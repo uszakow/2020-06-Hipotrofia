@@ -1,0 +1,59 @@
+.banner-container {
+  position: relative;
+}
+
+.banner-background {
+  display: none;
+}
+
+.banner-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner-button-container .banner-button {
+  max-width: 330px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 14px 8px;
+  padding: 10px;
+}
+
+.banner-button-container .banner-button-pregnancy {
+  background-color: #f0baba;
+}
+
+.banner-button-container .banner-button-pregnancy:hover {
+  background-color: #f06060;
+}
+
+.banner-button-container .banner-button-baby {
+  background-color: #83ace9;
+}
+
+.banner-button-container .banner-button-baby:hover {
+  background-color: #4b7ac0;
+}
+
+@media (min-width: 576px) {
+  .banner-background {
+    display: block;
+  }
+  .banner-button-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+/*# sourceMappingURL=Banner.css.map */
