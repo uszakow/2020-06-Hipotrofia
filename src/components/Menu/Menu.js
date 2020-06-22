@@ -26,7 +26,7 @@ class Menu extends Component {
                 <div className="menu-nav-container">
                     <form className="menu-search">
                         <input placeholder="szukana fraza" />
-                        <button type="submit"><img src={search} width="18" /></button>
+                        <button type="submit"><img src={search} alt="submit" width="18" /></button>
                     </form>
                     <nav>
                         <a href='#' className="menu-nav-item">Hipotrofia</a>
@@ -34,10 +34,10 @@ class Menu extends Component {
                         <a href='#' className="menu-nav-item">Historie dzieci</a>
                         <a href='#' className="menu-nav-item">Współpraca</a>
                         <a href='#' className="menu-nav-item">
-                            <img src={contact} width="20" className="menu-nav-img mobile-only" />
+                            <img src={contact} alt="contact" width="20" className="menu-nav-img mobile-only" />
                             Kontakt</a>
                     </nav>
-                    <a href='#' className="menu-nav-item"><img src={login} width="16" className="menu-nav-img" /><span className="mobile-only">Załoguj się</span></a>
+                    <a href='#' className="menu-nav-item"><img src={login} alt="login" width="16" className="menu-nav-img" /><span className="mobile-only">Zaloguj się</span></a>
                 </div>
                 <a href='#' className="menu-control mobile-only" onClick={this.activeMenu}>
                     <span></span>

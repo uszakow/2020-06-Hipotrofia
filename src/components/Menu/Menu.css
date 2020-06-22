@@ -137,10 +137,14 @@
   .mobile-only {
     display: none;
   }
+  .menu-container {
+    background-color: #ebe7e7;
+  }
   .menu-search {
     margin: 0 10px 0;
   }
   .menu-nav-container {
+    background-color: transparent;
     top: 100%;
     -webkit-transform: translateY(0%);
             transform: translateY(0%);

@@ -118,11 +118,15 @@ $green-middle: #2fd772;
 @media (min-width: $lg) {
     .mobile-only {
         display: none;
-    }    
+    }
+    .menu-container {
+        background-color: $grey-light;
+    }
     .menu-search{
         margin: 0 10px 0;
     }
     .menu-nav-container {
+        background-color: transparent;
         top: 100%;
         transform: translateY(0%);
         position: relative;
