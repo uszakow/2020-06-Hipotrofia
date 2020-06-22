@@ -18,4 +18,16 @@
   float: left;
   margin: 4px 24px 4px 0;
 }
+
+@media (min-width: 768px) {
+  .text-container h2 {
+    width: 60%;
+  }
+}
+
+@media (min-width: 992px) {
+  .text-container h2 {
+    width: 30%;
+  }
+}
 /*# sourceMappingURL=Text.css.map */

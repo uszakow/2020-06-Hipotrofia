@@ -7,22 +7,33 @@ $xl: 1200px;
 //colors
 $green-middle: #2fd772;
 
-.text-container {    
+.text-container {
     h2 {
         color: $green-middle;
         padding-bottom: 8px;
         border-bottom: 4px solid $green-middle;
     }
-    p{
+    p {
         text-align: justify;
     }
-    img{
+    img {
         max-width: 100%;
         display: block;
         margin: auto;
-    }   
-    .text-img-float{
+    }
+    .text-img-float {
         float: left;
         margin: 4px 24px 4px 0;
+    }
+}
+
+@media (min-width: $md) {
+    .text-container h2 {
+        width: 60%;
+    }
+}
+@media (min-width: $lg) {
+    .text-container h2 {
+        width: 30%;
     }
 }
