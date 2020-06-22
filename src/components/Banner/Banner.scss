@@ -1,0 +1,57 @@
+//size
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+//colors
+$pink-light: #f0baba;
+$pink-medium: #f06060;
+$blue-light: #83ace9;
+$blue-medium: #4b7ac0;
+
+.banner-container{
+    position: relative;
+}
+.banner-background{
+    display: none;
+}
+.banner-button-container {
+    display: flex;
+    justify-content: center;
+    .banner-button {
+        max-width: 330px;
+        border-radius: 5px;
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
+        margin: 14px 8px;
+        padding: 10px;
+    }
+    .banner-button-pregnancy {
+        background-color: $pink-light;
+    }
+    .banner-button-pregnancy:hover {
+        background-color: $pink-medium;
+    }
+    .banner-button-baby {
+        background-color: $blue-light;
+    }
+    .banner-button-baby:hover {
+        background-color: $blue-medium;
+    }
+}
+
+@media (min-width: $sm){
+    .banner-background{
+        display: block;
+    }
+    .banner-button-container{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
