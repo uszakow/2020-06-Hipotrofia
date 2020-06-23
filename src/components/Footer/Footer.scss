@@ -1,29 +1,25 @@
-@import '../../variables';
+@import "../../variables";
 
-.footer-container{
+.footer-container {
     background-color: $grey-medium;
     padding: 30px 16px;
-    display: grid;
-    grid-gap: 10px;
 }
-.footer-item{
-    a{
-        color: rgb(16, 16, 151);
-        text-decoration: none;
-        margin: 4px 0;
-    }
-    a:hover{
-        text-decoration: underline;
-    }
+.footer-content {
+    max-width: $max-width;
+    margin: auto;
+    display: grid;    
+    justify-content: space-around;
+    grid-gap: 5px;
 }
 
-@media (min-width: $md){
-    .footer-container{
-        grid-template-columns: repeat(2, 1fr);        
+@media (min-width: $md) {
+    .footer-content {
+        grid-template-columns: repeat(2, max-content);
     }
 }
-@media (min-width: $xl){
-    .footer-container{
-        grid-template-columns: repeat(3, 1fr);        
+@media (min-width: $xl) {
+    .footer-content {
+        grid-template-columns: repeat(3, max-content);
+        justify-content: space-between;
     }
 }

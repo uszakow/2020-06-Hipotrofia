@@ -1,0 +1,12 @@
+@import "../../../variables";
+
+.footer-item {
+    a {
+        color: rgb(16, 16, 151);
+        text-decoration: none;
+        margin: 4px 0;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}

@@ -1,41 +1,69 @@
 import React from 'react';
 import './Footer.css';
 
+import FooterItem from './FooterItem/FooterItem';
+
+const authors = [
+    {
+        name: 'Imię Nazwisko',
+        role: 'funkcja',
+        link: '#'
+    },
+    {
+        name: 'Długieimię Długienazwisko',
+        role: 'funkcja rola',
+        link: '#'
+    },
+    {
+        name: 'Długieimię Długienazwisko',
+        role: 'funkcja',
+        link: '#'
+    },
+    {
+        name: 'Imię Nazwisko',
+        role: 'funkcja',
+        link: '#'
+    },
+    {
+        name: 'Imię Nazwisko',
+        role: 'funkcja',
+        link: '#'
+    },
+    {
+        name: 'Imię Nazwisko',
+        role: 'funkcja',
+        link: '#'
+    },
+    {
+        name: 'Imię Nazwisko',
+        role: 'funkcja w projekcie',
+        link: '#'
+    },
+    {
+        name: 'Długieimię Długienazwisko',
+        role: 'funkcja rola',
+        link: '#'
+    },
+    {
+        name: 'Długieimię Długienazwisko',
+        role: 'funkcja rola',
+        link: '#'
+    },
+    {
+        name: 'Imię Nazwisko',
+        role: 'funkcja w projekcie',
+        link: '#'
+    },
+];
+
 function Footer() {
     return (
         <footer className="footer-container">
-            <span className="footer-item">
-                <a href="#">Imię Nazwisko</a>
-                <span> - funkcja</span>
-            </span>
-            <span className="footer-item">
-                <a href="#">Długieimię Długienazwisko</a>
-                <span> - funkcja rola</span>
-            </span>
-            <span className="footer-item">
-                <a href="#">Imię Nazwisko</a>
-                <span> - funkcja</span>
-            </span>
-            <span className="footer-item">
-                <a href="#">Imię Nazwisko</a>
-                <span> - funkcja</span>
-            </span>
-            <span className="footer-item">
-                <a href="#">Imię Nazwisko</a>
-                <span> - funkcja</span>
-            </span>
-            <span className="footer-item">
-                <a href="#">Długieimię Długienazwisko</a>
-                <span> - funkcja w projekcie</span>
-            </span>
-            <span className="footer-item">
-                <a href="#">Imię Nazwisko</a>
-                <span> - funkcja</span>
-            </span>
-            <span className="footer-item">
-                <a href="#">Imię Nazwisko</a>
-                <span> - funkcja</span>
-            </span>
+            <div className="footer-content">
+                {authors.map((item, index) => (
+                    <FooterItem key={index} author={item} />
+                ))}
+            </div>
         </footer >
     )
 }
