@@ -1,17 +1,10 @@
-//size
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
-
-//colors
-$green-middle: #2fd772;
+@import '../../../variables';
 
 .text-container {
     h2 {
-        color: $green-middle;
+        color: $green-medium;
         padding-bottom: 8px;
-        border-bottom: 4px solid $green-middle;
+        border-bottom: 4px solid $green-medium;
     }
     p {
         text-align: justify;

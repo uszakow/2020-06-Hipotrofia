@@ -1,19 +1,14 @@
-//size
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
+@import "../../variables";
 
-//colors
-$pink-light: #f0baba;
-$pink-medium: #f06060;
-$blue-light: #83ace9;
-$blue-medium: #4b7ac0;
-
-.banner-container{
+.banner-container {
     position: relative;
+    background-color: transparent;
+    img {
+        max-width: $max-width;
+        margin: auto;
+    }
 }
-.banner-background{
+.banner-background {
     display: none;
 }
 .banner-button-container {
@@ -21,14 +16,14 @@ $blue-medium: #4b7ac0;
     justify-content: center;
     .banner-button {
         max-width: 330px;
-        border-radius: 5px;
+        border-radius: 12px;
         color: white;
         font-weight: 700;
         text-decoration: none;
         text-align: center;
         flex-grow: 1;
-        margin: 14px 8px;
-        padding: 10px;
+        margin: 20px 8px;
+        padding: 12px;
     }
     .banner-button-pregnancy {
         background-color: $pink-light;
@@ -44,14 +39,20 @@ $blue-medium: #4b7ac0;
     }
 }
 
-@media (min-width: $sm){
-    .banner-background{
+@media (min-width: $sm) {
+    .banner-container {
+        background-color: $grey-medium;
+    }
+    .banner-background {
         display: block;
     }
-    .banner-button-container{
+    .banner-button-container {
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
+        .banner-button{
+            margin: 14px;
+        }
     }
 }

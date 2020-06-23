@@ -1,21 +1,3 @@
-//size
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
-
 * {
     box-sizing: border-box;
-}
-
-.app-container {
-    padding: 0 16px;
-    max-width: $xl;
-    margin: auto;
-}
-
-@media (min-width: $md) {
-    .app-container {
-        padding: 0 32px;
-    }
 }

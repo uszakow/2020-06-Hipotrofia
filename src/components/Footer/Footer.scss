@@ -1,14 +1,7 @@
-//size
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
-
-//colors
-$grey-middle: #c4c4c4;
+@import '../../variables';
 
 .footer-container{
-    background-color: $grey-middle;
+    background-color: $grey-medium;
     padding: 30px 16px;
     display: grid;
     grid-gap: 10px;

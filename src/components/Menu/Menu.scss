@@ -1,17 +1,7 @@
-//size
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
-
-//colors
-$grey-light: #ebe7e7;
-$grey-middle: #c4c4c4;
-$green-light: #5ec587;
-$green-middle: #2fd772;
+@import '../../variables';
 
 .menu-container {
-    background-color: $grey-middle;
+    background-color: $grey-medium;
     display: flex;
     position: relative;
 }
@@ -145,7 +135,7 @@ $green-middle: #2fd772;
             }
         }
         .menu-nav-item:hover {
-            color: $green-middle;
+            color: $green-medium;
         }
     }
 }

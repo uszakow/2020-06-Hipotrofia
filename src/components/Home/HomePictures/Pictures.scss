@@ -1,11 +1,4 @@
-//size
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
-
-//colors
-$grey-middle: #c4c4c4;
+@import '../../../variables';
 
 .pictures-container {
     display: grid;
@@ -13,7 +6,7 @@ $grey-middle: #c4c4c4;
     margin: 30px 0;
     .pictures-item {
         color: black;
-        background-color: $grey-middle;
+        background-color: $grey-medium;
         text-decoration: none;
         text-align: center;
         img {
