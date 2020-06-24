@@ -1,7 +1,8 @@
-@import '../../../variables';
+@import "../../../variables";
 
 .text-container {
     h2 {
+        max-width: 330px;
         color: $green-medium;
         padding-bottom: 8px;
         border-bottom: 4px solid $green-medium;
@@ -17,16 +18,5 @@
     .text-img-float {
         float: left;
         margin: 4px 24px 4px 0;
-    }
-}
-
-@media (min-width: $md) {
-    .text-container h2 {
-        width: 60%;
-    }
-}
-@media (min-width: $lg) {
-    .text-container h2 {
-        width: 30%;
     }
 }

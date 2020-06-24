@@ -12,9 +12,11 @@ function Home() {
     return (
         <>
             <Menu />
-            <Banner photo={bannerPhoto}/>
-            <Pictures />
-            <Text />
+            <Banner photo={bannerPhoto} />
+            <div className="home-container">
+                <Pictures />
+                <Text />
+            </div>
         </>
     )
 }

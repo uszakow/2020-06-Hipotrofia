@@ -1,7 +1,10 @@
+.footer-item {
+  margin: 2px;
+}
+
 .footer-item a {
   color: #101097;
   text-decoration: none;
-  margin: 4px 0;
 }
 
 .footer-item a:hover {

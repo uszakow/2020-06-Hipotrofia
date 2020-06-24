@@ -3,7 +3,6 @@ import './FooterItem.css';
 
 function FooterItem(props) {
     const { name, role, link } = props.author;
-    console.log(name)
     return (
         <span className="footer-item">
             <a href={link}>{name}</a>

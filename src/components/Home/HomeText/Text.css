@@ -1,4 +1,5 @@
 .text-container h2 {
+  max-width: 330px;
   color: #2fd772;
   padding-bottom: 8px;
   border-bottom: 4px solid #2fd772;
@@ -17,17 +18,5 @@
 .text-container .text-img-float {
   float: left;
   margin: 4px 24px 4px 0;
-}
-
-@media (min-width: 768px) {
-  .text-container h2 {
-    width: 60%;
-  }
-}
-
-@media (min-width: 992px) {
-  .text-container h2 {
-    width: 30%;
-  }
 }
 /*# sourceMappingURL=Text.css.map */
