@@ -1,5 +1,11 @@
 .banner-container {
   position: relative;
+  background-color: transparent;
+}
+
+.banner-container img {
+  max-width: 1440px;
+  margin: auto;
 }
 
 .banner-background {
@@ -17,7 +23,7 @@
 
 .banner-button-container .banner-button {
   max-width: 330px;
-  border-radius: 5px;
+  border-radius: 12px;
   color: white;
   font-weight: 700;
   text-decoration: none;
@@ -25,8 +31,8 @@
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  margin: 14px 8px;
-  padding: 10px;
+  margin: 20px 8px;
+  padding: 12px;
 }
 
 .banner-button-container .banner-button-pregnancy {
@@ -46,6 +52,9 @@
 }
 
 @media (min-width: 576px) {
+  .banner-container {
+    background-color: #c4c4c4;
+  }
   .banner-background {
     display: block;
   }
@@ -54,6 +63,9 @@
     bottom: 0;
     left: 0;
     right: 0;
+  }
+  .banner-button-container .banner-button {
+    margin: 14px;
   }
 }
 /*# sourceMappingURL=Banner.css.map */

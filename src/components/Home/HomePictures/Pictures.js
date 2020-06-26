@@ -1,41 +1,61 @@
 import React from 'react';
 import './Pictures.css';
 
-import picture from './img/picture.svg';
+import PicturesItem from './PictiresItem/PicturesItem';
+
+import picture from '../../../img/Home/HomePictures/picture.svg';
+
+const tiles = [
+    {
+        href: '#',
+        src: picture,
+        alt: 'image',
+        title: 'Współpraca',
+        text: 'consectetur adipiscing elit, sed do eiusmod tempor incididunt'
+    },
+    {
+        href: '#',
+        src: picture,
+        alt: 'image',
+        title: 'Różnica między SGA a IUGR',
+        text: 'consectetur adipiscing elit, sed do eiusmod tempor incididunt'
+    },
+    {
+        href: '#',
+        src: picture,
+        alt: 'image',
+        title: 'Programy leczenia hormonem wzrostu w Polsce',
+        text: 'consectetur adipiscing elit, sed do eiusmod tempor incididunt'
+    },
+    {
+        href: '#',
+        src: picture,
+        alt: 'image',
+        title: 'Historie dzieci',
+        text: 'consectetur adipiscing elit, sed do eiusmod tempor incididunt'
+    },
+    {
+        href: '#',
+        src: picture,
+        alt: 'image',
+        title: 'Najczęściej zadawane pytania o hipotrofię',
+        text: 'consectetur adipiscing elit, sed do eiusmod tempor incididunt'
+    },
+    {
+        href: '#',
+        src: picture,
+        alt: 'image',
+        title: 'Magik foundation',
+        text: 'https://www.magicfoundation.org/'
+    },
+]
 
 function Pictures() {
     return (
         <div className="pictures-container">
-            <a href="#" className="pictures-item">
-                <img src={picture} alt="image" />
-                <h4>Współpraca</h4>
-                <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-            </a>
-            <a href="#" className="pictures-item">
-                <img src={picture} alt="image" />
-                <h4>Różnica między SGA a IUGR</h4>
-                <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-            </a>
-            <a href="#" className="pictures-item">
-                <img src={picture} alt="image" />
-                <h4>Programy leczenia hormonem wzrostu w Polsce</h4>
-                <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-            </a>
-            <a href="#" className="pictures-item">
-                <img src={picture} alt="image" />
-                <h4>Historie dzieci</h4>
-                <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-            </a>
-            <a href="#" className="pictures-item">
-                <img src={picture} alt="image" />
-                <h4>Najczęściej zadawane pytania o hipotrofię</h4>
-                <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
-            </a>
-            <a href="#" className="pictures-item">
-                <img src={picture} alt="image" />
-                <h4>Magik foundation</h4>
-                <p>https://www.magicfoundation.org/</p>
-            </a>
+            {tiles.map((item, index) => (
+                <PicturesItem key={index} item={item} />
+            ))}
         </div>
     )
 }
