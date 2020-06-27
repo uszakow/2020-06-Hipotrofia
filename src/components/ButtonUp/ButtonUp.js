@@ -39,7 +39,7 @@ class ButtonUp extends Component {
 
         return (
             <button className={"button-up " + css} onClick={this.scrollUp}>
-                <img src={up} />
+                <img src={up} alt="Up" />
             </button>
         )
     }

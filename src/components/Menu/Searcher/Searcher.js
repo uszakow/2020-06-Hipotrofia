@@ -16,7 +16,7 @@ function Searcher(props) {
         <form className={"menu-searcher " + css}>
             <input placeholder="szukana fraza" />
             <button type="submit" onClick={searchPhrase}>
-                <img src={search} width="18" />
+                <img src={search} width="18" alt="search" />
             </button>
         </form>
     )

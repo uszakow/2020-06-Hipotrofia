@@ -4,9 +4,7 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Route,
-  Link,
   Switch,
-  NavLink,
 } from 'react-router-dom';
 
 import Menu from './components/Menu/Menu';
@@ -14,7 +12,6 @@ import Footer from './components/Footer/Footer';
 import ButtonUp from './components/ButtonUp/ButtonUp';
 
 import Home from './components/Home/Home';
-import Banner from './components/Banner/Banner';
 
 function App() {
   return (
@@ -56,3 +53,5 @@ function App() {
 }
 
 export default App;
+
+//author: Paweł Uszakow

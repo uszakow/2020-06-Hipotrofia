@@ -15,7 +15,12 @@ function Navigation(props) {
             <MenuItem href="/help" cssItem={cssItem} closeMenu={closeMenu}>Pomoc</MenuItem>
             <MenuItem href="/stories" cssItem={cssItem} closeMenu={closeMenu}>Historie dzieci</MenuItem>
             <MenuItem href="/blog" cssItem={cssItem} closeMenu={closeMenu}>Artykuły</MenuItem>
-            <MenuItem href="/cooperation" cssItem={cssItem} closeMenu={closeMenu}><span><img src={contact} width="20" className="mobile-only"></img>Kontakt</span></MenuItem>
+            <MenuItem href="/cooperation" cssItem={cssItem} closeMenu={closeMenu}>
+                <span>
+                    <img src={contact} width="20" className="mobile-only" alt="contact" />
+                    Kontakt
+                </span>
+            </MenuItem>
         </nav>
     )
 }

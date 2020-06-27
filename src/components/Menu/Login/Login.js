@@ -12,7 +12,7 @@ function Login(props) {
     return (
         <MenuItem href="/login" cssItem={cssItem} closeMenu={closeMenu}>
             <span>
-                <img src={login} className="menu-nav-img" width="16" title="Zaloguj się"/>
+                <img src={login} className="menu-nav-img" width="16" title="Zaloguj się" alt="Zaloguj się" />
                 <span className="mobile-only">Zaloguj się</span>
             </span>
         </MenuItem>
