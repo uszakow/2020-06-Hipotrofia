@@ -1,0 +1,21 @@
+.pictures-container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+}
+
+@media (min-width: 576px) {
+  .pictures-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    margin: 30px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .pictures-container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+/*# sourceMappingURL=Pictures.css.map */

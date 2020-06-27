@@ -1,0 +1,18 @@
+@import "../../../variables";
+
+.pictures-container {
+    display: grid;
+    grid-gap: 20px;
+}
+
+@media (min-width: $sm) {
+    .pictures-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px 0;
+    }
+}
+@media (min-width: $lg) {
+    .pictures-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

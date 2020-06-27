@@ -1,0 +1,13 @@
+.footer-item {
+  margin: 2px;
+}
+
+.footer-item a {
+  color: #101097;
+  text-decoration: none;
+}
+
+.footer-item a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=FooterItem.css.map */

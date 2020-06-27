@@ -1,0 +1,22 @@
+.text-container h2 {
+  max-width: 330px;
+  color: #2fd772;
+  padding-bottom: 8px;
+  border-bottom: 4px solid #2fd772;
+}
+
+.text-container p {
+  text-align: justify;
+}
+
+.text-container img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.text-container .text-img-float {
+  float: left;
+  margin: 4px 24px 4px 0;
+}
+/*# sourceMappingURL=Text.css.map */

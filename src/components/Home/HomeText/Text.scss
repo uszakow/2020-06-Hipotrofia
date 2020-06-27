@@ -1,0 +1,22 @@
+@import "../../../variables";
+
+.text-container {
+    h2 {
+        max-width: 330px;
+        color: $green-medium;
+        padding-bottom: 8px;
+        border-bottom: 4px solid $green-medium;
+    }
+    p {
+        text-align: justify;
+    }
+    img {
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .text-img-float {
+        float: left;
+        margin: 4px 24px 4px 0;
+    }
+}

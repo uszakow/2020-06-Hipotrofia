@@ -1,0 +1,26 @@
+@import "../../variables";
+
+.button-up {
+    background-color: rgba(235, 231, 231, 0.9);
+    padding: 10px 20px;
+    border: 0;
+    position: fixed;
+    bottom: 0;
+    right: 16px;
+    display: none;
+    img {
+        width: 30px;
+    }
+}
+.button-up-show {
+    display: inline;
+}
+
+@media (min-width: $lg) {
+    .button-up {
+        padding: 10px 30px;
+        img {
+            width: 50px;
+        }
+    }
+}
