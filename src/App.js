@@ -11,8 +11,10 @@ import {
 
 import Menu from './components/Menu/Menu';
 import Footer from './components/Footer/Footer';
+import ButtonUp from './components/ButtonUp/ButtonUp';
 
 import Home from './components/Home/Home';
+import Banner from './components/Banner/Banner';
 
 function App() {
   return (
@@ -36,12 +38,19 @@ function App() {
         <Route path="/login">
           <h2>Strona logowania</h2>
         </Route>
+        <Route path="/pregnancy">
+          <h2>Hipotrofia w ciąży</h2>
+        </Route>
+        <Route path="/children">
+          <h2>Hipotrofia u dzieci</h2>
+        </Route>
         <Route>
           <h2>Strona 404</h2>
         </Route>
       </Switch>
 
       <Footer />
+      <ButtonUp />
     </Router>
   );
 }
