@@ -7,12 +7,12 @@
 .footer-content {
     max-width: $max-width;
     margin: auto;
-    display: grid;    
+    display: grid;
     justify-content: space-around;
 }
 
 @media (min-width: $md) {
-    .footer-container{
+    .footer-container {
         padding: 30px $side-md;
     }
     .footer-content {
@@ -21,10 +21,10 @@
     }
 }
 @media (min-width: $xl) {
-    .footer-container{
+    .footer-container {
         padding: 30px $side-xl;
     }
     .footer-content {
-        grid-template-columns: repeat(3, max-content);        
+        grid-template-columns: repeat(3, max-content);
     }
 }

@@ -1,0 +1,74 @@
+@import "../../../variables";
+
+.menu-mobile {
+    display: flex;
+}
+.menu-control {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: 0;
+    margin: 22px 20px 22px auto;
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+
+    span,
+    span::before,
+    span::after {
+        width: 18px;
+        height: 2px;
+        background-color: black;
+        border-radius: 1px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        left: 50%;
+        margin-left: -9px;
+    }
+    span::before,
+    span::after {
+        content: "";
+        transition: 0.2s;
+    }
+    span::before {
+        transform: translateY(-5px);
+    }
+    span::after {
+        transform: translateY(5px);
+    }
+}
+.menu-mobile-container {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    padding: 20px 16px;
+    background-color: rgba(196, 196, 196, 0.7);
+    transition: 0.4s;
+    transform-origin: top;
+    top: 0;
+    transform: translateY(-100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.active {
+    .menu-control {
+        span {
+            height: 0;
+        }
+        span::before {
+            transform: rotate(-45deg);
+        }
+        span::after {
+            transform: rotate(45deg);
+        }
+    }
+    .menu-mobile-container {
+        top: 100%;
+        transform: translateY(0%);
+    }
+}

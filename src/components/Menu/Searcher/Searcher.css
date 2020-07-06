@@ -1,0 +1,32 @@
+.menu-searcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-searcher input {
+  min-width: 260px;
+  height: 36px;
+  padding: 8px;
+  border: 0;
+  border-radius: 12px 0 0 12px;
+  background-color: white;
+}
+
+.menu-searcher button {
+  height: 36px;
+  border: 0;
+  border-radius: 0 12px 12px 0;
+  background-color: white;
+  cursor: pointer;
+}
+
+.menu-searcher-mobile {
+  margin: 0 auto 26px auto;
+}
+
+.menu-searcher-desctop {
+  margin-right: 18px;
+  margin-left: auto;
+}
+/*# sourceMappingURL=Searcher.css.map */

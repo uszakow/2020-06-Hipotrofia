@@ -1,0 +1,27 @@
+@import "../../../variables";
+
+.menu-desctop {
+    display: flex;
+    align-items: center;
+    max-width: $max-width;
+    padding: 20px 0 12px 0;
+    .mobile-only {
+        display: none;
+    }
+}
+
+@media (min-width: $md) {
+    .menu-desctop {
+        margin: 0 $side-md;
+    }
+}
+@media (min-width: $xl) {
+    .menu-desctop {
+        margin: 0 $side-xl;
+    }
+}
+@media (min-width: $max-width+$side-xl) {
+    .menu-desctop {
+        margin: auto;
+    }
+}
