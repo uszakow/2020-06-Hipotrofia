@@ -12,6 +12,7 @@ import Footer from './components/Footer/Footer';
 import ButtonUp from './components/ButtonUp/ButtonUp';
 
 import Home from './components/Home/Home';
+import LoginPage from './components/LoginPage';
 
 function App() {
   return (
@@ -32,8 +33,17 @@ function App() {
         <Route path="/cooperation">
           <h2>Opcje współpracy</h2>
         </Route>
-        <Route path="/login">
-          <h2>Strona logowania</h2>
+        <Route path="/login">    
+          <LoginPage/>
+        </Route>
+        <Route path="/register">
+          <h2>Strona rejestracji</h2>
+        </Route>
+        <Route path="/logout">
+          <h2>Strona wylogowania</h2>
+        </Route>
+        <Route path="/forgot-password">
+          <h2>Strona zmiany hasła</h2>
         </Route>
         <Route path="/pregnancy">
           <h2>Hipotrofia w ciąży</h2>
