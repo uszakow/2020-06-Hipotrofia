@@ -13,6 +13,7 @@ import ButtonUp from './components/ButtonUp/ButtonUp';
 
 import Home from './components/Home/Home';
 import LoginPage from './components/LoginPage';
+import RegisterPage from './components/RegisterPage';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         </Route>
         <Route path="/register">
           <h2>Strona rejestracji</h2>
+          <RegisterPage/>
         </Route>
         <Route path="/logout">
           <h2>Strona wylogowania</h2>
