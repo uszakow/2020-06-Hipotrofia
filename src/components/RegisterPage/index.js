@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
 import { compose } from "recompose";
+import axios from 'axios';
+
 
 const RegisterPage = () => (
     <div className="SignUp">
@@ -12,7 +14,7 @@ const RegisterPage = () => (
 
 
   const INITIAL_STATE = {
-    // username: "",
+    name: "",
     email: "",
     password: "",
     password2: "",
@@ -20,7 +22,11 @@ const RegisterPage = () => (
     errorEmail: "",
     errorPassword: "",
     errorPassword2: "",
+    users:[]
   };
+
+
+
 
   class RegisterFormBase extends Component {
 
@@ -31,16 +37,20 @@ const RegisterPage = () => (
       }
 
       onSubmit = (event) => {
-        const { email, password, password2 } = this.state;
-        //tu zmiana na axios
-        this.props.database
-          .doCreateUserWithEmailAndPassword(email, password, password2)
-          .then((authUser) => {
-            //create a user in realtime Firebase database
-            return this.props.firebase.user(authUser.user.uid).set({
-              
-              email,
-            });
+        
+        event.preventDefault();
+
+        const user = {
+          name: this.state.name,
+          email:this.state.email,
+          password:this.state.password,
+          password2:this.state.password2
+        };
+
+        axios.post('http://localhost:3001/users', { user })
+          .then(res=> {
+            console.log(res);
+            console.log(res.data);
           })
           .then(() => {
             this.setState({ ...INITIAL_STATE });
@@ -51,7 +61,7 @@ const RegisterPage = () => (
               error,
             });
           });
-        event.preventDefault();
+
       };
     
       onChange = (event) => {
@@ -61,18 +71,28 @@ const RegisterPage = () => (
       };
 
       render(){
-          const {email, password, password2, errorEmail, errorPassword, errorPassword2, error} = this.state;
+          const {name, email, password, password2, errorEmail, errorPassword, errorPassword2, error} = this.state;
 
           const isInvalid =
       password !== password2 ||
       password === "" ||
       email === "" ;
-      
+
       
 
       return(
         <div>
             <form onSubmit={this.onSubmit} className="RegisterBox">
+            <div className="Name">
+                <label>Nazwa użytkownika</label>
+                <input
+                name="name"
+                value={name}
+                onChange={this.onChange}
+                type="text"
+                placeholder="nazwa użytkownika"
+                />
+          </div>
             <div className="Email">
                 <label>Email</label>
                 <input
@@ -106,7 +126,7 @@ const RegisterPage = () => (
               value={password2}
               onChange={this.onChange}
               type="password"
-              placeholder="confirm password"
+              placeholder="potwierdź hasło"
             />
           </div>
           {errorPassword2 && (
