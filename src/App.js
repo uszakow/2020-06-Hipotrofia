@@ -10,14 +10,18 @@ import {
 import Menu from './components/Menu/Menu';
 import Footer from './components/Footer/Footer';
 import ButtonUp from './components/ButtonUp/ButtonUp';
+import Banner from './components/Banner/Banner';
+
+import bannerPhoto from './img/Banner/banner.svg';
 
 import Home from './components/Home/Home';
+import Cooperation from './components/Cooperation';
 
 function App() {
   return (
     <Router>
       <Menu />
-
+      <Banner photo={bannerPhoto}/>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/help">
@@ -31,6 +35,7 @@ function App() {
         </Route>
         <Route path="/cooperation">
           <h2>Opcje współpracy</h2>
+          <Cooperation/>
         </Route>
         <Route path="/login">
           <h2>Strona logowania</h2>
