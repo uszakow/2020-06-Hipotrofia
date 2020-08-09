@@ -1,0 +1,118 @@
+@import "../../variables";
+
+.cooperation_container {
+    max-width: $max-width;
+    margin: auto;
+    margin: 0 $side-sm 20px $side-sm;
+}
+
+@media (min-width: $md) {
+    .cooperation_container {
+        margin: 0 $side-md 20px $side-md;
+    }
+}
+@media (min-width: $xl) {
+    .cooperation_container {
+        margin: 0 $side-xl 20px $side-xl;
+    }
+}
+@media (min-width: $max-width+$side-xl) {
+    .cooperation_container {
+        margin: 0 auto 20px auto;
+    }
+}
+
+.cooperation_container_buttons_and_text{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin:5px 0;
+
+    .cooperation_container_buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 25px;
+
+        button{
+            width: 330px;
+            height: 50px;
+            text-align: center;
+            background-color: #DEDADA;
+            border-radius: 12px;
+            border: none;
+            margin: 5px 0;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 28px;
+            color: #000000;
+            cursor: pointer;
+        }
+
+    }
+    .cooperation_container_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100%;
+
+        h1{
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            color: $green-medium;
+
+            &::after{
+                content: "";
+                display: block;
+                width: 330px;
+                height: 4px;
+                background-color:$green-medium ;
+                margin-top: 8px;
+            }
+        }
+        p{
+            max-width: 800px;
+            max-height: 280px;
+            font-size: 18px;
+            line-height: 22px;
+            color: #000000;
+            font-weight: normal;
+            margin-top: 30px;
+        }
+    }
+}
+
+.cooperation_container_photo{
+    background-image: url('../../img/Cooperation/roller-coaster-3605743_1920\ 1.png');
+    width: 1156px;
+    height: 384px;
+    position: relative;
+
+    h2{
+        position:absolute;
+        display: block;
+        font-family: 'Pacifico';
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: normal;
+        color:#000000;
+        top: 250px;
+        right: 300px;
+
+    }
+}
+
+.cooperation_container_extra_text{
+    width: 100%;
+    height: 72px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    p{
+        margin: 37px 0;
+    }
+}

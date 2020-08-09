@@ -34,7 +34,6 @@ function App() {
           <h2>Tutaj można będzie coś opublikować</h2>
         </Route>
         <Route path="/cooperation">
-          <h2>Opcje współpracy</h2>
           <Cooperation/>
         </Route>
         <Route path="/login">
