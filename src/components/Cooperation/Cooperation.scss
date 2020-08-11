@@ -2,8 +2,6 @@
 
 @import "../../media";
 
-// @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
 .cooperation .container_buttons_and_text{
     display: flex;
     flex-direction: row;
@@ -11,6 +9,7 @@
     align-items: flex-start;
     margin:5px 0;
     width: 100%;
+    font-family: $basic;
 
     .container_buttons{
         display: flex;
@@ -42,6 +41,7 @@
         align-items: flex-start;
         height: 100%;
         width: 100%;
+        font-family: $basic;
 
         h1{
             font-weight: bold;
@@ -59,7 +59,7 @@
             }
         }
         p{
-            // max-width: 800px;
+        
             max-height: 280px;
             font-size: 18px;
             line-height: 22px;
@@ -74,24 +74,9 @@
     background-image: url('../../img/Cooperation/roller-coaster-3605743_1920\ 1.png');
     
     height: 384px;
-    position: relative;
     background-size: cover;
     background-repeat: no-repeat;
 
-
-    h2{
-        position:absolute;
-        display: block;
-        font-family: 'Pacifico';
-        font-size: 18px;
-        line-height: 32px;
-        font-weight: normal;
-        color:#000000;
-        top: 250px;
-        right: 536px;
-        // font-family: 'Pacifico', cursive;
-
-    }
 }
 
  .container_extra_text{
@@ -100,6 +85,7 @@
     font-size: 18px;
     line-height: 22px;
     color: #000000;
+    font-family: $basic;
     p{
         margin: 37px 0;
     }
