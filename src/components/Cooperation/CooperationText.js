@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CooperationText = () => (
-    <div className="cooperation_container_text">
+    <div className="cooperation container_text">
       <h1>Współpraca</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

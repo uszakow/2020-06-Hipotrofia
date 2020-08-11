@@ -4,21 +4,24 @@ import CooperationText from "./CooperationText";
 import CooperationExtraText from "./CooperationExtraText";
 import "./Cooperation.scss";
 
-import RollercosterImg from "../../img/Cooperation/roller-coaster-3605743_1920 1.png";
+import Banner from "../Banner/Banner";
+
+import bannerPhoto from "../../img/Banner/banner.svg";
 
 const Cooperation = () => (
-  <div className="cooperation_container">
-    <div className="cooperation_container_buttons_and_text">
-      <CooperationButtons />
-      <CooperationText />
-    </div>
+  <>
+    <Banner photo={bannerPhoto} />
+    <div className="cooperation container">
+      <div className="cooperation container_buttons_and_text">
+        <CooperationButtons />
+        <CooperationText />
+      </div>
 
-    <div className="cooperation_container_photo">
-      <h2>Rozpocznij współpracę z NAMI!!!</h2>
-    </div>
+      <div className="cooperation container_photo"></div>
 
-    <CooperationExtraText />
-  </div>
+      <CooperationExtraText />
+    </div>
+  </>
 );
 
 export default Cooperation;
