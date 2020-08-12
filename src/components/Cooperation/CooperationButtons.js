@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 const CooperationButtons = () => (
     
       <div className="cooperation container_buttons">
-        <Link to="/cooperation">
+        {/* <Link to="/cooperation">
           <button className="współpraca">Współpraca</button>
-        </Link>
-        <Link to="/">
+        </Link> */}
+        {/* <Link to="/">
           <button className="difference">Różnica między SGA a IUGR</button>
-        </Link>
+        </Link> */}
         <Link to="/">
           <button className="programs">Programy leczenia w Polsce</button>
         </Link>
@@ -19,9 +19,9 @@ const CooperationButtons = () => (
         <Link to="/questions">
           <button className="questions">Najczęściej zadawane pytania</button>
         </Link>
-        <Link to="/">
+        {/* <Link to="/">
           <button className="foundation">Magic foundation</button>
-        </Link>
+        </Link> */}
       </div>
       
 );

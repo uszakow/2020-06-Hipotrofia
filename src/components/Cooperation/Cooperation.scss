@@ -2,21 +2,45 @@
 
 @import "../../media";
 
+//fonts  (Karolina Skorupska)
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;800&display=swap');
+$basic: 'Montserrat', sans-serif;
+
+
 .cooperation .container_buttons_and_text{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     margin:5px 0;
     width: 100%;
     font-family: $basic;
 
+    @media(max-width:$md){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    }
+
     .container_buttons{
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-right: 25px;
+
+        @media(max-width:$md){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    }
+
+        @media(max-width:$sm){
+            padding: $side-sm;
+        }
+    
+
 
         button{
             width: 330px;
@@ -49,6 +73,11 @@
             line-height: 29px;
             color: $green-medium;
 
+            @media(max-width:$sm){
+                font-size: 18px;
+                line-height: 22px;
+            }
+
             &::after{
                 content: "";
                 display: block;
@@ -56,6 +85,10 @@
                 height: 4px;
                 background-color:$green-medium ;
                 margin-top: 8px;
+
+                @media(max-width:$sm){
+                    margin-top:3px;
+                }
             }
         }
         p{
@@ -66,6 +99,12 @@
             color: #000000;
             font-weight: normal;
             margin-top: 30px;
+
+            @media(max-width:$sm){
+                font-size: 18px;
+                line-height: 22px;
+                margin-top: 15px;
+            }
         }
     }
 }
@@ -77,11 +116,15 @@
     background-size: cover;
     background-repeat: no-repeat;
 
+    @media(max-width:$md){
+        display: none;
+}
+
 }
 
  .container_extra_text{
     width: 100%;
-    height: 72px;
+    margin:10px 0;
     font-size: 18px;
     line-height: 22px;
     color: #000000;
