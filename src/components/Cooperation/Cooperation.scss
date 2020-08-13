@@ -37,10 +37,8 @@ $basic: 'Montserrat', sans-serif;
     }
 
         @media(max-width:$sm){
-            padding: $side-sm;
+            margin: 0 auto;
         }
-    
-
 
         button{
             width: 330px;
@@ -55,6 +53,10 @@ $basic: 'Montserrat', sans-serif;
             line-height: 28px;
             color: #000000;
             cursor: pointer;
+
+            @media(max-width:$sm){
+                width: 300px;
+            }
         }
 
     }
@@ -88,6 +90,7 @@ $basic: 'Montserrat', sans-serif;
 
                 @media(max-width:$sm){
                     margin-top:3px;
+                    width: 300px;
                 }
             }
         }
@@ -116,7 +119,7 @@ $basic: 'Montserrat', sans-serif;
     background-size: cover;
     background-repeat: no-repeat;
 
-    @media(max-width:$md){
+    @media(max-width:$lg){
         display: none;
 }
 
@@ -129,7 +132,15 @@ $basic: 'Montserrat', sans-serif;
     line-height: 22px;
     color: #000000;
     font-family: $basic;
-    p{
-        margin: 37px 0;
+    
+
+    @media(max-width:$sm){
+        margin-top:15%;
+    }
+    @media(max-width:$xs){
+        margin-top:25%;
+    }
+    @media(max-width:300px){
+        margin-top: 60%;
     }
 }
