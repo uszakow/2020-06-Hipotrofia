@@ -7,7 +7,7 @@ import Banner from "../Banner/Banner";
 
 import bannerPhoto from "../../img/Banner/banner.svg";
 
-const Cooperation = () => (
+const CooperationPage = () => (
   <>
     <Banner photo={bannerPhoto} />
     <div className="cooperation container">
@@ -20,6 +20,6 @@ const Cooperation = () => (
   </>
 );
 
-export default Cooperation;
+export default CooperationPage;
 
 //Karolina Skorupska

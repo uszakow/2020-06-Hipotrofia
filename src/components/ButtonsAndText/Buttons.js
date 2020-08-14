@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 const Buttons = () => (
     
       <div className="container_buttons">
-        {/* <Link to="/cooperation">
+        <Link to="/cooperation">
           <button className="współpraca">Współpraca</button>
-        </Link> */}
+        </Link>
         {/* <Link to="/">
           <button className="difference">Różnica między SGA a IUGR</button>
         </Link> */}

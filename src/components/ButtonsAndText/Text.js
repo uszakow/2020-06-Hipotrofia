@@ -1,9 +1,14 @@
 import React from 'react';
 
-const Text = () => (
+const Text = (props) => (
     <div className=" container_text">
-      <h1>Współpraca</h1>
+      <h1 
+      // className={props.color}
+      >
+        {/* {props.name}  */}
+        Współpraca/ Historie dzieci</h1>
       <p>
+        {/* {props.description} */}
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -16,3 +21,7 @@ const Text = () => (
 );
 
 export default Text;
+
+//Karolina Skorupska
+// zakomentowane- czeka na dane z bazy dancyh-propsy bedą zmienne na każdej podstronie:
+// nazwa podstrony-name, h1-color, description- opisy

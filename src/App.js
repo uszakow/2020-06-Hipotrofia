@@ -13,7 +13,8 @@ import ButtonUp from './components/ButtonUp/ButtonUp';
 
 
 import Home from './components/Home/Home';
-import Cooperation from './components/Cooperation';
+import CooperationPage from './components/Cooperation';
+import StoriesPage from './components/Stories/index';
 
 function App() {
   return (
@@ -26,13 +27,13 @@ function App() {
           <h2>Gdzie znaleźć pomoc</h2>
         </Route>
         <Route path="/stories">
-          <h2>Historie dzieci</h2>
+          <StoriesPage/>
         </Route>
         <Route path="/blog">
           <h2>Tutaj można będzie coś opublikować</h2>
         </Route>
         <Route path="/cooperation">
-          <Cooperation/>
+          <CooperationPage/>
         </Route>
         <Route path="/login">
           <h2>Strona logowania</h2>
