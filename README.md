@@ -7,9 +7,9 @@
 - Każda podstrona jest pisana w komponencie, który znajduje się w folderze `components`. Każdy komponent, który będzie wykorzystywany nw różnych podstronach, zapisywany jest w folderze `components`. Wszystkie wewnętrzne komponenty, które są wykorzystywane tylko wewnątrz innego komponentu, są zapisywane w folderze tego innego komponentu.  
 **Przykład:**  
 >components>  
+>>Banner> (komponent, który będzie wykorzystywany w wielu miejscach)  
 >>Home> (komponent, który mieści w sobie całą podstronę)
 >>>HomePictures> (komponent, który będzie wykorzystywany tylko wewnątrz komponentu *Home*)  
->>Banner> (komponent, który będzie wykorzystywany w wielu miejscach)  
 - Nazwy komponentów, komentarze, klasy są pisane w języku *angielskim*.
 - Na dole komponentu trzeba napisać komentaż z *imieniem i nazwiskiem* autora tego komponentu. Z regułu każdy komponent ma jednego autora.
 
