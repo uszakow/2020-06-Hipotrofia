@@ -28,10 +28,12 @@
 **Przykład:**  
 komponent `Banner`, znajdujący się w folderze `components`  
 >.banner-container{  
->>*treść*  
+>>*treść* 
+> 
 >}  
 >.banner-button-container{  
 >>*treść*  
+>
 >}  
 
 **Inny przykład:**
@@ -39,6 +41,7 @@ komponent `Pictures`, który znajduje się w folderze komponentu `Home`, który 
 (ponieważ komponent `Pictures` jest częścią innego komponentu, pierwsza część nazwy klasy ma odpowiadać komponentowi, który jest bezpośrednio w folderze `components` - w podanym przykładzie to będzie `home-`)  
 >.home-pictures-container{  
 >>*treść*  
+>
 >}  
 
 ### Responsywność
