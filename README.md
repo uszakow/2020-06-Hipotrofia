@@ -4,45 +4,52 @@
 ### Ogólne założenia
 - Nowy branch jest tworzony do nowego tasku.
 - Kod jest pisany *mobile-first*.
-- Każda podstrona jest pisana w komponencie, który znajduje się w folderze `components`. Każdy komponent, który będzie wykorzystywany nw różnych podstronach, zapisywany jest w folderze `components`. Wszystkie wewnętrzne komponenty, które są wykorzystywane tylko wewnątrz innego komponentu, są zapisywane w folderze tego innego komponentu.
-*Przykład:*
-    components>
+- Każda podstrona jest pisana w komponencie, który znajduje się w folderze `components`. Każdy komponent, który będzie wykorzystywany nw różnych podstronach, zapisywany jest w folderze `components`. Wszystkie wewnętrzne komponenty, które są wykorzystywane tylko wewnątrz innego komponentu, są zapisywane w folderze tego innego komponentu.  
+*Przykład:*  
+    components>  
         Home> (komponent, który mieści w sobie całą podstronę)
-            HomePictures> (komponent, który będzie wykorzystywany tylko wewnątrz komponentu *Home*)
-        Banner> (komponent, który będzie wykorzystywany w wielu miejscach)
+            HomePictures> (komponent, który będzie wykorzystywany tylko wewnątrz komponentu *Home*)  
+        Banner> (komponent, który będzie wykorzystywany w wielu miejscach)  
 - Nazwy komponentów, komentarze, klasy są pisane w języku *angielskim*.
 - Na dole komponentu trzeba napisać komentaż z *imieniem i nazwiskiem* autora tego komponentu. Z regułu każdy komponent ma jednego autora.
 
 ### Style
 - Style są pisane w *scss*.
-- Style wykorzystywane w komponencie są zapisywane w folderze tego komponentu. Nazwa pliku stylów taka sama, jak i nazwa pliku .js, które je wykorzystują.
-*Przykład:*
-    components>
-        Home>
-            Home.js
-            Home.scss
+- Style wykorzystywane w komponencie są zapisywane w folderze tego komponentu. Nazwa pliku stylów taka sama, jak i nazwa pliku .js, które je wykorzystują.  
+*Przykład:*  
+    components >  
+        Home >  
+            Home.js  
+            Home.scss  
 - W pliku .js importuje się bezpośrednio plik .scss danego komponentu, np.:
 `import './Home.scss'`
 - Nazwy klas stylów są pisane w języku *angielskim*.
-- Naswy klas stylów są pisane według *BEM*. Pierwsza część nazwy klasy **zawsze** zaczyna się z nazwy komponenta, który leży w folderze `components`.
-*Przykład* (komponent `Banner`, znajdujący się w folderze `components`)
+- Naswy klas stylów są pisane według *BEM*. Pierwsza część nazwy klasy **zawsze** zaczyna się z nazwy komponenta, który leży w folderze `components`.  
+*Przykład*  
+komponent `Banner`, znajdujący się w folderze `components`  
     .banner-container{
         *treść*
-    }
+    }  
     .banner-button-container{
         *treść*
-    }
+    }  
+*Inny przykład*
+komponent `Pictures`, który znajduje się w folderze komponentu `Home`, który jest w folderze `components`  
+(ponieważ komponent `Pictures` jest częścią innego komponentu, pierwsza część nazwy klasy ma odpowiadać komponentowi, który jest bezpośrednio w folderze `components` - w podanym przykładzie to będzie `home-`)  
+    .home-pictures-container{
+        *treść*
+    }  
 
 ### Responsywność
 - Minimalna szerokość ekranu na którym strona ma być pokazywana równa się `320px`.
-- Treść każdej podstrony ma znajdować się w komponencie, który ma klasę `className="container"`. Klasa znajduje się w pliku `_media.scss`. Ta klasa stwarza @media dla całej treści.
-*Przykład*
-    <>
-        <Banner photo={bannerPhoto} />
-        <div className="container">
-            *cała treść podstrony, włożone komponenty*
-        </div>
-    </>
+- Treść każdej podstrony ma znajdować się w komponencie, który ma klasę `className="container"`. Klasa znajduje się w pliku `_media.scss`. Ta klasa stwarza @media dla całej treści.  
+*Przykład*  
+    <div>  
+        <Banner photo={bannerPhoto} />  
+        <div className="container">  
+            *cała treść podstrony, włożone komponenty*  
+        </div>  
+    </div>  
 
 ### Style wspólne dla projektu
 - Zmienne, które powtarzają się w całym projekcie, są zapisywane w pliku `_variables.scss`. Dotyczy to między innymi kolorów i breakpointów dla @media. Zawartość pliku `_variables.scss` można zmieniać (zwł. dodawać nowe zmienne) tylko po konsultacji w grupie *front-end* na Slacku.
@@ -65,7 +72,7 @@
 
 
 
-
+***
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
