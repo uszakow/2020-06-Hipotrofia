@@ -6,10 +6,10 @@
 - Kod jest pisany *mobile-first*.
 - Każda podstrona jest pisana w komponencie, który znajduje się w folderze `components`. Każdy komponent, który będzie wykorzystywany nw różnych podstronach, zapisywany jest w folderze `components`. Wszystkie wewnętrzne komponenty, które są wykorzystywane tylko wewnątrz innego komponentu, są zapisywane w folderze tego innego komponentu.  
 **Przykład:**  
-    components>  
-        Home> (komponent, który mieści w sobie całą podstronę)
-            HomePictures> (komponent, który będzie wykorzystywany tylko wewnątrz komponentu *Home*)  
-        Banner> (komponent, który będzie wykorzystywany w wielu miejscach)  
+>components>  
+>>Home> (komponent, który mieści w sobie całą podstronę)
+>>>HomePictures> (komponent, który będzie wykorzystywany tylko wewnątrz komponentu *Home*)  
+>>Banner> (komponent, który będzie wykorzystywany w wielu miejscach)  
 - Nazwy komponentów, komentarze, klasy są pisane w języku *angielskim*.
 - Na dole komponentu trzeba napisać komentaż z *imieniem i nazwiskiem* autora tego komponentu. Z regułu każdy komponent ma jednego autora.
 
@@ -27,17 +27,18 @@
 - Naswy klas stylów są pisane według *BEM*. Pierwsza część nazwy klasy **zawsze** zaczyna się z nazwy komponenta, który leży w folderze `components`.  
 **Przykład:**  
 komponent `Banner`, znajdujący się w folderze `components`  
->.banner-container{
->>*treść*
+>.banner-container{  
+>>*treść*  
 >}  
->.banner-button-container{
->>*treść*
+>.banner-button-container{  
+>>*treść*  
 >}  
+
 **Inny przykład:**
 komponent `Pictures`, który znajduje się w folderze komponentu `Home`, który jest w folderze `components`  
 (ponieważ komponent `Pictures` jest częścią innego komponentu, pierwsza część nazwy klasy ma odpowiadać komponentowi, który jest bezpośrednio w folderze `components` - w podanym przykładzie to będzie `home-`)  
->.home-pictures-container{
->>*treść*
+>.home-pictures-container{  
+>>*treść*  
 >}  
 
 ### Responsywność
