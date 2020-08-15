@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import ArrowUp from '../../img/Stories/Vector.png';
 
+import './Stories.scss';
+
 class Post extends Component {
     state={
         wrapperIsOpen:false,
@@ -27,7 +29,8 @@ class Post extends Component {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
               </p>
               <div className='stories-post-button-more'>Czytaj więcej</div>
-              <p className="stories-post-content-all-text">
+
+              <p className="stories-post-content-all-text" id={this.state.wrapperIsOpen ? "visible" : "hidden"}>
                   {this.props.allText}
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
@@ -61,7 +64,7 @@ class Post extends Component {
                 anim id est laborum.
               </p>
             </div>
-            <div className="stories-post-arrow-up"><img src={ArrowUp} alt='arrow up'></img></div>
+            <div className="stories-post-arrow-up" id={this.state.wrapperIsOpen ? "visible" : "hidden"}><img src={ArrowUp} alt='arrow up'></img></div>
           </div>
         )
     }
