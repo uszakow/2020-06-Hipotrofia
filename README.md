@@ -5,7 +5,7 @@
 - Nowy branch jest tworzony do nowego tasku.
 - Kod jest pisany *mobile-first*.
 - Każda podstrona jest pisana w komponencie, który znajduje się w folderze `components`. Każdy komponent, który będzie wykorzystywany nw różnych podstronach, zapisywany jest w folderze `components`. Wszystkie wewnętrzne komponenty, które są wykorzystywane tylko wewnątrz innego komponentu, są zapisywane w folderze tego innego komponentu.  
-*Przykład:*  
+**Przykład:**  
     components>  
         Home> (komponent, który mieści w sobie całą podstronę)
             HomePictures> (komponent, który będzie wykorzystywany tylko wewnątrz komponentu *Home*)  
@@ -16,34 +16,34 @@
 ### Style
 - Style są pisane w *scss*.
 - Style wykorzystywane w komponencie są zapisywane w folderze tego komponentu. Nazwa pliku stylów taka sama, jak i nazwa pliku .js, które je wykorzystują.  
-*Przykład:*  
-    components >  
-        Home >  
-            Home.js  
-            Home.scss  
+**Przykład:**  
+>components >  
+>>Home >  
+>>>Home.js  
+>>>Home.scss  
 - W pliku .js importuje się bezpośrednio plik .scss danego komponentu, np.:
 `import './Home.scss'`
 - Nazwy klas stylów są pisane w języku *angielskim*.
 - Naswy klas stylów są pisane według *BEM*. Pierwsza część nazwy klasy **zawsze** zaczyna się z nazwy komponenta, który leży w folderze `components`.  
-*Przykład*  
+**Przykład:**  
 komponent `Banner`, znajdujący się w folderze `components`  
-    .banner-container{
-        *treść*
-    }  
-    .banner-button-container{
-        *treść*
-    }  
-*Inny przykład*
+>.banner-container{
+>>*treść*
+>}  
+>.banner-button-container{
+>>*treść*
+>}  
+**Inny przykład:**
 komponent `Pictures`, który znajduje się w folderze komponentu `Home`, który jest w folderze `components`  
 (ponieważ komponent `Pictures` jest częścią innego komponentu, pierwsza część nazwy klasy ma odpowiadać komponentowi, który jest bezpośrednio w folderze `components` - w podanym przykładzie to będzie `home-`)  
-    .home-pictures-container{
-        *treść*
-    }  
+>.home-pictures-container{
+>>*treść*
+>}  
 
 ### Responsywność
 - Minimalna szerokość ekranu na którym strona ma być pokazywana równa się `320px`.
 - Treść każdej podstrony ma znajdować się w komponencie, który ma klasę `className="container"`. Klasa znajduje się w pliku `_media.scss`. Ta klasa stwarza @media dla całej treści.  
-*Przykład*  
+**Przykład:**  
     <div>  
         <Banner photo={bannerPhoto} />  
         <div className="container">  
