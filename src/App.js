@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 
 import {
   BrowserRouter as Router,
@@ -10,7 +10,8 @@ import {
 import Menu from './components/Menu/Menu';
 import Footer from './components/Footer/Footer';
 import ButtonUp from './components/ButtonUp/ButtonUp';
-
+import PageInConstruction from './components/PageInConstruction/PageInConstruction';
+import Page404 from './components/Page404/Page404';
 
 import Home from './components/Home/Home';
 import Cooperation from './components/Cooperation';
@@ -19,33 +20,29 @@ function App() {
   return (
     <Router>
       <Menu />
-      
+
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/help">
-          <h2>Gdzie znaleźć pomoc</h2>
+          <PageInConstruction />
         </Route>
         <Route path="/stories">
-          <h2>Historie dzieci</h2>
+          <PageInConstruction />
         </Route>
         <Route path="/blog">
-          <h2>Tutaj można będzie coś opublikować</h2>
+          <PageInConstruction />
         </Route>
-        <Route path="/cooperation">
-          <Cooperation/>
-        </Route>
+        <Route path="/cooperation" component={Cooperation} />
         <Route path="/login">
-          <h2>Strona logowania</h2>
+          <PageInConstruction />
         </Route>
         <Route path="/pregnancy">
-          <h2>Hipotrofia w ciąży</h2>
+          <PageInConstruction />
         </Route>
         <Route path="/children">
-          <h2>Hipotrofia u dzieci</h2>
+          <PageInConstruction />
         </Route>
-        <Route>
-          <h2>Strona 404</h2>
-        </Route>
+        <Route component={Page404} />
       </Switch>
 
       <Footer />

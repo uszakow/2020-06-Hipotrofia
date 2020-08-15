@@ -1,5 +1,5 @@
 import React from 'react';
-import './FooterItem.css';
+import './FooterItem.scss';
 
 function FooterItem(props) {
     const { name, role, link } = props.author;
