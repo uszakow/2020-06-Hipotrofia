@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './MenuMobile.css';
+import './MenuMobile.scss';
 
 import Navigation from '../Navigation/Navigation';
 import Searcher from '../Searcher/Searcher';
@@ -20,7 +20,7 @@ class MenuMobile extends Component {
     }
 
     render() {        
-        const isActive = this.state.isActive ? 'active' : '';
+        const isActive = this.state.isActive ? 'menu-active' : '';
 
         return (
             <div className={"menu-mobile " + isActive}>

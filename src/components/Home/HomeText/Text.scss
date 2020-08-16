@@ -1,12 +1,6 @@
 @import "../../../variables";
 
-.text-container {
-    h2 {
-        max-width: 330px;
-        color: $green-medium;
-        padding-bottom: 8px;
-        border-bottom: 4px solid $green-medium;
-    }
+.home-text-container {   
     p {
         text-align: justify;
     }
