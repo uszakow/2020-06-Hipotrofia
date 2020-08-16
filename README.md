@@ -61,7 +61,7 @@ komponent `Pictures`, który znajduje się w folderze komponentu `Home`, który 
 
 ### Ułatwienia dla czytników ekranów
 - Każda podstona ma mieć **jeden** element `<h1>`.
-- Jeżeli potrzebne są inne nagłówki, trzeba wykorzystywać `h2`, `h3` i tak dalej. **Nie można** robić "dziur" w numeracji nagłówków - nie można zrobić nagłówek `h2`, a potem `h4`, nie używając nagłówku `h3`.
+- Jeżeli potrzebne są inne nagłówki, trzeba wykorzystywać `<h2>`, `<h3>` i tak dalej. **Nie można** robić "dziur" w numeracji nagłówków - nie można zrobić nagłówek `<h2>`, a potem `<h4>`, nie używając nagłówku `<h3>`.
 - Żeby style nagłówka wyglądały tak samo bez różnicy na poziom nagłówka, trzeba wykorzystywać klasę `className="h"` (klasa znajduje się w pliku `App.scss`).
 
 ### Sprawdzanie kodu
