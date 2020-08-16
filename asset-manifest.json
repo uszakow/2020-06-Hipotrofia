@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b50c3cba.chunk.css",
+    "main.js": "/static/js/main.def98ec0.chunk.js",
+    "main.js.map": "/static/js/main.def98ec0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.7057cae1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.7057cae1.js.map",
+    "static/js/2.8e5802a5.chunk.js": "/static/js/2.8e5802a5.chunk.js",
+    "static/js/2.8e5802a5.chunk.js.map": "/static/js/2.8e5802a5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.86eb1981cd01f80e788ecadff33074fe.js": "/precache-manifest.86eb1981cd01f80e788ecadff33074fe.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.b50c3cba.chunk.css.map": "/static/css/main.b50c3cba.chunk.css.map",
+    "static/js/2.8e5802a5.chunk.js.LICENSE.txt": "/static/js/2.8e5802a5.chunk.js.LICENSE.txt",
+    "static/media/banner.svg": "/static/media/banner.07f63c98.svg",
+    "static/media/builder.svg": "/static/media/builder.abf40bc0.svg",
+    "static/media/contact.svg": "/static/media/contact.d932c289.svg",
+    "static/media/historieDzieci.png": "/static/media/historieDzieci.81a06831.png",
+    "static/media/img1.png": "/static/media/img1.93c18271.png",
+    "static/media/img2.png": "/static/media/img2.6cd36238.png",
+    "static/media/img3.svg": "/static/media/img3.7879b630.svg",
+    "static/media/login.svg": "/static/media/login.02599189.svg",
+    "static/media/magicFoundation.png": "/static/media/magicFoundation.1a745018.png",
+    "static/media/najczesciejZadawanePytania.png": "/static/media/najczesciejZadawanePytania.2ceac759.png",
+    "static/media/programLeczeniaWPolsce.png": "/static/media/programLeczeniaWPolsce.ad20e713.png",
+    "static/media/Cooperation.scss": "/static/media/roller-coaster-3605743_1920 1.03984309.png",
+    "static/media/roznicaMiedzySGAaIUGR.png": "/static/media/roznicaMiedzySGAaIUGR.2e6f56db.png",
+    "static/media/search.svg": "/static/media/search.b3530932.svg",
+    "static/media/up.svg": "/static/media/up.b1aba57b.svg",
+    "static/media/uszakow.png": "/static/media/uszakow.643bbfc1.png",
+    "static/media/wspolpraca.png": "/static/media/wspolpraca.91ec88cf.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7057cae1.js",
+    "static/js/2.8e5802a5.chunk.js",
+    "static/css/main.b50c3cba.chunk.css",
+    "static/js/main.def98ec0.chunk.js"
+  ]
+}
