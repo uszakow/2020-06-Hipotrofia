@@ -1,71 +1,120 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './Footer.scss';
 
 import FooterItem from './FooterItem/FooterItem';
+import FooterInfo from './FooterInfo/FooterInfo';
+
+import author from './../../img/Footer/author.png';
+import uszakow from '../../img/Footer/uszakow.png';
 
 const authors = [
     {
-        name: 'Imię Nazwisko',
-        role: 'funkcja',
-        link: '#'
+        name: 'Paweł Uszakow',
+        role: 'front-end developer',
+        photo: uszakow,
+        github: 'https://github.com/uszakow',
+        linkedin: 'https://www.linkedin.com/in/p-uszakow/'
     },
     {
-        name: 'Długieimię Długienazwisko',
+        name: '2Długieimię Długienazwisko',
         role: 'funkcja rola',
-        link: '#'
+        photo: author,
+        github: '#',
+        linkedin: '#'
     },
     {
-        name: 'Długieimię Długienazwisko',
+        name: '3Długieimię Długienazwisko',
         role: 'funkcja',
-        link: '#'
+        photo: author,
+        github: '#',
+        linkedin: '#'
     },
     {
-        name: 'Imię Nazwisko',
+        name: '4Imię Nazwisko',
         role: 'funkcja',
-        link: '#'
+        photo: author,
+        github: '#',
+        linkedin: '#'
     },
     {
-        name: 'Imię Nazwisko',
+        name: '5Imię Nazwisko',
         role: 'funkcja',
-        link: '#'
+        photo: author,
+        github: '#',
+        linkedin: '#'
     },
     {
-        name: 'Imię Nazwisko',
+        name: '6Imię Nazwisko',
         role: 'funkcja',
-        link: '#'
+        photo: author,
+        github: '#',
+        linkedin: '#'
     },
     {
-        name: 'Imię Nazwisko',
+        name: '7Imię Nazwisko',
         role: 'funkcja w projekcie',
-        link: '#'
+        photo: author,
+        github: '#',
+        linkedin: '#'
     },
     {
-        name: 'Długieimię Długienazwisko',
+        name: '8Długieimię Długienazwisko',
         role: 'funkcja rola',
-        link: '#'
+        photo: author,
+        github: '#',
+        linkedin: '#'
     },
     {
-        name: 'Długieimię Długienazwisko',
+        name: '9Długieimię Długienazwisko',
         role: 'funkcja rola',
-        link: '#'
+        photo: author,
+        github: '#',
+        linkedin: '#'
     },
     {
-        name: 'Imię Nazwisko',
+        name: '10Imię Nazwisko',
         role: 'funkcja w projekcie',
-        link: '#'
+        photo: author,
+        github: '#',
+        linkedin: '#'
     },
 ];
 
-function Footer() {
-    return (
-        <footer className="footer-container">
-            <div className="footer-content">
-                {authors.map((item, index) => (
-                    <FooterItem key={index} author={item} />
-                ))}
-            </div>
-        </footer >
-    )
+class Footer extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            indexForInfo: null
+        }
+    }
+
+    openFooterInfo = (index) => {
+        this.setState({
+            indexForInfo: index
+        })
+    }
+    closeFooterInfo = () => {
+        this.setState({
+            indexForInfo: null
+        })
+    }
+
+    render() {
+        const { indexForInfo } = this.state;
+
+        return (
+            <footer className="footer-container" >
+
+                <div className="footer-content">
+                    {authors.map((item, index) => (
+                        <FooterItem key={index} author={item} index={index} openFooterInfo={this.openFooterInfo} />
+                    ))}
+                    <FooterInfo author={authors[indexForInfo]} closeFooterInfo={this.closeFooterInfo} />
+                </div>
+
+            </footer >
+        )
+    }
 }
 
 export default Footer;

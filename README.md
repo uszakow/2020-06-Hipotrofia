@@ -15,7 +15,7 @@
 
 ### Style
 - Style są pisane w *scss*.
-- Style wykorzystywane w komponencie są zapisywane w folderze tego komponentu. Nazwa pliku stylów taka sama, jak i nazwa pliku .js, które je wykorzystują.  
+- Style wykorzystywane w komponencie są zapisywane w folderze tego komponentu. Nazwa pliku stylów taka sama, jak i nazwa pliku .js, który go wykorzystuje.  
 **Przykład:**  
 >components >  
 >>Home >  
