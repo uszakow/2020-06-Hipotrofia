@@ -1,16 +1,27 @@
 @import "../../../variables";
 
-.home-text-container {   
+.home-text-container {
     p {
         text-align: justify;
     }
     img {
-        max-width: 100%;
-        display: block;
-        margin: auto;
+        display: none;
+    }
+    .home-h {
+        color: $green-medium;
     }
     .text-img-float {
         float: left;
-        margin: 4px 24px 4px 0;
+        margin: 4px 24px 0 0;
+    }
+}
+
+@media (min-width: $sm) {
+    .home-text-container {
+        img {
+            max-width: 100%;
+            display: block;
+            margin: auto;
+        }
     }
 }

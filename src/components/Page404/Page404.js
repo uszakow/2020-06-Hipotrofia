@@ -12,7 +12,7 @@ function Page404() {
                     Ta strona nie istnieje lub została usunięta
                 </h1>
                 <p>
-                    Jeżeli trafiłeś na tę stronę z innego linku, napisz do nas na mail <a href="mailto:test@test.test">test@test.test</a>
+                    Jeżeli trafiłeś na tę stronę z innego linku, napisz wiadomość na adres e-mail <a href="mailto:test@test.test">test@test.test</a>
                 </p>
             </div>
         </>

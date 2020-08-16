@@ -1,3 +1,14 @@
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.h {
+    max-width: 320px;   
+    padding-bottom: 8px;
+    border-bottom: 4px solid;
+    font-size: 24px;
+}
 .container {
     max-width: $max-width;
     margin: auto;
