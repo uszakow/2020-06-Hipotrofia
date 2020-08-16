@@ -5,7 +5,7 @@ import FooterItem from './FooterItem/FooterItem';
 import FooterInfo from './FooterInfo/FooterInfo';
 
 import author from './../../img/Footer/author.png';
-import uszakow from '../../img/Footer/uszakow.png';
+import uszakow from './../../img/Footer/uszakow.png';
 
 const authors = [
     {

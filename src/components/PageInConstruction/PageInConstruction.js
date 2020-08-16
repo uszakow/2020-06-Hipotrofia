@@ -2,8 +2,8 @@ import React from 'react';
 import './PageInConstruction.scss';
 
 import Banner from '../Banner/Banner';
-import bannerPhoto from '../../img/Banner/banner.svg';
-import builder from '../../img/PageInConstruction/builder.svg';
+import bannerPhoto from './../../img/Banner/banner.svg';
+import builder from './../../img/PageInConstruction/builder.svg';
 
 function PageInConstruction() {
     return (

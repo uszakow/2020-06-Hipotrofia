@@ -3,12 +3,12 @@ import './Pictures.scss';
 
 import PicturesItem from './PictiresItem/PicturesItem';
 
-import wspolpraca from '../../../img/Home/HomePictures/wspolpraca.png';
-import roznicaMiedzySGAaIUGR from '../../../img/Home/HomePictures/roznicaMiedzySGAaIUGR.png';
-import programLeczeniaWPolsce from '../../../img/Home/HomePictures/programLeczeniaWPolsce.png';
-import historieDzieci from '../../../img/Home/HomePictures/historieDzieci.png';
-import najczesciejZadawanePytania from '../../../img/Home/HomePictures/najczesciejZadawanePytania.png';
-import magicFoundation from '../../../img/Home/HomePictures/magicFoundation.png';
+import wspolpraca from './../../../img/Home/HomePictures/wspolpraca.png';
+import roznicaMiedzySGAaIUGR from './../../../img/Home/HomePictures/roznicaMiedzySGAaIUGR.png';
+import programLeczeniaWPolsce from './../../../img/Home/HomePictures/programLeczeniaWPolsce.png';
+import historieDzieci from './../../../img/Home/HomePictures/historieDzieci.png';
+import najczesciejZadawanePytania from './../../../img/Home/HomePictures/najczesciejZadawanePytania.png';
+import magicFoundation from './../../../img/Home/HomePictures/magicFoundation.png';
 
 const tiles = [
     {

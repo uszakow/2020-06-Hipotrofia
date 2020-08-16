@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './ButtonUp.scss';
 
-import up from '../../img/ButtonUp/up.svg';
+import up from './../../img/ButtonUp/up.svg';
 
 class ButtonUp extends Component {
     constructor(props) {

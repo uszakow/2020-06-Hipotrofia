@@ -3,7 +3,7 @@ import './Navigation.scss';
 
 import MenuItem from '../MenuItem/MenuItem';
 
-import contact from '../../../img/Menu/contact.svg';
+import contact from './../../../img/Menu/contact.svg';
 
 function Navigation(props) {
     const { css, closeMenu } = props;

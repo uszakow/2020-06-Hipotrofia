@@ -6,7 +6,7 @@ import "./Cooperation.scss";
 
 import Banner from "../Banner/Banner";
 
-import bannerPhoto from "../../img/Banner/banner.svg";
+import bannerPhoto from "./../../img/Banner/banner.svg";
 
 const Cooperation = () => (
   <>

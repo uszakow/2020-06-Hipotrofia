@@ -1,9 +1,9 @@
 import React from 'react';
 import './Text.scss';
 
-import img1 from '../../../img/Home/HomeText/img1.png';
-import img2 from '../../../img/Home/HomeText/img2.png';
-import img3 from '../../../img/Home/HomeText/img3.svg';
+import img1 from './../../../img/Home/HomeText/img1.png';
+import img2 from './../../../img/Home/HomeText/img2.png';
+import img3 from './../../../img/Home/HomeText/img3.svg';
 
 function Text() {
     return (

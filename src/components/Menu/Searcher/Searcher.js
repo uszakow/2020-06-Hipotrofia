@@ -1,7 +1,7 @@
 import React from 'react';
 import './Searcher.scss';
 
-import search from '../../../img/Menu/search.svg';
+import search from './../../../img/Menu/search.svg';
 
 function Searcher(props) {
     const { css, closeMenu } = props;

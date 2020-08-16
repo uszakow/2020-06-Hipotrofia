@@ -2,7 +2,7 @@ import React from 'react';
 
 import MenuItem from '../MenuItem/MenuItem';
 
-import login from '../../../img/Menu/login.svg';
+import login from './../../../img/Menu/login.svg';
 
 function Login(props) {
     const { css, closeMenu } = props;
