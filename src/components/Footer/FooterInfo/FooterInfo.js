@@ -12,8 +12,8 @@ function FooterInfo(props) {
                     <div>
                         <div className="footer-info-name">{author.name}</div>
                         <div>{author.role}</div>
-                        <div>GitHub: <a href={author.github} target="_blank">{author.github}</a></div>
-                        <div>LinkedIn: <a href={author.linkedin} target="_blank">{author.linkedin}</a></div>
+                        <div>GitHub: <a href={author.github}>{author.github}</a></div>
+                        <div>LinkedIn: <a href={author.linkedin}>{author.linkedin}</a></div>
                     </div>
                 </div>
                 <button

@@ -12,42 +12,42 @@ import magicFoundation from '../../../img/Home/HomePictures/magicFoundation.png'
 
 const tiles = [
     {
-        href: '#',
+        href: '/cooperation',
         src: wspolpraca,
         alt: 'Współpraca',
         title: 'Współpraca',
         text: 'consectetur adipiscing elit, sed do eiusmod tempor incididunt'
     },
     {
-        href: '#',
+        href: '/inconstruction',
         src: roznicaMiedzySGAaIUGR,
         alt: 'Różnica między SGA a IUGR',
         title: 'Różnica między SGA a IUGR',
         text: 'consectetur adipiscing elit, sed do eiusmod tempor incididunt'
     },
     {
-        href: '#',
+        href: '/inconstruction',
         src: programLeczeniaWPolsce,
         alt: 'Programy leczenia hormonem wzrostu w Polsce',
         title: 'Programy leczenia hormonem wzrostu w Polsce',
         text: 'consectetur adipiscing elit, sed do eiusmod tempor incididunt'
     },
     {
-        href: '#',
+        href: '/stories',
         src: historieDzieci,
         alt: 'Historie dzieci',
         title: 'Historie dzieci',
         text: 'consectetur adipiscing elit, sed do eiusmod tempor incididunt'
     },
     {
-        href: '#',
+        href: '/inconstruction',
         src: najczesciejZadawanePytania,
         alt: 'Najczęściej zadawane pytania o hipotrofię',
         title: 'Najczęściej zadawane pytania o hipotrofię',
         text: 'consectetur adipiscing elit, sed do eiusmod tempor incididunt'
     },
     {
-        href: '#',
+        href: '/inconstruction',
         src: magicFoundation,
         alt: 'Magic foundation',
         title: 'Magic foundation',
