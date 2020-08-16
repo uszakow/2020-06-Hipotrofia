@@ -1,12 +1,13 @@
 import React from 'react';
-import './FooterItem.css';
+import './FooterItem.scss';
 
 function FooterItem(props) {
-    const { name, role, link } = props.author;
-    
+    const { name, role } = props.author;
+    const { openFooterInfo, index } = props;
+
     return (
         <span className="footer-item">
-            <a href={link}>{name}</a>
+            <button onClick={() => openFooterInfo(index)}>{name}</button>
             <span> - {role}</span>
         </span>
     )

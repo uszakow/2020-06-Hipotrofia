@@ -1,3 +1,13 @@
+@import "variables";
+
 * {
     box-sizing: border-box;
+}
+
+.h {
+    max-width: 320px;
+    color: $green-medium;
+    padding-bottom: 8px;
+    border-bottom: 4px solid $green-medium;
+    font-size: 24px;
 }

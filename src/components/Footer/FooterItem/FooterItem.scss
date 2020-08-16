@@ -1,12 +1,18 @@
 @import "../../../variables";
 
 .footer-item {
-    margin: 2px;
-    a {
+    margin: 2px;   
+    button {
         color: rgb(16, 16, 151);
+        background-color: transparent;
         text-decoration: none;
+        text-align: left;
+        padding: 0;
+        border: 0;
+        font-size: 16px;
     }
-    a:hover {
+    button:hover {
         text-decoration: underline;
+        cursor: pointer;
     }
 }

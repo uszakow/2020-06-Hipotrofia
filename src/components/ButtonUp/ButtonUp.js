@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './ButtonUp.css';
+import './ButtonUp.scss';
 
 import up from '../../img/ButtonUp/up.svg';
 
