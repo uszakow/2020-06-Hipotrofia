@@ -1,0 +1,10 @@
+@import "../../variables";
+@import "../../global";
+
+.pageinconstruction-img {
+    display: none;
+
+    @media (min-width: $lg) {
+        display: block;
+    }
+}

@@ -1,5 +1,83 @@
 # 2020-06-Hipotrofia
 
+## Zasady napisania kodu
+### Ogólne założenia
+- Nowy branch jest tworzony do nowego tasku.
+- Kod jest pisany *mobile-first*.
+- Każda podstrona jest pisana w komponencie, który znajduje się w folderze `components`. Każdy komponent, który będzie wykorzystywany nw różnych podstronach, zapisywany jest w folderze `components`. Wszystkie wewnętrzne komponenty, które są wykorzystywane tylko wewnątrz innego komponentu, są zapisywane w folderze tego innego komponentu.  
+**Przykład:**  
+>components>  
+>>Banner> (komponent, który będzie wykorzystywany w wielu miejscach)  
+>>Home> (komponent, który mieści w sobie całą podstronę)
+>>>HomePictures> (komponent, który będzie wykorzystywany tylko wewnątrz komponentu *Home*)  
+- Nazwy komponentów, komentarze, klasy są pisane w języku *angielskim*.
+- Na dole komponentu trzeba napisać komentaż z *imieniem i nazwiskiem* autora tego komponentu. Z regułu każdy komponent ma jednego autora.
+
+### Style
+- Style są pisane w *scss*.
+- Style wykorzystywane w komponencie są zapisywane w folderze tego komponentu. Nazwa pliku stylów taka sama, jak i nazwa pliku .js, który go wykorzystuje.  
+**Przykład:**  
+>components >  
+>>Home >  
+>>>Home.js  
+>>>Home.scss  
+- W pliku .js importuje się bezpośrednio plik .scss danego komponentu, np.:
+`import './Home.scss'`
+- Nazwy klas stylów są pisane w języku *angielskim*.
+- Naswy klas stylów są pisane według *BEM*. Pierwsza część nazwy klasy **zawsze** zaczyna się z nazwy komponenta, który leży w folderze `components`.  
+**Przykład:**  
+komponent `Banner`, znajdujący się w folderze `components`  
+>.banner-container{  
+>>*treść* 
+> 
+>}  
+>.banner-button-container{  
+>>*treść*  
+>
+>}  
+
+**Inny przykład:**
+komponent `Pictures`, który znajduje się w folderze komponentu `Home`, który jest w folderze `components`  
+(ponieważ komponent `Pictures` jest częścią innego komponentu, pierwsza część nazwy klasy ma odpowiadać komponentowi, który jest bezpośrednio w folderze `components` - w podanym przykładzie to będzie `home-`)  
+>.home-pictures-container{  
+>>*treść*  
+>
+>}  
+
+### Responsywność
+- Minimalna szerokość ekranu na którym strona ma być pokazywana równa się `320px`.
+- Treść każdej podstrony ma znajdować się w komponencie, który ma klasę `className="container"`. Klasa znajduje się w pliku `_media.scss`. Ta klasa stwarza @media dla całej treści.  
+**Przykład:**  
+    <div>  
+        <Banner photo={bannerPhoto} />  
+        <div className="container">  
+            *cała treść podstrony, włożone komponenty*  
+        </div>  
+    </div>  
+
+### Style wspólne dla projektu
+- Zmienne, które powtarzają się w całym projekcie, są zapisywane w pliku `_variables.scss`. Dotyczy to między innymi kolorów i breakpointów dla @media. Zawartość pliku `_variables.scss` można zmieniać (zwł. dodawać nowe zmienne) tylko po konsultacji w grupie *front-end* na Slacku.
+- Wszystkie style, które mają być wspólne dla całego projektu (np. czcionki, style wszystkich elementów etc.) mają być ustalane tylko dla całego projektu (przede wszystkim w pliku `_global.scss`), a nie w jednym komponencie. Zmiany pliku `_global.scss` oraz innych plików wspólnych dla całego projektu można dokonać tylko po konsultacji w grupie *front-end* na Slacku.
+
+### Ułatwienia dla czytników ekranów
+- Każda podstona ma mieć **jeden** element `<h1>`.
+- Jeżeli potrzebne są inne nagłówki, trzeba wykorzystywać `<h2>`, `<h3>` i tak dalej. **Nie można** robić "dziur" w numeracji nagłówków - nie można zrobić nagłówek `<h2>`, a potem `<h4>`, nie używając nagłówku `<h3>`.
+- Żeby style nagłówka wyglądały tak samo bez różnicy na poziom nagłówka, trzeba wykorzystywać klasę `className="h"` (klasa znajduje się w pliku `App.scss`).
+
+### Sprawdzanie kodu
+- Po ukończeniu napisania branchu autor robi *pull request*.
+- Zatwierdzić *pull request* może tylko inny programista po dokonaniu *review kodu*.
+- Jeżeli review-er ma uwagi, ma napisać do autora kodu. Kod może edytować tylko jego autor, natomiast zatwierdzić zmiany może tylko review-er.
+
+### Lista reguł nie jest wyczerpująca
+- Jeżeli w procesie napisania kodu wynikło pytanie na temat, jak trzeba pisać poprawnie, a na danej liście nie ma odpowiedzi, to trzeba niezwłocznie napisać w grupie *front-end* na Slacku.
+- Grupa *front-end* na Slacku jest jedynym miejscem, stworzonym specjalnie dla omówienia jakichkolwiek pytań, związanych z front-endem projektu, w ramach zespołu front-end developerów.
+
+
+
+
+***
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -9,6 +9,7 @@
     margin: auto;
     display: grid;
     justify-content: space-around;
+    position: relative;
 }
 
 @media (min-width: $md) {

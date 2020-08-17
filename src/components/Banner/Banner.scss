@@ -3,6 +3,7 @@
 .banner-container {
     position: relative;
     background-color: transparent;
+    min-height: 100px;
     img {
         max-width: $max-width;
         margin: auto;
@@ -40,9 +41,6 @@
 }
 
 @media (min-width: $sm) {
-    .banner-container {
-        background-color: $grey-medium;
-    }
     .banner-background {
         display: block;
     }
