@@ -15,7 +15,7 @@ const StoriesPage = (props) => {
   // przygotowane pod bazę danych
 /*   const [ postsList, setPostsList ]=useState([]);
   useEffect(()=>{
-    fetch('http://localhost:3001/BLOG-POSTS')
+    fetch('http://localhost:3001/BLOG-POSTS- tutaj nazwa z bazy danych')
     .then((response)=>{
       return response.json();
     })
@@ -31,9 +31,11 @@ const StoriesPage = (props) => {
     <div className="stories container">
       <ButtonsAndText />
       <Post />
+       
        {/* informacje o poście wyciągane docelowo będą z bazy danych i propsy będą przekazywane do komponentu POST */}
-      {/* {postsList.map((post, index)=> <Post key={index} postInformation={postInformation}/>)}
-      <StoriesImages/> */}
+      {/* {postsList.map((post, index)=> <Post key={index} postInformation={postInformation}/>)}*/}
+
+      <StoriesImages/>
     </div>
   </>
 

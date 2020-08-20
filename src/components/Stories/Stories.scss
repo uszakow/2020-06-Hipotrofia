@@ -14,5 +14,34 @@
             height: 2px;
             background-color: $grey-medium;
         }
+        .stories-post-content{
+
+            .stories-post-button-show-more {
+                cursor: pointer;
+                color: $blue-medium;
+                display: block;
+            }
+            .stories-post-button-show-more-hidden {
+                display: none;
+            }
+
+            .stories-post-content-all-text{
+                display: block;
+            }
+            .stories-post-content-all-text-hidden{
+                display: none;
+            }
+
+        }
+
+        img.stories-post-arrow-up{
+            display: block;
+            padding: 30px;
+        }
+        img.stories-post-arrow-up-hidden{
+            display: none;
+        }
     }
 }
+
+//Karolina Skorupska

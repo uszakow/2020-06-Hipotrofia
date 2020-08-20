@@ -12,3 +12,5 @@ const StoriesImages = () => (
 );
 
 export default StoriesImages;
+
+//Karolina Skorupska
