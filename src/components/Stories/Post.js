@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import StoriesImages from './StoriesImages';
+
 import ArrowUp from "../../img/Stories/Vector.png";
 
 import "./Stories.scss";
@@ -10,19 +12,18 @@ class Post extends Component {
   };
   wrapperHandler = () => {
     this.setState({
-      wrapperIsOpen: !this.state.wrapperIsOpen
+      wrapperIsOpen: !this.state.wrapperIsOpen,
     });
-    
   };
 
   render() {
-    console.log(this.state.wrapperIsOpen)
+    console.log(this.state.wrapperIsOpen);
 
     return (
       <div className="stories-post-container">
         <div className="stories-post-horizontal-line"></div>
         <h2 className="stories-post-title">{this.props.title}Tytuł posta</h2>
-        <p className="stories-post-date">{this.props.date}czas publikacji</p>
+        <p className="stories-post-date">{this.props.date}05.03.2020</p>
 
         <div className="stories-post-content">
           <p className="stories-post-content-sample-text">
@@ -32,16 +33,22 @@ class Post extends Component {
           </p>
 
           <div
-            
-            className={this.state.wrapperIsOpen ? " stories-post-button-show-more-hidden" : "stories-post-button-show-more"}
+            className={
+              this.state.wrapperIsOpen
+                ? " stories-post-button-show-more-hidden"
+                : "stories-post-button-show-more"
+            }
             onClick={this.wrapperHandler}
           >
             Czytaj więcej
           </div>
 
           <p
-            
-            className={this.state.wrapperIsOpen ? "stories-post-content-all-text" : "stories-post-content-all-text-hidden"}
+            className={
+              this.state.wrapperIsOpen
+                ? "stories-post-content-all-text"
+                : "stories-post-content-all-text-hidden"
+            }
           >
             {this.props.allText}
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -76,13 +83,19 @@ class Post extends Component {
             anim id est laborum.
           </p>
         </div>
- 
-          <img src={ArrowUp} alt="arrow up" 
-                    
-                    className={this.state.wrapperIsOpen ? "stories-post-arrow-up" : "stories-post-arrow-up-hidden"}
-                    onClick={this.wrapperHandler}
-         ></img>
-       
+            <div className="stories-arrow-box">
+        <img
+          src={ArrowUp}
+          alt="arrow up"
+          className={
+            this.state.wrapperIsOpen
+              ? "stories-post-arrow-up"
+              : "stories-post-arrow-up-hidden"
+          }
+          onClick={this.wrapperHandler}
+        ></img>
+        </div>
+        <StoriesImages />
       </div>
     );
   }

@@ -7,6 +7,7 @@ const StoriesImages = () => (
         <img src={SampleImage} alt='stories image'></img>
         <img src={SampleImage} alt='stories image'></img>
         <img src={SampleImage} alt='stories image'></img>
+        <img src={SampleImage} alt='stories image'></img>
 
     </div>
 );

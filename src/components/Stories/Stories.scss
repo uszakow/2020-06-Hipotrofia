@@ -1,12 +1,19 @@
 @import "../../variables";
 
 @import "../../media";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;800&display=swap');
+$basic: 'Montserrat', sans-serif;
 
 .stories{
     width: 100%;
-
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
     .stories-post-container{
         width: 100%;
+        margin-bottom: 30px;
+
 
         .stories-post-horizontal-line{
             display: block;
@@ -14,12 +21,32 @@
             height: 2px;
             background-color: $grey-medium;
         }
+        h2.stories-post-title{
+            // font-family: $basic;
+            // font-size: 20px;
+            // line-height: 24px;
+            color: $blue-medium;
+            font-weight: bold;
+        }
+        .stories-post-date{
+            // font-family: $basic;
+            // font-size: 18px;
+            // line-height: 22px;
+            font-weight: normal;
+        }
+
         .stories-post-content{
+            // font-family: $basic;
+            // font-size: 18px;
+            // line-height: 22px;
+            font-weight: normal;
+
 
             .stories-post-button-show-more {
                 cursor: pointer;
                 color: $blue-medium;
                 display: block;
+                text-decoration: underline;
             }
             .stories-post-button-show-more-hidden {
                 display: none;
@@ -33,15 +60,43 @@
             }
 
         }
-
-        img.stories-post-arrow-up{
-            display: block;
-            padding: 30px;
+        .stories-arrow-box{
+            
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            img.stories-post-arrow-up{
+                display: block;
+                padding: 30px;
+                cursor: pointer;
+                text-align: end;
+            }
+            img.stories-post-arrow-up-hidden{
+                display: none;
+            }
         }
-        img.stories-post-arrow-up-hidden{
-            display: none;
+        
+
+        .stories-images-container{
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            img{
+               
+                @media(min-width:$xs){
+                    margin: 5px 0;
+                }
+            }
+            
         }
     }
+
+
 }
 
 //Karolina Skorupska

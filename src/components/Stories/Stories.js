@@ -5,7 +5,7 @@ import React
 import Banner from "../Banner/Banner";
 import ButtonsAndText from "../ButtonsAndText/ButtonsAndText";
 import Post from './Post';
-import StoriesImages from './StoriesImages';
+
 
 import bannerPhoto from "../../img/Banner/banner.svg";
 
@@ -31,11 +31,14 @@ const StoriesPage = (props) => {
     <div className="stories container">
       <ButtonsAndText />
       <Post />
+      <Post />
+      <Post />
        
        {/* informacje o poście wyciągane docelowo będą z bazy danych i propsy będą przekazywane do komponentu POST */}
       {/* {postsList.map((post, index)=> <Post key={index} postInformation={postInformation}/>)}*/}
 
-      <StoriesImages/>
+      
+      {/* miejsce na pole formularza */}
     </div>
   </>
 

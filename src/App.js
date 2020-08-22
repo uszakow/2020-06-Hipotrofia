@@ -14,7 +14,7 @@ import ButtonUp from './components/ButtonUp/ButtonUp';
 
 import Home from './components/Home/Home';
 import CooperationPage from './components/Cooperation';
-import StoriesPage from './components/Stories/index';
+import StoriesPage from './components/Stories/Stories';
 
 function App() {
   return (
