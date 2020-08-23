@@ -38,6 +38,7 @@ $basic: 'Montserrat', sans-serif;
 
         @media(max-width:$sm){
             margin: 0 auto;
+            display: block;
         }
 
         button{
@@ -116,6 +117,7 @@ $basic: 'Montserrat', sans-serif;
                 // font-size: 18px;
                 // line-height: 22px;
                 margin-top: 15px;
+                padding-right: 25px;
             }
         }
     }
