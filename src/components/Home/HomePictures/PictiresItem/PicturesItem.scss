@@ -1,6 +1,6 @@
 @import "../../../../variables";
 
-.pictures-item {
+.home-pictures-item {
     color: black;
     background-color: $grey-medium;
     text-decoration: none;
@@ -17,6 +17,6 @@
         margin: 0 20px 20px 20px;
     }
 }
-.pictures-item:hover {
+.home-pictures-item:hover {
     text-decoration: underline;
 }

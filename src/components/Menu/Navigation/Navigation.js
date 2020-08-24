@@ -1,5 +1,5 @@
 import React from 'react';
-import './Navigation.css';
+import './Navigation.scss';
 
 import MenuItem from '../MenuItem/MenuItem';
 
@@ -13,12 +13,11 @@ function Navigation(props) {
         <nav className={"menu-navigation"}>
             <MenuItem href="/" cssItem={cssItem} closeMenu={closeMenu}>Hipotrofia</MenuItem>
             <MenuItem href="/help" cssItem={cssItem} closeMenu={closeMenu}>Pomoc</MenuItem>
-            <MenuItem href="/stories" cssItem={cssItem} closeMenu={closeMenu}>Historie dzieci</MenuItem>
-            <MenuItem href="/blog" cssItem={cssItem} closeMenu={closeMenu}>Artykuły</MenuItem>
+            <MenuItem href="/stories" cssItem={cssItem} closeMenu={closeMenu}>Historie dzieci</MenuItem>           
             <MenuItem href="/cooperation" cssItem={cssItem} closeMenu={closeMenu}>
                 <span>
                     <img src={contact} width="20" className="mobile-only" alt="contact" />
-                    Kontakt
+                    Współpraca
                 </span>
             </MenuItem>
         </nav>

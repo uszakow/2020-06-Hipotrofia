@@ -1,5 +1,5 @@
 import React from 'react';
-import './MenuDesctop.css';
+import './MenuDesctop.scss';
 
 import Navigation from '../Navigation/Navigation';
 import Searcher from '../Searcher/Searcher';

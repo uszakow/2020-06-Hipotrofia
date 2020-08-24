@@ -1,5 +1,4 @@
 import React from 'react';
-import './Login.css';
 
 import MenuItem from '../MenuItem/MenuItem';
 
