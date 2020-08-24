@@ -15,3 +15,5 @@ const CooperationExtraText = () => (
 );
 
 export default CooperationExtraText;
+
+//Karolina Skorupska
