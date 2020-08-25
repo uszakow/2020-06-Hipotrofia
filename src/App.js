@@ -21,7 +21,6 @@ function App() {
   return (
     <Router>
 
-    //konflikt-  rozwiązany? Karolina
       <div className="app-wrap">
         <Menu />
 
@@ -34,7 +33,7 @@ function App() {
           <Route path="/blog">
             <PageInConstruction />
           </Route>
-          <Route path="/cooperation" component={Cooperation} />
+          <Route path="/cooperation" component={CooperationPage} />
           <Route path="/login">
             <PageInConstruction />
           </Route>

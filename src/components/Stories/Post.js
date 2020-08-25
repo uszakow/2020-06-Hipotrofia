@@ -42,6 +42,18 @@ class Post extends Component {
           >
             Czytaj więcej
           </div>
+          <div className="stories-arrow-box">
+        <img
+          src={ArrowUp}
+          alt="arrow up"
+          className={
+            this.state.wrapperIsOpen
+              ? "stories-post-arrow-up"
+              : "stories-post-arrow-up-hidden"
+          }
+          onClick={this.wrapperHandler}
+        ></img>
+        </div>
 
           <p
             className={
@@ -82,18 +94,6 @@ class Post extends Component {
             cupidatat non proident, sunt in culpa qui officia deserunt mollit
             anim id est laborum.
           </p>
-        </div>
-            <div className="stories-arrow-box">
-        <img
-          src={ArrowUp}
-          alt="arrow up"
-          className={
-            this.state.wrapperIsOpen
-              ? "stories-post-arrow-up"
-              : "stories-post-arrow-up-hidden"
-          }
-          onClick={this.wrapperHandler}
-        ></img>
         </div>
         <StoriesImages />
       </div>
