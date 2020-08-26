@@ -52,9 +52,6 @@ function App() {
         <Footer />
         <ButtonUp />
       </div>
-
-      <Footer />
-      <ButtonUp />
     
     </Router>
   );

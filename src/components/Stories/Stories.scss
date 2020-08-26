@@ -5,17 +5,13 @@
      font-family: $basic;
     .stories-post-container{
         width: 100%;
-        margin-bottom: 30px;
+        margin: 30px 0;
 
         .stories-post-horizontal-line{
             display: block;
             width: 100%;
             height: 2px;
             background-color: $grey-medium;
-
-            @media(min-width:$sm){    
-                width: 300px;
-            }
         }
         h2.stories-post-title{
             // font-family: $basic;
@@ -81,10 +77,18 @@
             align-items: center;
             width: 100%;
 
+            @media(max-width:$lg){
+                justify-content: center;
+
+            }
+
             img{
                
-                margin:10px;
+                margin:30px;
     
+                @media(max-width:$lg){
+                    margin:10px;
+                }
             }
             
         }
