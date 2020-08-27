@@ -21,7 +21,6 @@ function App() {
   return (
     <Router>
 
-    //konflikt
       <div className="app-wrap">
         <Menu />
 
@@ -30,13 +29,11 @@ function App() {
           <Route path="/help">
             <PageInConstruction />
           </Route>
-          <Route path="/stories">
-            <PageInConstruction />
-          </Route>
+          <Route path="/stories" component={StoriesPage} />
           <Route path="/blog">
             <PageInConstruction />
           </Route>
-          <Route path="/cooperation" component={Cooperation} />
+          <Route path="/cooperation" component={CooperationPage} />
           <Route path="/login">
             <PageInConstruction />
           </Route>
@@ -55,40 +52,6 @@ function App() {
         <Footer />
         <ButtonUp />
       </div>
-
-    //konflikt
-      <Menu />
-      
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/help">
-          <h2>Gdzie znaleźć pomoc</h2>
-        </Route>
-        <Route path="/stories">
-          <StoriesPage/>
-        </Route>
-        <Route path="/blog">
-          <h2>Tutaj można będzie coś opublikować</h2>
-        </Route>
-        <Route path="/cooperation">
-          <CooperationPage/>
-        </Route>
-        <Route path="/login">
-          <h2>Strona logowania</h2>
-        </Route>
-        <Route path="/pregnancy">
-          <h2>Hipotrofia w ciąży</h2>
-        </Route>
-        <Route path="/children">
-          <h2>Hipotrofia u dzieci</h2>
-        </Route>
-        <Route>
-          <h2>Strona 404</h2>
-        </Route>
-      </Switch>
-
-      <Footer />
-      <ButtonUp />
     
     </Router>
   );
