@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 
-import StoriesImages from './StoriesImages';
+import StoriesImages from "./StoriesImages";
 
-import ArrowUp from "../../img/Stories/Vector.png";
 
 import "./Stories.scss";
 
@@ -42,19 +41,6 @@ class Post extends Component {
           >
             Czytaj więcej
           </div>
-          <div className="stories-arrow-box">
-        <img
-          src={ArrowUp}
-          alt="arrow up"
-          className={
-            this.state.wrapperIsOpen
-              ? "stories-post-arrow-up"
-              : "stories-post-arrow-up-hidden"
-          }
-          onClick={this.wrapperHandler}
-        ></img>
-        </div>
-
           <p
             className={
               this.state.wrapperIsOpen
@@ -94,6 +80,17 @@ class Post extends Component {
             cupidatat non proident, sunt in culpa qui officia deserunt mollit
             anim id est laborum.
           </p>
+
+          <div className="stories-arrow-box">
+            <div
+              className={
+                this.state.wrapperIsOpen
+                  ? "stories-post-arrow-up"
+                  : "stories-post-arrow-up-hidden"
+              }
+              onClick={this.wrapperHandler}
+            >Zwiń tekst</div>
+          </div>
         </div>
         <StoriesImages />
       </div>

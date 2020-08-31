@@ -1,6 +1,7 @@
-import React
-//  {useState,useEffect} 
+import React,
+ {useState,useEffect} 
  from "react";
+ import axios from 'axios';
 
 import Banner from "../Banner/Banner";
 import ButtonsAndText from "../ButtonsAndText/ButtonsAndText";
@@ -13,17 +14,20 @@ import bannerPhoto from "../../img/Banner/banner.svg";
 const StoriesPage = (props) => {
 
   // przygotowane pod bazę danych
-/*   const [ postsList, setPostsList ]=useState([]);
+  const [ postsList, setPostsList ]=useState([]);
   useEffect(()=>{
-    fetch('http://localhost:3001/BLOG-POSTS- tutaj nazwa z bazy danych')
-    .then((response)=>{
+    axios.get('http://localhost:3001/messages')
+    .then(response=>{
       return response.json();
     })
-    .then((posts)=>{
-      setPostsList(posts);
+    .then((post)=>{
+      setPostsList(post);
+      
     });
     
-  },[]); */
+  },[]);
+
+ 
 
   return(
     <>
@@ -31,11 +35,9 @@ const StoriesPage = (props) => {
     <div className="stories container">
       <ButtonsAndText />
       <Post />
-      <Post />
-      <Post />
        
        {/* informacje o poście wyciągane docelowo będą z bazy danych i propsy będą przekazywane do komponentu POST */}
-      {/* {postsList.map((post, index)=> <Post key={index} postInformation={postInformation}/>)}*/}
+      {postsList.map((post, index)=> <Post key={index} postInformation={post}/>)}
 
       
       {/* miejsce na pole formularza */}

@@ -33,6 +33,10 @@
             // line-height: 22px;
             font-weight: normal;
 
+            .stories-post-content-sample-text{
+                margin:0;
+            }
+
 
             .stories-post-button-show-more {
                 cursor: pointer;
@@ -46,6 +50,7 @@
 
             .stories-post-content-all-text{
                 display: block;
+                margin-top: 0;
             }
             .stories-post-content-all-text-hidden{
                 display: none;
@@ -57,44 +62,74 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            img.stories-post-arrow-up{
+            .stories-post-arrow-up{
                 display: block;
                 padding: 30px 0;
                 cursor: pointer;
+                color:$blue-medium;
+                text-decoration: underline;
             }
-            img.stories-post-arrow-up-hidden{
+            .stories-post-arrow-up-hidden{
                 display: none;
             }
         }
         
-
-        .stories-images-container{
-            padding: 15px;
+        .stories-images{
             display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             width: 100%;
-
-            @media(max-width:$lg){
-                justify-content: center;
-
-            }
-
-            img{
-               
-                margin:30px;
+            
+            .stories-images-container{
+                padding: 15px;
+                // display: flex;
+                /* flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center; */
+                width: 100%;
+                display: grid;
+    
     
                 @media(max-width:$lg){
-                    margin:10px;
+                    // justify-content: center;
+    
                 }
+    
+                img{
+                    
+                    object-fit:cover;
+                    height: 202px;
+                    margin:30px;
+                    overflow: hidden;
+                    width: 90%;
+    
+                }
+                
             }
-            
+
         }
+        
     }
 
 
+}
+//change: display flex to display grid - along with Paweł suggestion
+@media (min-width: $sm) {
+    .stories-images-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px 0;
+    }
+}
+@media (min-width: $lg) {
+    .stories-images-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: $xl) {
+    .stories-images-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 //Karolina Skorupska
