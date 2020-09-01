@@ -1,54 +1,45 @@
-import React,
- {useState,useEffect} 
- from "react";
- import axios from 'axios';
+import React, { Component } from "react";
+import axios from "axios";
 
 import Banner from "../Banner/Banner";
 import ButtonsAndText from "../ButtonsAndText/ButtonsAndText";
-import Post from './Post';
-
+import Post from "./Post";
 
 import bannerPhoto from "../../img/Banner/banner.svg";
 
+class StoriesPage extends Component {
+  state = {
+    postsList: [],
+  };
 
-const StoriesPage = (props) => {
-
-  // przygotowane pod bazę danych
-  const [ postsList, setPostsList ]=useState([]);
-  useEffect(()=>{
-    axios.get('http://localhost:3001/messages')
-    .then(response=>{
-      return response.json();
-    })
-    .then((post)=>{
-      setPostsList(post);
-      
+  componentDidMount() {
+    axios.get("http://localhost:3001/posts")
+    .then(res => {
+      const postsList = res.data;
+      this.setState({ postsList });
     });
+  }
+
+  render() {
     
-  },[]);
+    const {postsList} = this.state;
+    
+    return (
+      <>
+        <Banner photo={bannerPhoto} />
+        <div className="stories container">
+          <ButtonsAndText />
+          
+          {postsList.map((post, index)=> <Post key={index} post={post}/>)}
 
- 
 
-  return(
-    <>
-    <Banner photo={bannerPhoto} />
-    <div className="stories container">
-      <ButtonsAndText />
-      <Post />
-       
-       {/* informacje o poście wyciągane docelowo będą z bazy danych i propsy będą przekazywane do komponentu POST */}
-      {postsList.map((post, index)=> <Post key={index} postInformation={post}/>)}
-
-      
-      {/* miejsce na pole formularza */}
-    </div>
-  </>
-
-  )
-  
+          {/* miejsce na pole formularza */}
+        </div>
+      </>
+    );
+  }
 }
-  
-export default StoriesPage;
 
+export default StoriesPage;
 
 //Karolina Skorupska
