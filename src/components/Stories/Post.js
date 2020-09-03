@@ -27,10 +27,10 @@ class Post extends Component {
         <p className="stories-post-date">{created}</p>
 
         <div className="stories-post-content">
-          <p className="stories-post-content-sample-text">
+{/*           <p className="stories-post-content-sample-text">
             {sampleText}
             
-          </p>
+          </p> */}
 
           <div
             className={
@@ -49,7 +49,7 @@ class Post extends Component {
                 : "stories-post-content-all-text-hidden"
             }
           >
-            {fullText}
+            {fullText} 
             
           </p>
 

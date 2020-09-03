@@ -33,27 +33,36 @@
             // line-height: 22px;
             font-weight: normal;
 
-            .stories-post-content-sample-text{
+/*             .stories-post-content-sample-text{
                 margin:0;
-            }
+            } */
 
 
             .stories-post-button-show-more {
                 cursor: pointer;
                 color: $blue-medium;
-                display: block;
+                visibility: visible;
                 text-decoration: underline;
             }
             .stories-post-button-show-more-hidden {
-                display: none;
+                visibility: hidden;
+
             }
 
             .stories-post-content-all-text{
+                                // display: none;
                 display: block;
-                margin-top: 0;
+                
+                height: auto;
             }
             .stories-post-content-all-text-hidden{
-                display: none;
+
+
+                display: block;
+                
+                height: 40px;
+                overflow: hidden;
+                
             }
 
         }
