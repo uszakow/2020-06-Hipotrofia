@@ -13,7 +13,7 @@ class StoriesPage extends Component {
   };
 
   componentDidMount() {
-    axios.get("http://localhost:3001/posts")
+    axios.get("http://localhost:3001/articleDto?page=3")
     .then(res => {
       const postsList = res.data;
       this.setState({ postsList });
