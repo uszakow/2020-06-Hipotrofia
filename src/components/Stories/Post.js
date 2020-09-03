@@ -18,7 +18,7 @@ class Post extends Component {
   render() {
     console.log(this.state.wrapperIsOpen);
 
-    const {author, title, created, sampleText, fullText}=this.props.post;
+    const {author, title, created, contents}=this.props.post;
 
     return (
       <div className="stories-post-container">
@@ -27,11 +27,16 @@ class Post extends Component {
         <p className="stories-post-date">{created}</p>
 
         <div className="stories-post-content">
-{/*           <p className="stories-post-content-sample-text">
-            {sampleText}
+          <p
+            className={
+              this.state.wrapperIsOpen
+                ? "stories-post-content-all-text"
+                : "stories-post-content-all-text-hidden"
+            }
+          >
+            {contents} 
             
-          </p> */}
-
+          </p>
           <div
             className={
               this.state.wrapperIsOpen
@@ -42,16 +47,6 @@ class Post extends Component {
           >
             Czytaj więcej
           </div>
-          <p
-            className={
-              this.state.wrapperIsOpen
-                ? "stories-post-content-all-text"
-                : "stories-post-content-all-text-hidden"
-            }
-          >
-            {fullText} 
-            
-          </p>
 
           <div className="stories-arrow-box">
             <div
