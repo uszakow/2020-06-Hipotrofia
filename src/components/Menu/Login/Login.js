@@ -1,6 +1,9 @@
 import React from 'react';
+<<<<<<< HEAD
 
 import './Login.css';
+=======
+>>>>>>> origin/develop
 
 
 import MenuItem from '../MenuItem/MenuItem';

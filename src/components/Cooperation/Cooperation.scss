@@ -1,0 +1,33 @@
+@import "../../variables";
+@import "../../global";
+
+//fonts  
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;800&display=swap');
+$basic: 'Montserrat', sans-serif;
+
+
+
+ .container_photo{
+    background-image: url('../../img/Cooperation/roller-coaster-3605743_1920\ 1.png');
+    
+    height: 384px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media(max-width:$lg){
+        display: none;
+}
+
+}
+
+ .container_extra_text{
+    width: 100%;
+    margin:10px 0;
+    // font-size: 18px;
+    // line-height: 22px;
+    color: #000000;
+    font-family: $basic;
+
+}
+
+//Karolina Skorupska

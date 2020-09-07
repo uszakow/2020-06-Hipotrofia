@@ -1,0 +1,33 @@
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.h {
+    max-width: 320px;   
+    padding-bottom: 8px;
+    border-bottom: 4px solid;
+    font-size: 24px;
+}
+.container {
+    max-width: $max-width;
+    margin: auto;
+    margin: 0 $side-sm 20px $side-sm;
+    flex-grow: 1;
+}
+
+@media (min-width: $md) {
+    .container {
+        margin: 0 $side-md 20px $side-md;
+    }
+}
+@media (min-width: $xl) {
+    .container {
+        margin: 0 $side-xl 20px $side-xl;
+    }
+}
+@media (min-width: $max-width+$side-xl) {
+    .container {
+        margin: 0 auto 20px auto;
+    }
+}

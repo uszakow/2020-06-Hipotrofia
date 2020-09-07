@@ -1,5 +1,4 @@
 import React from 'react';
-import './Home.css';
 
 import Banner from '../Banner/Banner';
 import Pictures from './HomePictures/Pictures';
@@ -11,7 +10,7 @@ function Home() {
     return (
         <>
             <Banner photo={bannerPhoto} />
-            <div className="home-container">
+            <div className="container">
                 <Pictures />
                 <Text />
             </div>
@@ -22,3 +21,4 @@ function Home() {
 export default Home;
 
 //author: Paweł Uszakow
+
