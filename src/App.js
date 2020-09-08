@@ -12,6 +12,7 @@ import Footer from './components/Footer/Footer';
 import ButtonUp from './components/ButtonUp/ButtonUp';
 import PageInConstruction from './components/PageInConstruction/PageInConstruction';
 import Page404 from './components/Page404/Page404';
+import QuestionsPage from './components/questions/questions';
 
 import Home from './components/Home/Home';
 import CooperationPage from './components/Cooperation/Cooperation';
@@ -46,7 +47,9 @@ function App() {
           <Route path="/inconstruction">
             <PageInConstruction />
           </Route>
+          <Route path="/questions" component={QuestionsPage} />
           <Route component={Page404} />
+          
         </Switch>
 
         <Footer />
