@@ -100,12 +100,12 @@ class LoginFormBase extends Component {
     const isInvalid = password === "" || email === "";
 
     return (
-      <div className="SignIn">
-        <h1>Zaloguj się</h1>
+      <div className="loginpage-form-container-form">
+        <h1>Witamy...</h1>
 
         <div className="LoginBox">
           <form onSubmit={this.onSubmit}>
-            <div className="Email">
+            <div className="email-container">
               <label>Email</label>
               <input
                 name="email"
@@ -118,7 +118,7 @@ class LoginFormBase extends Component {
             </div>
             {errorEmail && <span className="errorMessage">{errorEmail}</span>}
 
-            <div className="Password">
+            <div className="password-container">
               <label>Password</label>
               <input
                 name="password"
@@ -134,13 +134,14 @@ class LoginFormBase extends Component {
             )}
           </form>
         </div>
-        <div className="buttonFrame">
-          <p>
-            <Link to={"/register"}>Załóż konto</Link>
-          </p>
-          <button disabled={isInvalid} type="submit" onClick={this.onSubmit}>
+        <div className="loginpage-buttons-container">
+        <button disabled={isInvalid} type="submit" onClick={this.onSubmit}>
             Zaloguj się
           </button>
+          <p>
+            <Link to={"/register"}>Zarejestruj</Link>
+          </p>
+
         </div>
 
         {error && <p className="errorMessage">{error.message}</p>}
