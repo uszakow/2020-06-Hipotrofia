@@ -1,0 +1,12 @@
+@import "../../variables";
+@import "../../global";
+
+.container_photo {
+    background-image: url('../../img/Cooperation/roller-coaster-3605743_1920\ 1.png');
+    height: 384px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media(max-width:$lg){
+        display: none;
+}
