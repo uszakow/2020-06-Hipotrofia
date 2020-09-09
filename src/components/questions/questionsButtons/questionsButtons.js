@@ -1,5 +1,4 @@
 import React from 'react';
-import QuestionsData from "../questionsData";
 import "./questionsButtons.scss";
 
 const QuestionsButtons = () => {

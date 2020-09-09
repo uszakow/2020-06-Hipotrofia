@@ -5,6 +5,7 @@ import ButtonsAndText from '../ButtonsAndText/ButtonsAndText';
 import bannerPhoto from "../../img/Banner/banner.svg";
 import "./questions.scss";
 import QuestionsButtons from "./questionsButtons/questionsButtons";
+import QuestionsData from "./questionsData";
 
 const QuestionsPage = () => {
     return (
