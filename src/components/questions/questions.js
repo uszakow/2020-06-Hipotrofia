@@ -3,20 +3,16 @@ import { Link } from 'react-router-dom';
 import Banner from "../Banner/Banner";
 import ButtonsAndText from '../ButtonsAndText/ButtonsAndText';
 import bannerPhoto from "../../img/Banner/banner.svg";
-import QuestionsData from "./questionsData";
 import "./questions.scss";
+import QuestionsButtons from "./questionsButtons/questionsButtons";
 
 const QuestionsPage = () => {
-    console.log(QuestionsData[0])
     return (
     <>
     <Banner photo={bannerPhoto}/>
     <div className='questions container'>
     <ButtonsAndText />
-
-    <div>
-        hhhejjjjjjjj
-    </div>
+    <QuestionsButtons />
     <div className="questions_container_photo"></div>
     </div>
     </>
