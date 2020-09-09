@@ -85,7 +85,7 @@ class LoginFormBase extends Component {
     if (password === "" || password.length <= 6) {
       isPasswordValid = false;
       this.setState({
-        errorPassword: "Password is invalid",
+        errorPassword: "Hasło jest błędne",
       });
     } else {
       this.setState({ errorPassword: "" });
@@ -100,6 +100,7 @@ class LoginFormBase extends Component {
     const isInvalid = password === "" || email === "";
 
     return (
+      <>
       <div className="loginpage-form-container-form">
         <h1>Witamy...</h1>
 
@@ -113,7 +114,7 @@ class LoginFormBase extends Component {
                 onChange={this.onChange}
                 onBlur={this.validateEmail}
                 type="text"
-                placeholder="e-mail"
+                placeholder="imię@email.com"
               />
             </div>
             {errorEmail && <span className="errorMessage">{errorEmail}</span>}
@@ -126,7 +127,7 @@ class LoginFormBase extends Component {
                 onChange={this.onChange}
                 onBlur={this.validatePassword}
                 type="password"
-                placeholder="password"
+                placeholder="Hasło"
               />
             </div>
             {errorPassword && (
@@ -135,17 +136,23 @@ class LoginFormBase extends Component {
           </form>
         </div>
         <div className="loginpage-buttons-container">
-        <button disabled={isInvalid} type="submit" onClick={this.onSubmit}>
-            Zaloguj się
+        <button  className="login-button" disabled={isInvalid} type="submit" onClick={this.onSubmit}>
+            Zaloguj
           </button>
-          <p>
+          <p className="register-button">
             <Link to={"/register"}>Zarejestruj</Link>
           </p>
+          <p className="forget-password">
+            <Link to={"/"}>Zapomniałeś hasła?</Link>
+        </p>
+
 
         </div>
-
         {error && <p className="errorMessage">{error.message}</p>}
       </div>
+
+
+      </>
     );
   }
 }

@@ -1,16 +1,14 @@
 @import "../../variables";
 
     .loginpage{
-        background-color: green;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 90%;
         height: 90vh;
 
         .loginpage-form-container{
-            background-color: hotpink;
             height: 100%;
             width: 100%;
             display: flex;
@@ -19,7 +17,6 @@
             align-items: center;
             
             .loginpage-form-container-form{
-                background-color: coral;
                 height: 80%;
                 max-height: 780px;
                 width: 90%;
@@ -40,12 +37,14 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: flex-start;
+                    margin-bottom: 10px;
 
                     label{
                         font-family: $basic;
                         font-size: 16px;
                         line-height: 20px;
                         color: black;
+                        padding: 5px 0;
                     }
                     input{
                         max-width: 330px;
@@ -63,12 +62,15 @@
 
         }
         .loginpage-photo-container{
-            background-color: indigo;
             width: 100%;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @media(max-width:$xl){
+                display: none;
+            }
 
             .background-image{
                 background-image: url('../../img/Login/abstract-login-image.png');
@@ -85,8 +87,44 @@
 
         }
         .loginpage-buttons-container{
-            
+            margin-top: 45px;
+
+            .login-button, .register-button{
+                width: 278px;
+                height: 54px;
+                border: 1px solid $blue-medium; 
+                text-transform: uppercase;
+                border-radius: 12px;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+                font-family: $basic;
+            }
+            .login-button{
+                background-color: $blue-medium;
+                color: #ffffff;
+                padding:16px 94px;
+            }
+            .register-button{
+                padding: 16px 72px;
+                a{
+                    color:$blue-medium;
+                    text-decoration: none;
+                }
+            }
+
         }
 
         
+    }
+
+    .forget-password{
+        display: inline-block;
+        a{
+            color: $blue-medium;
+            font-family: $basic;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
     }
