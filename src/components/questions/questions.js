@@ -1,19 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Banner from "../Banner/Banner";
 import ButtonsAndText from '../ButtonsAndText/ButtonsAndText';
 import bannerPhoto from "../../img/Banner/banner.svg";
 import "./questions.scss";
-import QuestionsButtons from "./questionsButtons/questionsButtons";
-import QuestionsData from "./questionsData";
+import QuestionsData from './QuestionsData/questionsData';
 
 const QuestionsPage = () => {
     return (
     <>
     <Banner photo={bannerPhoto}/>
-    <div className='questions container'>
+    <div className='container'>
     <ButtonsAndText />
-    <QuestionsButtons />
+    <QuestionsData />
     <div className="questions_container_photo"></div>
     </div>
     </>
