@@ -10,6 +10,8 @@
   border: 2px solid #dedada;
   box-sizing: border-box;
   border-radius: 12px;
+  text-align: left;
+  margin-bottom: 10px;
 
   cursor: pointer;
 }
@@ -18,6 +20,14 @@
   display: none;
 }
 
-.rotate{
-  transform: rotate(180deg);
+.rotate {
+  transform: rotate(180deg) translateY(-50%);
+}
+.questions_questionsButtons_question {
+  
+}
+.questions_questionsButtons_img {
+  margin-right: -2px;
+  float: right;
+  margin-right: 10px;
 }
