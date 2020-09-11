@@ -13,7 +13,11 @@ function QuestionsButtons(props) {
       <button className="questions_questionsButtons_button" onClick={showHide}>
         <span className="questions_questionsButtons_question">{question}</span>
         <span>
-          <img src={Vector} className="rotate + questions_questionsButtons_img" id={"img" + question} />
+          <img
+            src={Vector}
+            className="rotate + questions_questionsButtons_img"
+            id={"img" + question}
+          />
         </span>
       </button>
       <div id={question} className="questions_questionsButtons_answer + hide">

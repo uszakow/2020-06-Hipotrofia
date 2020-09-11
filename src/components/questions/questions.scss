@@ -2,13 +2,13 @@
 @import "../../global";
 
 .questions_container_photo {
-    background-image: url('../../img/questions/pexels-pixabay-39369 1.png');
-    height: 384px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: 15px;
+  background-image: url("../../img/questions/pexels-pixabay-39369 1.png");
+  height: 384px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 15px;
 
-    @media(max-width:$lg){
-        display: none;
-}
+  @media (max-width: $lg) {
+    display: none;
+  }
 }
