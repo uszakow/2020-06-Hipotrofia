@@ -11,7 +11,9 @@
   box-sizing: border-box;
   border-radius: 12px;
   text-align: left;
-  margin-bottom: 10px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
 
   cursor: pointer;
 }
@@ -21,13 +23,19 @@
 }
 
 .rotate {
-  transform: rotate(180deg) translateY(-50%);
+  transform: rotate(180deg);
 }
 .questions_questionsButtons_question {
-  
+  margin-left: 15px;
+  font-size: 18px;
+  line-height: 28px;
 }
 .questions_questionsButtons_img {
-  margin-right: -2px;
   float: right;
-  margin-right: 10px;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+.questions_questionsButtons_answer{
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
