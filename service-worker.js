@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/2020-06-Hipotrofia/precache-manifest.b1490aab726f8913b9e803a17ec5b547.js"
+  "/2020-06-Hipotrofia/precache-manifest.92df5b2be5c66896fe538c40f2d87f7a.js"
 );
 
 self.addEventListener('message', (event) => {
