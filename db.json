@@ -308,5 +308,108 @@
 			"created": "2020-05-21",
 			"articleId": 3
 		}
+	],
+	"authors": [
+		{
+			"name": "Paweł Uszakow",
+			"role": "front-end developer",
+			"photo": "src/img/Footer/uszakow.png",
+			"contacts": [
+				{
+					"GitHub": "https://github.com/uszakow"
+				},
+				{
+					"LinkedIn": "https://www.linkedin.com/in/p-uszakow/"
+				}
+			]
+		},
+		{
+			"name": "2Długieimię Długienazwisko",
+			"role": "funkcja rola",
+			"photo": "author",
+			"contacts": [
+				{
+					"GitHub": "#"
+				},
+				{
+					"LinkedIn": "#"
+				}
+			]
+		},
+		{
+			"name": "3Długieimię Długienazwisko",
+			"role": "funkcja",
+			"photo": "author",
+			"contacts": [
+				{
+					"Figma": "#"
+				},
+				{
+					"Facebook": "#"
+				}
+			]
+		},
+		{
+			"name": "4Imię Nazwisko",
+			"role": "funkcja",
+			"photo": "author",
+			"contacts": [
+				{
+					"GitHub": "#"
+				},
+				{
+					"Facebook": "#"
+				},
+				{
+					"Instagram": "some link"
+				}
+			]
+		},
+		{
+			"name": "5Imię Nazwisko",
+			"role": "funkcja",
+			"photo": "author",
+			"contacts": [
+				{
+					"site": "site"
+				},
+				{
+					"e-mail": "mail"
+				}
+			]
+		},
+		{
+			"name": "6Imię Nazwisko",
+			"role": "funkcja",
+			"photo": "author",
+			"contacts": [
+				{ "GitHub": "#"
+				},
+				{ "LinkedIn": "#"
+				}
+			]
+		},
+		{
+			"name": "7Imię Nazwisko",
+			"role": "funkcja w projekcie",
+			"photo": "author",
+			"contacts": [
+				{ "GitHub": "#"
+				},
+				{ "LinkedIn": "#"
+				}
+			]
+		},
+		{
+			"name": "8Długieimię Długienazwisko",
+			"role": "funkcja rola",
+			"photo": "author",
+			"contacts": [
+				{ "GitHub": "#"
+				},
+				{ "LinkedIn": "#"
+				}
+			]
+		}
 	]
 }

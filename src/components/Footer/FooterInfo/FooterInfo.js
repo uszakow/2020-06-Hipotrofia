@@ -5,6 +5,7 @@ function FooterInfo(props) {
     const { author, closeFooterInfo } = props;
 
     if (author) {
+        console.log(author.photo)
         return (
             <div className="footer-info">
                 <div>

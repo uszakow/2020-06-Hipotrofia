@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import './Footer.scss';
+import axios from "axios";
 
 import FooterItem from './FooterItem/FooterItem';
 import FooterInfo from './FooterInfo/FooterInfo';
 
-import authors from './authors';
+// import authors from './authors';
 
 class Footer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            indexForInfo: null
+            indexForInfo: null,
+            authors: []
         }
     }
 
@@ -25,8 +27,16 @@ class Footer extends Component {
         })
     }
 
+    componentDidMount() {
+        axios.get("http://localhost:3001/authors")
+            .then(res => {
+                const authors = res.data;
+                this.setState({ authors });
+            })
+    }
+
     render() {
-        const { indexForInfo } = this.state;
+        const { indexForInfo, authors } = this.state;
 
         return (
             <footer className="footer-container" >
