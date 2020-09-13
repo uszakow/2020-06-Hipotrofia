@@ -41,7 +41,7 @@ class LoginFormBase extends Component {
     const { email, password, error } = this.state;
 
     //get z db potem funkcja z filter i dwie sciezki- do zalogowania i do bledu
-    //LOGOWANIE ZA POMOCĄ FIREBASE-POSZUKAĆ HOOKÓW DO DATABASE- AXIOS
+    
     const [usersList, setUsersList] = useState([]);
 
     useEffect(() => {
@@ -53,10 +53,9 @@ class LoginFormBase extends Component {
         .then((data) => {
           setUsersList(data);
         });
-      // .catch(error((error)=>{
-      //   this.setState({error})
-      // }));
     }, []);
+
+    // IF wprowadzone dane = dane z bazy danych =>> zalogowano---> landing page / ---> nieprawidłowe dane, zapomniałeś hasła?
 
     event.preventDefault();
   };
