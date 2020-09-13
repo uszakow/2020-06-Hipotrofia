@@ -12,8 +12,12 @@ function FooterInfo(props) {
                     <div>
                         <div className="footer-info-name">{author.name}</div>
                         <div>{author.role}</div>
-                        <div>GitHub: <a href={author.github}>{author.github}</a></div>
-                        <div>LinkedIn: <a href={author.linkedin}>{author.linkedin}</a></div>
+                        {author.contacts.map((item, index) => (
+                            <div key={index}>
+                                <span>{Object.keys(item)[0]}: </span>
+                                <a href={Object.values(item)[0]}>{Object.values(item)[0]}</a>
+                            </div>
+                        ))}
                     </div>
                 </div>
                 <button
