@@ -313,7 +313,7 @@
 		{
 			"name": "Paweł Uszakow",
 			"role": "front-end developer",
-			"photo": "src/img/Footer/uszakow.png",
+			"photo": "/Footer/paweluszakow.png",
 			"contacts": [
 				{
 					"GitHub": "https://github.com/uszakow"
@@ -324,22 +324,22 @@
 			]
 		},
 		{
-			"name": "2Długieimię Długienazwisko",
-			"role": "funkcja rola",
-			"photo": "author",
+			"name": "Karolina Skorupska",
+			"role": "front-end developer",
+			"photo": "/Footer/karolinaskorupska.png",
 			"contacts": [
 				{
-					"GitHub": "#"
+					"GitHub": "https://github.com/karolinaskorupska"
 				},
 				{
-					"LinkedIn": "#"
+					"LinkedIn": "https://www.linkedin.com/in/karolina-skorupska/"
 				}
 			]
 		},
 		{
 			"name": "3Długieimię Długienazwisko",
 			"role": "funkcja",
-			"photo": "author",
+			"photo": "/Footer/author.png",
 			"contacts": [
 				{
 					"Figma": "#"
@@ -352,7 +352,7 @@
 		{
 			"name": "4Imię Nazwisko",
 			"role": "funkcja",
-			"photo": "author",
+			"photo": "/Footer/author.png",
 			"contacts": [
 				{
 					"GitHub": "#"
@@ -368,7 +368,7 @@
 		{
 			"name": "5Imię Nazwisko",
 			"role": "funkcja",
-			"photo": "author",
+			"photo": "/Footer/author.png",
 			"contacts": [
 				{
 					"site": "site"
@@ -381,7 +381,7 @@
 		{
 			"name": "6Imię Nazwisko",
 			"role": "funkcja",
-			"photo": "author",
+			"photo": "/Footer/author.png",
 			"contacts": [
 				{ "GitHub": "#"
 				},
@@ -392,7 +392,7 @@
 		{
 			"name": "7Imię Nazwisko",
 			"role": "funkcja w projekcie",
-			"photo": "author",
+			"photo": "/Footer/author.png",
 			"contacts": [
 				{ "GitHub": "#"
 				},
@@ -403,7 +403,7 @@
 		{
 			"name": "8Długieimię Długienazwisko",
 			"role": "funkcja rola",
-			"photo": "author",
+			"photo": "/Footer/author.png",
 			"contacts": [
 				{ "GitHub": "#"
 				},

@@ -5,11 +5,12 @@ function FooterInfo(props) {
     const { author, closeFooterInfo } = props;
 
     if (author) {
-        console.log(author.photo)
+        const photo = require(`./../../../img${author.photo}`)
+        
         return (
             <div className="footer-info">
                 <div>
-                    <img src={author.photo} alt={author.name} />
+                    <img src={photo} alt={author.name} />
                     <div>
                         <div className="footer-info-name">{author.name}</div>
                         <div>{author.role}</div>

@@ -5,8 +5,6 @@ import axios from "axios";
 import FooterItem from './FooterItem/FooterItem';
 import FooterInfo from './FooterInfo/FooterInfo';
 
-// import authors from './authors';
-
 class Footer extends Component {
     constructor(props) {
         super(props);
