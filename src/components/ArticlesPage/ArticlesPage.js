@@ -1,6 +1,7 @@
 import React from 'react';
 import "./ArticlesPage.scss";
 import Banner from '../Banner/Banner';
+import Article from './Article';
 
 // import ImageBackground from '../../img/Articles/pexels-taryn-elliott-3889795\ 1.png';
 import ImageTwojaHistoria from '../../img/Articles/Twoja historia.png';
@@ -21,11 +22,7 @@ const ArticlesPage = () => {
                     <div className="line"></div>
                 </div>
             </div>
-            <div className="ArticlesPage content">
-                <div className="ArticlesPage-Article">
-
-                </div>
-            </div>
+            <Article/>
         </div>
     )
 }

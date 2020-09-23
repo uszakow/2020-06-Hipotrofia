@@ -4,7 +4,7 @@
     width: 80%;
     
     .ArticlesBanner{
-        max-width: 100%;
+        max-width: 1156px;
         height: 249px;
         border-radius: 10px;
         background-image: url("../../img/Articles/pexels-taryn-elliott-3889795\ 1.png");
@@ -32,8 +32,9 @@
             align-items: center;
             z-index: 1;
             position: absolute;
-            @media(max-width: $sm){
+            @media(max-width: $md){
                 right: 0;
+                border-radius: 10px;
             }
 
             img{
@@ -46,7 +47,7 @@
                 padding:0;
                 background-color: $grey-light;
 
-                @media(max-width: $sm){
+                @media(max-width: $md){
                     display: none;
                 }
         
