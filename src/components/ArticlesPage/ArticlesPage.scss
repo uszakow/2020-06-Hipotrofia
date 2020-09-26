@@ -1,17 +1,19 @@
 @import "../../variables";
 
 .ArticlesPage {
-    width: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: $basic;
+    
     
     .ArticlesBanner{
-        max-width: 1156px;
+        
         height: 249px;
         border-radius: 10px;
         background-image: url("../../img/Articles/pexels-taryn-elliott-3889795\ 1.png");
         position: relative;
-        @media(min-width:$max-width){
-            background-repeat: no-repeat;
-        }
+
         @media(max-width:$xl){
             background-position-x: 80%;
             overflow: hidden;
@@ -30,7 +32,6 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            z-index: 1;
             position: absolute;
             @media(max-width: $md){
                 right: 0;
@@ -51,6 +52,88 @@
                     display: none;
                 }
         
+            }
+        }
+    }
+    .article{
+        padding-top: 30px;
+        .article-horizontal-line{
+            width: 100%;
+            height: 2px;
+            background-color: $grey-medium;
+        }
+        .article-content{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .article-content-avatar-image {
+                padding-top: 10px;
+
+                img{
+                    border-radius: 50%;
+                }
+            }
+            .article-content-text{
+                width: 85%;
+                
+                .article-content-text-header{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: flex-start;
+
+                    h1{
+                        font-size: 20px;
+                        font-weight: 700;
+                        color:#412a2a ;
+                    }
+                    p{
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+
+                    img{
+                        padding-top: 20px;
+                    }
+                }
+                .article-content-text-body-box{
+                    font-size: 18px;
+                    line-height: 22px;
+                    font-weight: 400;
+
+                    p{
+                        cursor: pointer;
+                        text-decoration: underline;
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+                    .horizontal-line-short{
+                        width: 100%;
+                        height: 2px;
+                        background-color: $grey-medium;
+                    }
+                    .article-content-text-body-box-content-action-box{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 20px 0;
+
+                        div{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                            img{
+                                display: inline-block;
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
