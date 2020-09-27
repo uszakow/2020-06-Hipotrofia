@@ -136,5 +136,57 @@
                 }
             }
         }
+        .article-comments{
+            
+            .article-comments-header{
+                width: 100%;
+                height: 60px;
+                background-color: #dedada;
+                font-size: 20px;
+                line-height: 24px;
+                padding:15px 10px;
+                margin:10px 0;
+            }
+            .article-comments-comment{
+                background-color: #f7f7f7;
+                width: 100%;
+                padding:10px;
+                display: flex;
+                flex-direction: row;
+                 img.avatar-image{
+                     border-radius:50%;
+                     width: 103px;
+                     height: 103px;
+                     margin-right: 20px;
+                 }
+                 .article-comments-comment-content{
+                     width: 100%;
+                     .article-comments-comment-content-header{
+                         display: flex;
+                         flex-direction: row;
+                         justify-content: space-between;
+                         align-items: center;
+                         img.settings{
+                             cursor: pointer;
+                         }
+                     }
+
+                     .article-comments-comment-content-action-box{
+                         display: flex;
+                         flex-direction: row;
+                         justify-content: end;
+                         align-items: center;
+                         padding: 5px 30px;
+
+                         div{
+                             padding:0 20px;
+                             img{
+                                 margin-right: 15px;
+                             }
+                         }
+                     }
+                 }
+            }
+        }
     }
 }
