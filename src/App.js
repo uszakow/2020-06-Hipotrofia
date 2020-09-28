@@ -16,6 +16,7 @@ import Page404 from './components/Page404/Page404';
 import Home from './components/Home/Home';
 import CooperationPage from './components/Cooperation/Cooperation';
 import StoriesPage from './components/Stories/Stories';
+import LoginPage from './components/LoginPage/LoginPage';
 
 function App() {
   return (
@@ -35,7 +36,7 @@ function App() {
           </Route>
           <Route path="/cooperation" component={CooperationPage} />
           <Route path="/login">
-            <PageInConstruction />
+            <LoginPage />
           </Route>
           <Route path="/pregnancy">
             <PageInConstruction />
