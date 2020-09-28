@@ -14,8 +14,7 @@
         position: relative;
     }
     img {
-        position: absolute;
-        left: -30px;
+        display: none;
     }
 }
 .menu-item-mobile:hover {
@@ -25,11 +24,11 @@
     display: none;
 }
 .menu-item-desctop {
-    color: $green-light;
+    color: #848080;
 }
 .menu-item-desctop:hover {
-    color: $green-medium;
+    color: #565656;
 }
 .menu-item-desctop.menu-item-active {
-    color: black;
+    color: $brown-dark;
 }

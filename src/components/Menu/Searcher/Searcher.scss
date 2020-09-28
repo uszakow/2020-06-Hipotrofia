@@ -3,14 +3,12 @@
     input {
         min-width: 260px;
         height: 36px;
-        padding: 8px;
-        border: 0;
+        padding: 8px;        
         border-radius: 12px 0 0 12px;
         background-color: white;
     }
     button {
-        height: 36px;
-        border: 0;
+        height: 36px;        
         border-radius: 0 12px 12px 0;
         background-color: white;
         cursor: pointer;
@@ -18,8 +16,22 @@
 }
 .menu-searcher-mobile {
     margin: 0 auto 26px auto;
+    input {
+        border: 0;
+    }
+    button {
+        border: 0;
+    }
 }
 .menu-searcher-desctop {
     margin-right: 18px;
     margin-left: auto;
+    input {
+        border: 1px solid #897A7A;
+        border-right: 0;
+    }
+    button {
+        border: 1px solid #897A7A;
+        border-left: 0;
+    }
 }
