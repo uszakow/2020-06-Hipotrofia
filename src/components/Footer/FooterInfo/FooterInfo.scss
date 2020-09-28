@@ -1,7 +1,6 @@
 @import "../../../variables";
 
 .footer-info {
-    // background-color: red;
     background-color: $grey-medium;
     width: 100%;
     height: 100%;
@@ -9,7 +8,6 @@
     display: grid;
     grid-template-columns: 1fr 20px;
     grid-gap: 10px;
-    // display: none;
 
     img {
         width: 100px;
@@ -23,6 +21,10 @@
     }
     a {
         color: rgb(16, 16, 151);
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
     }
     .footer-info-name {
         font-weight: 600;

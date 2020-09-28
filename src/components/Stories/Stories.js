@@ -14,23 +14,23 @@ class StoriesPage extends Component {
 
   componentDidMount() {
     axios.get("http://localhost:3001/articleDto?page=3")
-    .then(res => {
-      const postsList = res.data;
-      this.setState({ postsList });
-    });
+      .then(res => {
+        const postsList = res.data;
+        this.setState({ postsList });
+      });
   }
 
   render() {
-    
-    const {postsList} = this.state;
-    
+
+    const { postsList } = this.state;
+
     return (
       <>
         <Banner photo={bannerPhoto} />
         <div className="stories container">
           <ButtonsAndText />
-          
-          {postsList.map((post, index)=> <Post key={index} post={post}/>)}
+
+          {postsList.map((post, index) => <Post key={index} post={post} />)}
 
 
           {/* miejsce na pole formularza */}
