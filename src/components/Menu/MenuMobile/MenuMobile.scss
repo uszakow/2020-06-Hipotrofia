@@ -2,13 +2,14 @@
 
 .menu-mobile {
     display: flex;
+    background-color: $grey-light;
 }
 .menu-control {
     width: 24px;
     height: 24px;
     padding: 0;
     border: 0;
-    margin: 22px 20px 22px auto;
+    margin: 16px 20px 16px auto;
     background-color: transparent;
     position: relative;
     z-index: 2;
