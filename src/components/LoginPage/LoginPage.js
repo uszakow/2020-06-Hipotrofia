@@ -46,7 +46,7 @@ class LoginFormBase extends Component {
 
     useEffect(() => {
       axios
-        .get("http://localhost:3001/users")
+        .get("https://hipotrofia.herokuapp.com/users")
         .then((response) => {
           return response.json();
         })

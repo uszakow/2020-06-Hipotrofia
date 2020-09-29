@@ -47,7 +47,7 @@ const RegisterPage = () => (
           password2:this.state.password2
         };
 
-        axios.post('http://localhost:3001/users', { user })
+        axios.post('https://hipotrofia.herokuapp.com/users', { user })
           .then(res=> {
             console.log(res);
             console.log(res.data);

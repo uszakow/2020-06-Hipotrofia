@@ -26,7 +26,7 @@ class Footer extends Component {
     }
 
     componentDidMount() {
-        axios.get("http://localhost:3001/authors")
+        axios.get("https://hipotrofia.herokuapp.com/authors")
             .then(res => {
                 const authors = res.data;
                 this.setState({ authors });
