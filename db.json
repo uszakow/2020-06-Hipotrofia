@@ -1,0 +1,416 @@
+{
+	"tags": [
+		{
+			"id": 1,
+			"name": "wcześniak"
+		},
+		{
+			"id": 2,
+			"name": "poród"
+		},
+		{
+			"id": 3,
+			"name": "hormonwzrostu"
+		},
+		{
+			"id": 4,
+			"name": "przyrosty"
+		},
+		{
+			"id": 5,
+			"name": "ulewanie"
+		}
+	],
+	"doctors": [
+		{
+			"id": 1,
+			"firstName": "Jan",
+			"lastName": "Kowalski",
+			"city": "Warszawa",
+			"zip_code": "00-123",
+			"region": "Mazowsze",
+			"street": "Lipna",
+			"building_number": "12",
+			"specialization": {
+				"1": "endokrynolog",
+				"2": "genetyk",
+				"4": "pediatra"
+			},
+			"avgEvaluation": 0.0
+		},
+		{
+			"id": 2,
+			"firstName": "Anna",
+			"lastName": "Nowak",
+			"city": "Warszawa",
+			"zip_code": "00-153",
+			"region": "Mazowsze",
+			"street": "Dębowa",
+			"building_number": "1",
+			"specialization": {
+				"4": "pediatra",
+				"5": "edietetyk"
+			},
+			"avgEvaluation": 0.0
+		},
+		{
+			"id": 3,
+			"firstName": "Hieronim",
+			"lastName": "Grecki",
+			"city": "Kraków",
+			"zip_code": "31-123",
+			"region": "Małopolska",
+			"street": "Bukowa",
+			"building_number": "32",
+			"specialization": {
+				"1": "endokrynolog",
+				"4": "pediatra"
+			},
+			"avgEvaluation": 0.0
+		},
+		{
+			"id": 4,
+			"firstName": "Ludwika",
+			"lastName": "Niewiadoma",
+			"city": "Kraków",
+			"zip_code": "31-656",
+			"region": "Małopolska",
+			"street": "Świerkowa",
+			"building_number": "63",
+			"specialization": {
+				"2": "genetyk",
+				"4": "pediatra"
+			},
+			"avgEvaluation": 0.0
+		},
+		{
+			"id": 5,
+			"firstName": "Michał",
+			"lastName": "Iksiński",
+			"city": "Poznań",
+			"zip_code": "60-123",
+			"region": "Wielkopolska",
+			"street": "Grabowa",
+			"building_number": "3",
+			"specialization": {
+				"2": "genetyk",
+				"4": "pediatra"
+			},
+			"avgEvaluation": 0.0
+		},
+		{
+			"id": 6,
+			"firstName": "Żaneta",
+			"lastName": "Wrońska",
+			"city": "Wrocław",
+			"zip_code": "50-123",
+			"region": "Dolny Śląsk",
+			"street": "Jesionowa",
+			"building_number": "35",
+			"specialization": {
+				"3": "gastroenterolog",
+				"4": "pediatra",
+				"5": "edietetyk"
+			},
+			"avgEvaluation": 0.0
+		}
+	],
+	"articleDto": [
+		{
+			"id": 1,
+			"title": "Hipotrofia",
+			"contents": "Hipotrofię definiuje się jako wewnątrzmaciczne ograniczenie wzrastania płodu. To zbyt mała masa ciała w stosunku do wieku ciążowego. Rozróżnia się następujące rodzaje hipotrofii:\nhipotrofia symetryczna - wymiary ciała zmniejszają się proporcjonalnie;\nhipotrofia asymetryczna - obwód główki i długość ciała dziecka określa się jako względnie prawidłowe, a obwód brzucha jest zbyt mały. Hipotrofia asymetryczna dotyczy zdecydowanej większości przypadków.\nOstateczne rozpoznanie hipotrofii następuje dopiero po urodzeniu dziecka. Ocenia się parametry anatomiczne i czynnościowe niemowlaka. U noworodka hipotroficznego obserwuje się: wychudzenie; luźną, wysuszoną skórę; słabo rozwiniętą tkankę podskórną; rzadkie włosy; szybko wysychającą pępowinę, wstrzymanie moczu w pierwszych godzinach po urodzeniu, dwa naczynia w sznurze pępowinowym.",
+			"created": "2020-06-15T00:00:00.000+00:00",
+			"author": {
+				"id": 1,
+				"name": "Tomek"
+			},
+			"tagsId": [],
+			"modifiedBy": null,
+			"page": 1,
+			"ranking": 1,
+			"priority": 5,
+			"visible": true
+		},
+		{
+			"id": 2,
+			"title": "Jasiu",
+			"contents": "ona wypiła moje kakao. ona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakao. Weselny pyton, weselny pyton, Tańczy go Radom, tańczy go Bytom, Weselny pyton, weselny pyton, z moją kobitą przez Ciebie odbitą, Weselny pyton, weselny pyton, Tańczy go Radom, tańczy go Bytom Weselny pyton, weselny pytonona wypiła moje kakao. ona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakao. Weselny pyton, weselny pyton, Tańczy go Radom, tańczy go Bytom, Weselny pyton, weselny pyton, z moją kobitą przez Ciebie odbitą, Weselny pyton, weselny pyton, Tańczy go Radom, tańczy go Bytom Weselny pyton, weselny pytonona wypiła moje kakao. ona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakao. Weselny pyton, weselny pyton, Tańczy go Radom, tańczy go Bytom, Weselny pyton, weselny pyton, z moją kobitą przez Ciebie odbitą, Weselny pyton, weselny pyton, Tańczy go Radom, tańczy go Bytom Weselny pyton, weselny pytonona wypiła moje kakao. ona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakao. Weselny pyton, weselny pyton, Tańczy go Radom, tańczy go Bytom, Weselny pyton, weselny pyton, z moją kobitą przez Ciebie odbitą, Weselny pyton, weselny pyton, Tańczy go Radom, tańczy go Bytom Weselny pyton, weselny pytonona wypiła moje kakao. ona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakao. Weselny pyton, weselny pyton, Tańczy go Radom, tańczy go Bytom, Weselny pyton, weselny pyton, z moją kobitą przez Ciebie odbitą, Weselny pyton, weselny pyton, Tańczy go Radom, tańczy go Bytom Weselny pyton, weselny pytonona wypiła moje kakao. ona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakaoona wypiła moje kakao. Weselny pyton, weselny pyton, Tańczy go Radom, tańczy go Bytom, Weselny pyton, weselny pyton, z moją kobitą przez Ciebie odbitą, Weselny pyton, weselny pyton, Tańczy go Radom, tańczy go Bytom Weselny pyton, weselny pytonLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			"created": "2020-06-21T00:00:00.000+00:00",
+			"author": {
+				"id": 9,
+				"name": "Ala"
+			},
+			"tagsId": [
+				1,
+				3
+			],
+			"modifiedBy": null,
+			"page": 3,
+			"ranking": 2,
+			"priority": 1,
+			"visible": true
+		},
+		{
+			"id": 3,
+			"title": "Kasia",
+			"contents": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+			"created": "2020-06-27T00:00:00.000+00:00",
+			"author": {
+				"id": 15,
+				"name": "Tadek"
+			},
+			"tagsId": [
+				1,
+				2,
+				3
+			],
+			"modifiedBy": null,
+			"page": 3,
+			"ranking": 2,
+			"priority": 1,
+			"visible": true
+		},
+		{
+			"id": 4,
+			"title": "Przyczyny hipotrofii",
+			"contents": "Przyczyny hipotrofii są różnorodne, dlatego dzieli się je na grupy. O nieprawidłowościach wzrastania płodu decydują:\nczynniki matczyne - przede wszystkim choroby układu krążenia, choroby nerek, czynniki immunologiczne, infekcje, zażywane leki, używki;\nczynniki płodowe - ciąża wielopłodowa, wady wrodzone, zakażenia, aberracje chromosomalne;\nczynniki łożyskowe - przedwczesne oddzielenie łożyska, nieprawidłowe położenie łożyska, krwiak pozałożyskowy, zapalenie kosmków łożyskowych;\nczynniki społeczne - ciężka praca fizyczna, niedożywienie, słaba opieka prenatalna, niski status socjoekonomiczny.",
+			"created": "2020-06-27T00:00:00.000+00:00",
+			"author": {
+				"id": 14,
+				"name": "Radek"
+			},
+			"tagsId": [
+				1,
+				3,
+				4
+			],
+			"modifiedBy": null,
+			"page": 2,
+			"ranking": 2,
+			"priority": 1,
+			"visible": true
+		},
+		{
+			"id": 5,
+			"title": "Kasia",
+			"contents": "Medycyna na obecnym poziomie wiedzy, nie zna skutecznego sposobu na zapobieganie hipotrofii płodu. Wdraża się jedynie leczenie spoczynkowe, które polega na poprawie ukrwienia macicy. Szczególną opiekę zapewnia się matkom cierpiącym na ostre i przewlekłe choroby. Zaleca się także wysokokaloryczne diety wpływające na uzupełnienie niedoborów żywieniowych. W sytuacji zagrożenia życia płodu może zaistnieć konieczność wcześniejszego zakończenia ciąży. Wciąż trwają badania nad skutecznymi sposobami leczenia hipotrofii.\nOdpowiednia diagnoza postawiona przed urodzeniem dziecka to klucz do odpowiedniego postępowania z niemowlakiem hipotroficznym. Pielęgnacja powinna opierać się przede wszystkim na przeprowadzeniu dokładnego wywiadu dotyczącego czynników ryzyka. Przedmiotowe badanie noworodka musi zostać wykonane dokładnie. By zapobiec hipotermii, dziecko powinno się umieścić pod promiennikiem ciepła. Następnie należy osuszyć jego skórę i jeśli to konieczne, umieścić w inkubatorze. Opieka nad dzieckiem hipotroficznym zakłada także wyrównanie zaburzeń metabolicznych: hipoglikemii, hiperglikemii, hipokaliemii. Poza tym istotna okazuje się ocena zaburzeń hematologicznych, ale również leczenie infekcji wrodzonych oraz ewentualnych wad.",
+			"created": "2020-06-27T00:00:00.000+00:00",
+			"author": {
+				"id": 14,
+				"name": "Radek"
+			},
+			"tagsId": [],
+			"modifiedBy": null,
+			"page": 2,
+			"ranking": 2,
+			"priority": 3,
+			"visible": true
+		}
+	],
+	"users": [
+		{
+			"id": 1,
+			"name": "Tomek",
+			"email": "tomek@test.pl",
+			"password": null,
+			"password2": null,
+			"roleName": "ROLE_ADMIN",
+			"active": true,
+			"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVG9tZWsiLCJlbWFpbCI6InRvbWVrQHRlc3QucGwiLCJyb2xlTmFtZSI6IlJPTEVfQURNSU4iLCJhY3RpdmUiOnRydWV9.YIudqnRXFnOgXfVsbI2_9JFWgw4BxBrBDXl5-_3BZTY"
+		},
+		{
+			"id": 9,
+			"name": "Ala",
+			"email": "ala@test.pl",
+			"password": null,
+			"password2": null,
+			"roleName": "ROLE_USER",
+			"active": true,
+			"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWxhIiwiZW1haWwiOiJhbGFAdGVzdC5wbCIsInJvbGVOYW1lIjoiUk9MRV9VU0VSIiwiYWN0aXZlIjp0cnVlfQ.k2lMLz0mGFJR2OKbepvvGMzsQM2gKTfdF4vDP_rH-2U"
+		},
+		{
+			"id": 14,
+			"name": "Radek",
+			"email": "radek@test.pl",
+			"password": null,
+			"password2": null,
+			"roleName": "ROLE_PUBLISHER",
+			"active": true,
+			"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUmFkZWsiLCJlbWFpbCI6InJhZGVrQHRlc3QucGwiLCJyb2xlTmFtZSI6IlJPTEVfUFVCTElTSEVSIiwiYWN0aXZlIjp0cnVlfQ.3DEfN8aMUp6Jf8AQ2KEYa9e1BSm2RcWixMlR8gfKxA8"
+		},
+		{
+			"id": 15,
+			"name": "Tadek",
+			"email": "tadek@test.pl",
+			"password": null,
+			"password2": null,
+			"roleName": "ROLE_USER",
+			"active": true,
+			"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGFkZWsiLCJlbWFpbCI6InRhZGVrQHRlc3QucGwiLCJyb2xlTmFtZSI6IlJPTEVfVVNFUiIsImFjdGl2ZSI6dHJ1ZX0.Dc7KcFWQ3uSx4c5pHds1nawuOUWLj_RVJQ3d2OcS3oQ"
+		}
+	],
+	"specializations": [
+		{
+			"id": 1,
+			"nameOfSpecialization": "endokrynolog"
+		},
+		{
+			"id": 2,
+			"nameOfSpecialization": "genetyk"
+		},
+		{
+			"id": 3,
+			"nameOfSpecialization": "gastroenterolog"
+		},
+		{
+			"id": 4,
+			"nameOfSpecialization": "pediatra"
+		},
+		{
+			"id": 5,
+			"nameOfSpecialization": "edietetyk"
+		}
+	],
+	"messages": [
+		{
+			"id": 1,
+			"contents": "Bardzo fajny artkuł",
+			"author": "Tadek",
+			"created": "2020-04-21",
+			"articleId": 2
+		},
+		{
+			"id": 2,
+			"contents": "Naprawdę? Dla mnie nic odkrywczego, zero konkretów.",
+			"author": "Lucek",
+			"created": "2020-04-21",
+			"articleId": 2
+		},
+		{
+			"id": 3,
+			"contents": "No bez przesady. Owszem, można by trochę szczegółów dodać, jakiś namiar na dobrego lekarza, ale i tak można się czegoś dowiedzieć.",
+			"author": "Julka",
+			"created": "2020-04-23",
+			"articleId": 2
+		},
+		{
+			"id": 4,
+			"contents": "A możesz podać namiar na Waszego lekarza?",
+			"author": "Ania",
+			"created": "2020-05-12",
+			"articleId": 3
+		},
+		{
+			"id": 5,
+			"contents": "Jasne, przyjmuje w Pcimiu Dolnym.",
+			"author": "Ksia",
+			"created": "2020-05-21",
+			"articleId": 3
+		}
+	],
+	"authors": [
+		{
+			"name": "Paweł Uszakow",
+			"role": "front-end developer",
+			"photo": "/Footer/paweluszakow.png",
+			"contacts": [
+				{
+					"GitHub": "https://github.com/uszakow"
+				},
+				{
+					"LinkedIn": "https://www.linkedin.com/in/p-uszakow/"
+				}
+			]
+		},
+		{
+			"name": "Karolina Skorupska",
+			"role": "front-end developer",
+			"photo": "/Footer/karolinaskorupska.png",
+			"contacts": [
+				{
+					"GitHub": "https://github.com/karolinaskorupska"
+				},
+				{
+					"LinkedIn": "https://www.linkedin.com/in/karolina-skorupska/"
+				}
+			]
+		},
+		{
+			"name": "3Długieimię Długienazwisko",
+			"role": "funkcja",
+			"photo": "/Footer/author.png",
+			"contacts": [
+				{
+					"Figma": "#"
+				},
+				{
+					"Facebook": "#"
+				}
+			]
+		},
+		{
+			"name": "4Imię Nazwisko",
+			"role": "funkcja",
+			"photo": "/Footer/author.png",
+			"contacts": [
+				{
+					"GitHub": "#"
+				},
+				{
+					"Facebook": "#"
+				},
+				{
+					"Instagram": "some link"
+				}
+			]
+		},
+		{
+			"name": "5Imię Nazwisko",
+			"role": "funkcja",
+			"photo": "/Footer/author.png",
+			"contacts": [
+				{
+					"site": "site"
+				},
+				{
+					"e-mail": "mail"
+				}
+			]
+		},
+		{
+			"name": "6Imię Nazwisko",
+			"role": "funkcja",
+			"photo": "/Footer/author.png",
+			"contacts": [
+				{ "GitHub": "#"
+				},
+				{ "LinkedIn": "#"
+				}
+			]
+		},
+		{
+			"name": "7Imię Nazwisko",
+			"role": "funkcja w projekcie",
+			"photo": "/Footer/author.png",
+			"contacts": [
+				{ "GitHub": "#"
+				},
+				{ "LinkedIn": "#"
+				}
+			]
+		},
+		{
+			"name": "8Długieimię Długienazwisko",
+			"role": "funkcja rola",
+			"photo": "/Footer/author.png",
+			"contacts": [
+				{ "GitHub": "#"
+				},
+				{ "LinkedIn": "#"
+				}
+			]
+		}
+	]
+}
+ 

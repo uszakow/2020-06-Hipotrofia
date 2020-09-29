@@ -57,7 +57,7 @@ komponent `Pictures`, który znajduje się w folderze komponentu `Home`, który 
 
 ### Style wspólne dla projektu
 - Zmienne, które powtarzają się w całym projekcie, są zapisywane w pliku `_variables.scss`. Dotyczy to między innymi kolorów i breakpointów dla @media. Zawartość pliku `_variables.scss` można zmieniać (zwł. dodawać nowe zmienne) tylko po konsultacji w grupie *front-end* na Slacku.
-- Wszystkie style, które mają być wspólne dla całego projektu (np. czcionki, style wszystkich elementów etc.) mają być ustalane tylko dla całego projektu (przede wszystkim w pliku `App.scss`), a nie w jednym komponencie. Zmiany pliku `App.scss` oraz innych plików wspólnych dla całego projektu można dokonać tylko po konsultacji w grupie *front-end* na Slacku.
+- Wszystkie style, które mają być wspólne dla całego projektu (np. czcionki, style wszystkich elementów etc.) mają być ustalane tylko dla całego projektu (przede wszystkim w pliku `_global.scss`), a nie w jednym komponencie. Zmiany pliku `_global.scss` oraz innych plików wspólnych dla całego projektu można dokonać tylko po konsultacji w grupie *front-end* na Slacku.
 
 ### Ułatwienia dla czytników ekranów
 - Każda podstona ma mieć **jeden** element `<h1>`.

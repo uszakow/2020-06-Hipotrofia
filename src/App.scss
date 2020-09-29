@@ -1,18 +1,6 @@
 @import "variables";
+@import "global";
 
 * {
     box-sizing: border-box;
-}
-
-.app-wrap {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-.h {
-    max-width: 320px;
-    color: $green-medium;
-    padding-bottom: 8px;
-    border-bottom: 4px solid $green-medium;
-    font-size: 24px;
 }

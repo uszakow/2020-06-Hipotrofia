@@ -1,0 +1,141 @@
+@import "../../variables";
+
+
+.stories{
+     font-family: $basic;
+    .stories-post-container{
+        width: 100%;
+        margin: 30px 0;
+
+        .stories-post-horizontal-line{
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: $grey-medium;
+        }
+        h2.stories-post-title{
+            // font-family: $basic;
+            // font-size: 20px;
+            // line-height: 24px;
+            color: $blue-medium;
+            font-weight: bold;
+        }
+        .stories-post-date{
+            // font-family: $basic;
+            // font-size: 18px;
+            // line-height: 22px;
+            font-weight: normal;
+        }
+
+        .stories-post-content{
+            // font-family: $basic;
+            // font-size: 18px;
+            // line-height: 22px;
+            font-weight: normal;
+
+/*             .stories-post-content-sample-text{
+                margin:0;
+            } */
+
+
+            .stories-post-button-show-more {
+                cursor: pointer;
+                color: $blue-medium;
+                visibility: visible;
+                text-decoration: underline;
+            }
+            .stories-post-button-show-more-hidden {
+                visibility: hidden;
+
+            }
+
+            .stories-post-content-all-text{
+                display: block;
+                height: auto;        
+                
+            }
+            .stories-post-content-all-text-hidden{
+
+                display: block;
+                height: 40px;
+                overflow: hidden;
+                
+            }
+
+        }
+        .stories-arrow-box{
+            
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .stories-post-arrow-up{
+                display: block;
+                padding: 30px 0;
+                cursor: pointer;
+                color:$blue-medium;
+                text-decoration: underline;
+            }
+            .stories-post-arrow-up-hidden{
+                display: none;
+            }
+        }
+        
+        .stories-images{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            
+            .stories-images-container{
+                padding: 15px;
+                // display: flex;
+                /* flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center; */
+                width: 100%;
+                display: grid;
+    
+    
+                @media(max-width:$lg){
+                    // justify-content: center;
+    
+                }
+    
+                img{
+                    
+                    object-fit:cover;
+                    height: 202px;
+                    margin:30px;
+                    overflow: hidden;
+                    width: 90%;
+    
+                }
+                
+            }
+
+        }
+        
+    }
+
+
+}
+//change: display flex to display grid - along with Paweł suggestion
+@media (min-width: $sm) {
+    .stories-images-container {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px 0;
+    }
+}
+@media (min-width: $lg) {
+    .stories-images-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: $xl) {
+    .stories-images-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+//Karolina Skorupska

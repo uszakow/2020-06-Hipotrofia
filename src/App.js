@@ -2,7 +2,7 @@ import React from 'react';
 import './App.scss';
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Switch,
 } from 'react-router-dom';
@@ -14,11 +14,14 @@ import PageInConstruction from './components/PageInConstruction/PageInConstructi
 import Page404 from './components/Page404/Page404';
 
 import Home from './components/Home/Home';
-import Cooperation from './components/Cooperation';
+import CooperationPage from './components/Cooperation/Cooperation';
+import StoriesPage from './components/Stories/Stories';
+import LoginPage from './components/LoginPage/LoginPage';
 
 function App() {
   return (
     <Router>
+
       <div className="app-wrap">
         <Menu />
 
@@ -27,15 +30,13 @@ function App() {
           <Route path="/help">
             <PageInConstruction />
           </Route>
-          <Route path="/stories">
-            <PageInConstruction />
-          </Route>
+          <Route path="/stories" component={StoriesPage} />
           <Route path="/blog">
             <PageInConstruction />
           </Route>
-          <Route path="/cooperation" component={Cooperation} />
+          <Route path="/cooperation" component={CooperationPage} />
           <Route path="/login">
-            <PageInConstruction />
+            <LoginPage />
           </Route>
           <Route path="/pregnancy">
             <PageInConstruction />
@@ -52,6 +53,7 @@ function App() {
         <Footer />
         <ButtonUp />
       </div>
+    
     </Router>
   );
 }
