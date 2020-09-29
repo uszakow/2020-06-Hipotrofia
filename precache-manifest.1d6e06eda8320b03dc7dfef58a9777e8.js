@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a63b291eba4c4a71870c3c617640b685",
+    "revision": "28365443a083411d4aa218e1f1ad2aa6",
     "url": "/2020-06-Hipotrofia/index.html"
   },
   {
-    "revision": "8a748e88aa426948db1c",
-    "url": "/2020-06-Hipotrofia/static/css/main.b6c80b16.chunk.css"
+    "revision": "afebdc4fbf709bf0a14d",
+    "url": "/2020-06-Hipotrofia/static/css/main.5f5d13e1.chunk.css"
   },
   {
-    "revision": "67b2d31de13afce37dc9",
-    "url": "/2020-06-Hipotrofia/static/js/2.44567582.chunk.js"
+    "revision": "ce4bd935bcf892340c30",
+    "url": "/2020-06-Hipotrofia/static/js/2.ac9fbc9d.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/2020-06-Hipotrofia/static/js/2.44567582.chunk.js.LICENSE.txt"
+    "url": "/2020-06-Hipotrofia/static/js/2.ac9fbc9d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8a748e88aa426948db1c",
-    "url": "/2020-06-Hipotrofia/static/js/main.3657f443.chunk.js"
+    "revision": "afebdc4fbf709bf0a14d",
+    "url": "/2020-06-Hipotrofia/static/js/main.4c0cf3ad.chunk.js"
   },
   {
     "revision": "02c8ce99886770aa7ad7",
     "url": "/2020-06-Hipotrofia/static/js/runtime-main.020e4572.js"
+  },
+  {
+    "revision": "52d30f70b4ca5164b134bbbc80e7725d",
+    "url": "/2020-06-Hipotrofia/static/media/abstract-login-image.52d30f70.png"
   },
   {
     "revision": "07f63c987ce96f664f1ee5f14d5604c8",
@@ -30,10 +34,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "abf40bc032014879829346fcf87e91c2",
     "url": "/2020-06-Hipotrofia/static/media/builder.abf40bc0.svg"
-  },
-  {
-    "revision": "d932c28965f4ef9863e69e6ab63e2835",
-    "url": "/2020-06-Hipotrofia/static/media/contact.d932c289.svg"
   },
   {
     "revision": "81a06831d5b633e143c53a9618c69eb6",
@@ -56,8 +56,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/2020-06-Hipotrofia/static/media/karolinaskorupska.c54cd8f7.png"
   },
   {
-    "revision": "025991890ea0a2bd2cf2087dff913b3a",
-    "url": "/2020-06-Hipotrofia/static/media/login.02599189.svg"
+    "revision": "113d6e618d83085cbd7b7bca4e12a0cf",
+    "url": "/2020-06-Hipotrofia/static/media/login.113d6e61.svg"
   },
   {
     "revision": "1a74501854883f9715b126c58dd44d5c",
@@ -88,8 +88,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/2020-06-Hipotrofia/static/media/roznicaMiedzySGAaIUGR.2e6f56db.png"
   },
   {
-    "revision": "b3530932f762d73044a27b36a107f5a1",
-    "url": "/2020-06-Hipotrofia/static/media/search.b3530932.svg"
+    "revision": "10ca1dbf4bf03d0ffb60e0d9045a0e49",
+    "url": "/2020-06-Hipotrofia/static/media/search.10ca1dbf.svg"
   },
   {
     "revision": "b1aba57bf3ca2099aa08d1fcea21b196",
