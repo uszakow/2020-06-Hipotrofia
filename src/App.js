@@ -1,60 +1,62 @@
-import React from 'react';
-import './App.scss';
+import React from "react";
+import "./App.scss";
 
-import {
-  HashRouter as Router,
-  Route,
-  Switch,
-} from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
-import Menu from './components/Menu/Menu';
-import Footer from './components/Footer/Footer';
-import ButtonUp from './components/ButtonUp/ButtonUp';
-import PageInConstruction from './components/PageInConstruction/PageInConstruction';
-import Page404 from './components/Page404/Page404';
+import Menu from "./components/Menu/Menu";
+import Footer from "./components/Footer/Footer";
+import ButtonUp from "./components/ButtonUp/ButtonUp";
+import PageInConstruction from "./components/PageInConstruction/PageInConstruction";
+import Page404 from "./components/Page404/Page404";
 
-import Home from './components/Home/Home';
-import CooperationPage from './components/Cooperation/Cooperation';
-import StoriesPage from './components/Stories/Stories';
-import LoginPage from './components/LoginPage/LoginPage';
-import ArticlesPage from './components/ArticlesPage/ArticlesPage';
+import Home from "./components/Home/Home";
+import CooperationPage from "./components/Cooperation/Cooperation";
+import StoriesPage from "./components/Stories/Stories";
+import LoginPage from "./container/LoginPage";
+import ArticlesPage from "./components/ArticlesPage/ArticlesPage";
+
+import { Provider } from "react-redux";
+import { PersistGate } from "redux-persist/integration/react";
+import {store, persistor } from './redux/store';
 
 function App() {
   return (
-    <Router>
+    <Provider store={store}>
+      <PersistGate  loading={null} persistor={persistor}>
+        <Router>
+          <div className="app-wrap">
+            <Menu />
 
-      <div className="app-wrap">
-        <Menu />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/help">
+                <PageInConstruction />
+              </Route>
+              <Route path="/stories" component={StoriesPage} />
+              <Route path="/blog">
+                <PageInConstruction />
+              </Route>
+              <Route path="/cooperation" component={CooperationPage} />
+              <Route path="/login" component={LoginPage} />
+              <Route path="/articles" component={ArticlesPage} />
+              <Route path="/pregnancy">
+                <PageInConstruction />
+              </Route>
+              <Route path="/children">
+                <PageInConstruction />
+              </Route>
+              <Route path="/inconstruction">
+                <PageInConstruction />
+              </Route>
+              <Route component={Page404} />
+            </Switch>
 
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/help">
-            <PageInConstruction />
-          </Route>
-          <Route path="/stories" component={StoriesPage} />
-          <Route path="/blog">
-            <PageInConstruction />
-          </Route>
-          <Route path="/cooperation" component={CooperationPage} />
-          <Route path="/login" cpomponent={LoginPage} />
-          <Route path="/articles" component={ArticlesPage}/>
-          <Route path="/pregnancy">
-            <PageInConstruction />
-          </Route>
-          <Route path="/children">
-            <PageInConstruction />
-          </Route>
-          <Route path="/inconstruction">
-            <PageInConstruction />
-          </Route>
-          <Route component={Page404} />
-        </Switch>
-
-        <Footer />
-        <ButtonUp />
-      </div>
-    
-    </Router>
+            <Footer />
+            <ButtonUp />
+          </div>
+        </Router>
+      </PersistGate>
+    </Provider>
   );
 }
 

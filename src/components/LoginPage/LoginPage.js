@@ -1,16 +1,16 @@
-import React, { Component, useState, useEffect } from "react";
-import { Link, withRouter } from "react-router-dom";
-// import { compose } from "recompose";
+import React, { Component } from "react";
+import { Link} from "react-router-dom";
+
 
 import "./loginpage.scss";
-import axios from "axios";
+
 import LoginPageImage from "../../img/Login/abstract-login-image.png";
 import LoginPageText from "../../img/Login/logo-hipotrofia 1.png";
 
-const LoginPage = () => (
+const LoginPage = ({user, loginUser, logoutUser}) => (
   <div className="container loginpage">
     <div className="loginpage-form-container">
-      <LoginFormBase />
+      <LoginFormBase  user={user} loginUser={loginUser} logoutUser={logoutUser}/>
     </div>
     <div className="loginpage-photo-container">
       <div className="background-image"  >
@@ -21,44 +21,32 @@ const LoginPage = () => (
   </div>
 );
 
-const INITIAL_STATE = {
-  email: "",
-  password: "",
-  errorEmail: "",
-  errorPassword: "",
-  isValid: false,
-  error: null,
-};
+
 
 class LoginFormBase extends Component {
+  
+
   constructor(props) {
     super(props);
-
-    this.state = { ...INITIAL_STATE };
+    this.state={...props}
   }
 
+
   onSubmit = (event) => {
-    const { email, password, error } = this.state;
-
-    //get z db potem funkcja z filter i dwie sciezki- do zalogowania i do bledu
-    
-    const [usersList, setUsersList] = useState([]);
-
-    useEffect(() => {
-      axios
-        .get("http://localhost:3001/users")
-        .then((response) => {
-          return response.json();
-        })
-        .then((data) => {
-          setUsersList(data);
-        });
-    }, []);
-
-    // IF wprowadzone dane = dane z bazy danych =>> zalogowano---> landing page / ---> nieprawidłowe dane, zapomniałeś hasła?
-
     event.preventDefault();
   };
+
+  onClick = ( )=>{
+    const userDto = {
+      token: '',
+      name: '', 
+      email: document.getElementById("email").value, 
+      roleName: '',
+    }
+
+    this.state.loginUser(userDto);
+
+  }
 
   onChange = (event) => {
     this.setState({ [event.target.name]: event.target.value });
@@ -94,9 +82,11 @@ class LoginFormBase extends Component {
   };
 
   render() {
-    const { email, password, errorEmail, errorPassword, error } = this.state;
+    // const { email, password, errorEmail, errorPassword, error } = this.state;
 
-    const isInvalid = password === "" || email === "";
+    // const isInvalid = password === "" || email === "";
+
+    console.log(this.state.user)
 
     return (
       <>
@@ -108,36 +98,42 @@ class LoginFormBase extends Component {
             <div className="email-container">
               <label>Email</label>
               <input
+                id="email"
                 name="email"
-                value={email}
+                // value={email}
                 onChange={this.onChange}
                 onBlur={this.validateEmail}
                 type="text"
                 placeholder="imię@email.com"
               />
             </div>
-            {errorEmail && <span className="errorMessage">{errorEmail}</span>}
+            {/* {errorEmail && <span className="errorMessage">{errorEmail}</span>} */}
 
             <div className="password-container">
               <label>Password</label>
               <input
+                id="password"
                 name="password"
-                value={password}
+                // value={password}
                 onChange={this.onChange}
                 onBlur={this.validatePassword}
                 type="password"
                 placeholder="Hasło"
               />
             </div>
-            {errorPassword && (
+            {/* {errorPassword && (
               <span className="errorMessage">{errorPassword}</span>
-            )}
+            )} */}
           </form>
         </div>
         <div className="loginpage-buttons-container">
-        <button  className="login-button" disabled={isInvalid} type="submit" onClick={this.onSubmit}>
+          {this.state.user.email === "" ?  <button  className="login-button"  type="submit" onClick={this.onClick}>
             Zaloguj
           </button>
+          :
+          <button className="logout-button" onClick={this.state.logoutUser}>Wyloguj</button>
+        }
+
           <p className="register-button">
             <Link to={"/register"}>Zarejestruj</Link>
           </p>
@@ -147,7 +143,7 @@ class LoginFormBase extends Component {
 
 
         </div>
-        {error && <p className="errorMessage">{error.message}</p>}
+        {/* {error && <p className="errorMessage">{error.message}</p>} */}
       </div>
 
 
