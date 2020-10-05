@@ -10,6 +10,7 @@
     font-size: 24px;
 }
 .container {
+    position: relative;
     max-width: $max-width;
     margin: auto;
     margin: 0 $side-sm 20px $side-sm;

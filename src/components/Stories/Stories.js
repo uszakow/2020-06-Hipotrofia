@@ -5,7 +5,7 @@ import Banner from "../Banner/Banner";
 import ButtonsAndText from "../ButtonsAndText/ButtonsAndText";
 import Post from "./Post";
 
-import bannerPhoto from "../../img/Banner/banner.svg";
+import bannerPhoto from '../../img/Banner/background.png';
 
 class StoriesPage extends Component {
   state = {

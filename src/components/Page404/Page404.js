@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Banner from '../Banner/Banner';
-import bannerPhoto from '../../img/Banner/banner.svg';
+import bannerPhoto from '../../img/Banner/background.png';
 
 function Page404() {
     return (
