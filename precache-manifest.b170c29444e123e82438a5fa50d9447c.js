@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ce032ea28d744d11941454d2730fd93a",
+    "revision": "c4ee3887eca62a8b8043f32dcc28cab4",
     "url": "/2020-06-Hipotrofia/index.html"
   },
   {
-    "revision": "aa1ab452e42989ca5e0b",
-    "url": "/2020-06-Hipotrofia/static/css/main.d9e938bd.chunk.css"
+    "revision": "04a9a946c1fea377f301",
+    "url": "/2020-06-Hipotrofia/static/css/main.011edb79.chunk.css"
   },
   {
     "revision": "f97b9341fe0783b16576",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/2020-06-Hipotrofia/static/js/2.68f3d378.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "aa1ab452e42989ca5e0b",
+    "revision": "04a9a946c1fea377f301",
     "url": "/2020-06-Hipotrofia/static/js/main.5687dbda.chunk.js"
   },
   {
