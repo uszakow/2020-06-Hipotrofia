@@ -1,8 +1,6 @@
 {
 	"pictures": {
-		"banner": {
-			"logo": "./../../img/Banner/logo-hipotrofia.png"
-		}
+		"banner": "Banner/logo-hipotrofia.png"
 	},
 	"tags": [
 		{
@@ -318,7 +316,7 @@
 		{
 			"name": "Paweł Uszakow",
 			"role": "front-end developer",
-			"photo": "/Footer/paweluszakow.png",
+			"photo": "paweluszakow.png",
 			"contacts": [
 				{
 					"GitHub": "https://github.com/uszakow"
@@ -331,7 +329,7 @@
 		{
 			"name": "Karolina Skorupska",
 			"role": "front-end developer",
-			"photo": "/Footer/karolinaskorupska.png",
+			"photo": "karolinaskorupska.png",
 			"contacts": [
 				{
 					"GitHub": "https://github.com/karolinaskorupska"
@@ -342,22 +340,22 @@
 			]
 		},
 		{
-			"name": "3Długieimię Długienazwisko",
-			"role": "funkcja",
-			"photo": "/Footer/author.png",
+			"name": "Anna Harat",
+			"role": "Projektant UX/UI",
+			"photo": "annaharat.jpg",
 			"contacts": [
 				{
-					"Figma": "#"
+					"Behance": "https://www.behance.net/annaharat"
 				},
 				{
-					"Facebook": "#"
+					"LinkedIn": "https://www.linkedin.com/in/anna-harat-502560176/"
 				}
 			]
 		},
 		{
 			"name": "4Imię Nazwisko",
 			"role": "funkcja",
-			"photo": "/Footer/author.png",
+			"photo": "author.png",
 			"contacts": [
 				{
 					"GitHub": "#"
@@ -373,7 +371,7 @@
 		{
 			"name": "5Imię Nazwisko",
 			"role": "funkcja",
-			"photo": "/Footer/author.png",
+			"photo": "author.png",
 			"contacts": [
 				{
 					"site": "site"
@@ -386,36 +384,41 @@
 		{
 			"name": "6Imię Nazwisko",
 			"role": "funkcja",
-			"photo": "/Footer/author.png",
+			"photo": "author.png",
 			"contacts": [
-				{ "GitHub": "#"
+				{
+					"GitHub": "#"
 				},
-				{ "LinkedIn": "#"
+				{
+					"LinkedIn": "#"
 				}
 			]
 		},
 		{
 			"name": "7Imię Nazwisko",
 			"role": "funkcja w projekcie",
-			"photo": "/Footer/author.png",
+			"photo": "author.png",
 			"contacts": [
-				{ "GitHub": "#"
+				{
+					"GitHub": "#"
 				},
-				{ "LinkedIn": "#"
+				{
+					"LinkedIn": "#"
 				}
 			]
 		},
 		{
 			"name": "8Długieimię Długienazwisko",
 			"role": "funkcja rola",
-			"photo": "/Footer/author.png",
+			"photo": "author.png",
 			"contacts": [
-				{ "GitHub": "#"
+				{
+					"GitHub": "#"
 				},
-				{ "LinkedIn": "#"
+				{
+					"LinkedIn": "#"
 				}
 			]
 		}
 	]
 }
- 

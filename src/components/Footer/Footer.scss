@@ -1,6 +1,7 @@
 @import "../../variables";
 
 .footer-container {
+    min-height: 170px;
     background-color: $grey-medium;
     padding: 30px $side-sm;
 }
@@ -14,7 +15,7 @@
 
 @media (min-width: $md) {
     .footer-container {
-        padding: 30px $side-md;
+        padding: 30px $side-md 50px;
     }
     .footer-content {
         grid-template-columns: repeat(2, max-content);
@@ -23,7 +24,7 @@
 }
 @media (min-width: $xl) {
     .footer-container {
-        padding: 30px $side-xl;
+        padding: 30px $side-xl 50px;
     }
     .footer-content {
         grid-template-columns: repeat(3, max-content);
