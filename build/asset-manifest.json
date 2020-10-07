@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/2020-06-Hipotrofia/static/css/main.d9e938bd.chunk.css",
+    "main.css": "/2020-06-Hipotrofia/static/css/main.011edb79.chunk.css",
     "main.js": "/2020-06-Hipotrofia/static/js/main.5687dbda.chunk.js",
     "main.js.map": "/2020-06-Hipotrofia/static/js/main.5687dbda.chunk.js.map",
     "runtime-main.js": "/2020-06-Hipotrofia/static/js/runtime-main.020e4572.js",
@@ -8,9 +8,9 @@
     "static/js/2.68f3d378.chunk.js": "/2020-06-Hipotrofia/static/js/2.68f3d378.chunk.js",
     "static/js/2.68f3d378.chunk.js.map": "/2020-06-Hipotrofia/static/js/2.68f3d378.chunk.js.map",
     "index.html": "/2020-06-Hipotrofia/index.html",
-    "precache-manifest.4c5a2e2a798b7a81c3de3494cbb63b94.js": "/2020-06-Hipotrofia/precache-manifest.4c5a2e2a798b7a81c3de3494cbb63b94.js",
+    "precache-manifest.b170c29444e123e82438a5fa50d9447c.js": "/2020-06-Hipotrofia/precache-manifest.b170c29444e123e82438a5fa50d9447c.js",
     "service-worker.js": "/2020-06-Hipotrofia/service-worker.js",
-    "static/css/main.d9e938bd.chunk.css.map": "/2020-06-Hipotrofia/static/css/main.d9e938bd.chunk.css.map",
+    "static/css/main.011edb79.chunk.css.map": "/2020-06-Hipotrofia/static/css/main.011edb79.chunk.css.map",
     "static/js/2.68f3d378.chunk.js.LICENSE.txt": "/2020-06-Hipotrofia/static/js/2.68f3d378.chunk.js.LICENSE.txt",
     "static/media/abstract-login-image.png": "/2020-06-Hipotrofia/static/media/abstract-login-image.52d30f70.png",
     "static/media/annaharat.jpg": "/2020-06-Hipotrofia/static/media/annaharat.12e42455.jpg",
@@ -35,7 +35,7 @@
   "entrypoints": [
     "static/js/runtime-main.020e4572.js",
     "static/js/2.68f3d378.chunk.js",
-    "static/css/main.d9e938bd.chunk.css",
+    "static/css/main.011edb79.chunk.css",
     "static/js/main.5687dbda.chunk.js"
   ]
 }

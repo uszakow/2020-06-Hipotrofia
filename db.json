@@ -1,7 +1,13 @@
 {
-	"pictures": {
-		"banner": "Banner/logo-hipotrofia.png"
-	},
+	"pictures": [
+		{
+			"id": "banner",
+			"pictures": {
+				"logo": "/Banner/logo-hipotrofia.png",
+				"background": "/Banner/background.png"
+			}
+		}
+	],
 	"tags": [
 		{
 			"id": 1,
@@ -122,7 +128,7 @@
 		{
 			"id": 1,
 			"title": "Hipotrofia",
-			"contents": "Hipotrofię definiuje się jako wewnątrzmaciczne ograniczenie wzrastania płodu. To zbyt mała masa ciała w stosunku do wieku ciążowego. Rozróżnia się następujące rodzaje hipotrofii:\nhipotrofia symetryczna - wymiary ciała zmniejszają się proporcjonalnie;\nhipotrofia asymetryczna - obwód główki i długość ciała dziecka określa się jako względnie prawidłowe, a obwód brzucha jest zbyt mały. Hipotrofia asymetryczna dotyczy zdecydowanej większości przypadków.\nOstateczne rozpoznanie hipotrofii następuje dopiero po urodzeniu dziecka. Ocenia się parametry anatomiczne i czynnościowe niemowlaka. U noworodka hipotroficznego obserwuje się: wychudzenie; luźną, wysuszoną skórę; słabo rozwiniętą tkankę podskórną; rzadkie włosy; szybko wysychającą pępowinę, wstrzymanie moczu w pierwszych godzinach po urodzeniu, dwa naczynia w sznurze pępowinowym.",
+			"contents": "Hipotrofię definiuje się jako wewnątrzmaciczne ograniczenie wzrastania płodu. To zbyt mała masa ciała w stosunku do wieku ciążowego. Rozróżnia się następujące rodzaje hipotrofii:\nhipotrofia symetryczna - wymiary ciała zmniejszają się proporcjonalnie;\nhipotrofia asymetryczna - obwód główki i długość ciała dziecka określa się jako względnie prawidłowe, a obwód brzucha jest zbyt mały. Hipotrofia asymetryczna dotyczy zdecydowanej większości przypadków.\nOstateczne rozpoznanie hipotrofii następuje dopiero po urodzeniu dziecka. Ocenia się parametry anatomiczne i czynnościowe niemowlaka. U noworodka hipotroficznego obserwuje się: wychudzenie; luźną, wysuszoną skórę; słabo rozw iniętą tkankę podskórną; rzadkie włosy; szybko wysychającą pępowinę, wstrzymanie moczu w pierwszych godzinach po urodzeniu, dwa naczynia w sznurze pępowinowym.",
 			"created": "2020-06-15T00:00:00.000+00:00",
 			"author": {
 				"id": 1,

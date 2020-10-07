@@ -6,7 +6,7 @@ import Text from './HomeText/Text';
 
 import bannerPhoto from '../../img/Banner/background.png';
 
-function Home() {
+function Home() {    
     return (
         <>
             <Banner photo={bannerPhoto} />
