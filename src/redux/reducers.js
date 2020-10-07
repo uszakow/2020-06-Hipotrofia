@@ -12,7 +12,7 @@ const INITIAL_STATE = {
     roleName: '',
 
   };
-
+//obiekt ktory definiuje stan 
 const activeUser = (state= INITIAL_STATE,  action )=>{ 
     switch (action.type) {
         case LOGIN:
@@ -35,3 +35,4 @@ const activeUser = (state= INITIAL_STATE,  action )=>{
 };
 
 export default combineReducers({activeUser});
+//wrzuca obiekty do stora

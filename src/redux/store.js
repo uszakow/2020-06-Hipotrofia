@@ -17,3 +17,4 @@ let store = createStore(persistedReducer, composeWithDevTools(applyMiddleware(..
 let persistor = persistStore(store);
 
 export {store, persistor};
+//persistor- podreczna pamięć się kasuje- przerzuca do storage (local lub session)
