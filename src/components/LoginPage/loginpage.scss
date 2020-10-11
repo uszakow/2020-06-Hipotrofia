@@ -89,7 +89,7 @@
         .loginpage-buttons-container{
             margin-top: 45px;
 
-            .login-button, .register-button{
+            .login-button, .register-button, .logout-button{
                 width: 278px;
                 height: 54px;
                 border: 1px solid $blue-medium; 
@@ -111,6 +111,11 @@
                     color:$blue-medium;
                     text-decoration: none;
                 }
+            }
+            .logout-button{
+                background-color: $grey-medium;
+                border: none;
+                cursor: pointer;
             }
 
         }

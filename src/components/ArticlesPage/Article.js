@@ -18,7 +18,7 @@ class Article extends Component {
         <div className=" article-horizontal-line"></div>
         <div className=" article-content">
           <div className=" article-content-avatar-image">
-            <img src={AvatarImage}></img>
+            <img src={AvatarImage} alt="avatar"></img>
           </div>
           <div className=" article-content-text">
             <div className=" article-content-text-header">
@@ -27,7 +27,7 @@ class Article extends Component {
                 <p>Data utworzenia</p>
               </div>
 
-              <img src={HeartImage}></img>
+              <img src={HeartImage} alt="heart"></img>
             </div>
             <div className="article-content-text-body-box">
               <div className="article-content-text-body-box-content">
@@ -40,23 +40,23 @@ class Article extends Component {
               <div className="horizontal-line-short"></div>
               <div className="article-content-text-body-box-content-action-box">
                 <div className="thumb-up">
-                  <img src={ThumbUpImage}></img>
+                  <img src={ThumbUpImage} alt="thumb up"></img>
                   Doceń
                 </div>
                 <div className="comment">
-                  <img src={MessageSquareImage}></img>
+                  <img src={MessageSquareImage} alt="message"></img>
                   Skomentuj
                 </div>
                 <div className="share">
-                  <img src={ShareImage}></img>
+                  <img src={ShareImage} alt="share"></img>
                   Udostępnij
                 </div>
                 <div className="edit">
-                  <img src={EditImage}></img>
+                  <img src={EditImage} alt="edit"></img>
                   Edytuj
                 </div>
                 <div className="delete">
-                  <img src={DeleteImage}></img>
+                  <img src={DeleteImage} alt="delete"></img>
                   Usuń
                 </div>
               </div>

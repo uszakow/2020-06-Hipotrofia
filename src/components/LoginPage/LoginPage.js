@@ -1,42 +1,16 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
-
 import "./loginpage.scss";
-
-import LoginPageImage from "../../img/Login/abstract-login-image.png";
 import LoginPageText from "../../img/Login/logo-hipotrofia 1.png";
-
-/* const LoginPage = ({ user, loginUser, logoutUser }) => (
-  <div className="container loginpage">
-    <div className="loginpage-form-container">
-      <LoginFormBase
-        user={user}
-        loginUser={loginUser}
-        logoutUser={logoutUser}
-      />
-    </div>
-    <div className="loginpage-photo-container">
-      <div className="background-image">
-        <img
-          className="text-image"
-          src={LoginPageText}
-          alt="login page text hipotrofia"
-        ></img>
-      </div>
-    </div>
-  </div>
-); */
 
 class LoginPage extends Component {
   constructor(props) {
     super(props);
-    this.state = {...props };
+    this.state = { ...props };
   }
-  
+
   onSubmit = (event) => {
-    
     event.preventDefault();
-    
   };
 
   onClick = () => {
@@ -51,14 +25,13 @@ class LoginPage extends Component {
   };
 
   onChange = (event) => {
-
     // this.setState({ [event.target.name]: event.target.value });
   };
 
   validateEmail = () => {
     const { email } = this.state;
     let isEmailValid = true;
-    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!re.test(email)) {
       isEmailValid = false;
       this.setState({ errorEmail: "Podany email jest nieprawidłowy!" });
@@ -95,50 +68,66 @@ class LoginPage extends Component {
       <div className="container loginpage">
         <div className="loginpage-form-container">
           <div className="loginpage-form-container-form">
-            <h1>Witamy...</h1>
+            {this.props.user.email === "" ? (
+              <h1>Witamy...</h1>
+            ) : (
+              <h1>Witamy {this.props.user.email}</h1>
+            )}
 
-            <div className="LoginBox">
-              <form onSubmit={this.onSubmit}>
-                <div className="email-container">
-                  <label>Email</label>
-                  <input
-                    id="email"
-                    name="email"
-                    // value={email}
-                    onChange={this.onChange}
-                    // onBlur={this.validateEmail}
-                    type="text"
-                    placeholder="imię@email.com"
-                  />
-                </div>
-                {/* {errorEmail && <span className="errorMessage">{errorEmail}</span>} */}
+            {this.props.user.email === "" && 
+                        <div className="LoginBox">
+                        <form onSubmit={this.onSubmit}>
+                          <div className="email-container">
+                            <label>Email</label>
+                            <input
+                              id="email"
+                              name="email"
+                              // value={email}
+                              onChange={this.onChange}
+                              // onBlur={this.validateEmail}
+                              type="text"
+                              placeholder="imię@email.com"
+                            />
+                          </div>
+                          {/* {errorEmail && <span className="errorMessage">{errorEmail}</span>} */}
+          
+                          <div className="password-container">
+                            <label>Password</label>
+                            <input
+                              id="password"
+                              name="password"
+                              // value={password}
+                              onChange={this.onChange}
+                              onBlur={this.validatePassword}
+                              type="password"
+                              placeholder="Hasło"
+                            />
+                          </div>
+                          {/* {errorPassword && (
+                        <span className="errorMessage">{errorPassword}</span>
+                      )} */}
+                        </form>
+                      </div>
+                      }  
 
-                <div className="password-container">
-                  <label>Password</label>
-                  <input
-                    id="password"
-                    name="password"
-                    // value={password}
-                    onChange={this.onChange}
-                    onBlur={this.validatePassword}
-                    type="password"
-                    placeholder="Hasło"
-                  />
-                </div>
-                {/* {errorPassword && (
-              <span className="errorMessage">{errorPassword}</span>
-            )} */}
-              </form>
-            </div>
             <div className="loginpage-buttons-container">
-              {this.state.user.email === "" ? (
-                <button
-                  className="login-button"
-                  type="submit"
-                  onClick={this.onClick}
-                >
-                  Zaloguj
-                </button>
+              {this.props.user.email === "" ? (
+                <>
+                  <button
+                    className="login-button"
+                    type="submit"
+                    onClick={this.onClick}
+                  >
+                    Zaloguj
+                  </button>
+
+                  <p className="register-button">
+                    <Link to={"/register"}>Zarejestruj</Link>
+                  </p>
+                  <p className="forget-password">
+                    <Link to={"/"}>Zapomniałeś hasła?</Link>
+                  </p>
+                </>
               ) : (
                 <button
                   className="logout-button"
@@ -147,13 +136,6 @@ class LoginPage extends Component {
                   Wyloguj
                 </button>
               )}
-
-              <p className="register-button">
-                <Link to={"/register"}>Zarejestruj</Link>
-              </p>
-              <p className="forget-password">
-                <Link to={"/"}>Zapomniałeś hasła?</Link>
-              </p>
             </div>
             {/* {error && <p className="errorMessage">{error.message}</p>} */}
           </div>
