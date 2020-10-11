@@ -99,6 +99,7 @@
                 font-size: 18px;
                 line-height: 22px;
                 font-family: $basic;
+                cursor: pointer;
             }
             .login-button{
                 background-color: $blue-medium;
@@ -115,7 +116,7 @@
             .logout-button{
                 background-color: $grey-medium;
                 border: none;
-                cursor: pointer;
+                
             }
 
         }

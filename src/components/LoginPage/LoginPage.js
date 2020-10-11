@@ -6,7 +6,15 @@ import LoginPageText from "../../img/Login/logo-hipotrofia 1.png";
 class LoginPage extends Component {
   constructor(props) {
     super(props);
-    this.state = { ...props };
+    this.state = {
+      ...props,
+      email: "",
+      errorEmail: "",
+      password: "",
+      errorPassword: "",
+      error:null,
+      isInvalid:false
+    };
   }
 
   onSubmit = (event) => {
@@ -58,9 +66,9 @@ class LoginPage extends Component {
   };
 
   render() {
-    // const { email, password, errorEmail, errorPassword, error } = this.state;
+    const { email, password, errorEmail, errorPassword, error } = this.state;
 
-    // const isInvalid = password === "" || email === "";
+    const isInvalid = password === "" || email === "";
 
     console.log(this.props);
 
@@ -74,41 +82,41 @@ class LoginPage extends Component {
               <h1>Witamy {this.props.user.email}</h1>
             )}
 
-            {this.props.user.email === "" && 
-                        <div className="LoginBox">
-                        <form onSubmit={this.onSubmit}>
-                          <div className="email-container">
-                            <label>Email</label>
-                            <input
-                              id="email"
-                              name="email"
-                              // value={email}
-                              onChange={this.onChange}
-                              // onBlur={this.validateEmail}
-                              type="text"
-                              placeholder="imię@email.com"
-                            />
-                          </div>
-                          {/* {errorEmail && <span className="errorMessage">{errorEmail}</span>} */}
-          
-                          <div className="password-container">
-                            <label>Password</label>
-                            <input
-                              id="password"
-                              name="password"
-                              // value={password}
-                              onChange={this.onChange}
-                              onBlur={this.validatePassword}
-                              type="password"
-                              placeholder="Hasło"
-                            />
-                          </div>
-                          {/* {errorPassword && (
+            {this.props.user.email === "" && (
+              <div className="LoginBox">
+                <form onSubmit={this.onSubmit}>
+                  <div className="email-container">
+                    <label>Email</label>
+                    <input
+                      id="email"
+                      name="email"
+                      // value={email}
+                      onChange={this.onChange}
+                      onBlur={this.validateEmail}
+                      type="text"
+                      placeholder="imię@email.com"
+                    />
+                  </div>
+                  {errorEmail && <span className="errorMessage">{errorEmail}</span>}
+
+                  <div className="password-container">
+                    <label>Password</label>
+                    <input
+                      id="password"
+                      name="password"
+                      // value={password}
+                      onChange={this.onChange}
+                      onBlur={this.validatePassword}
+                      type="password"
+                      placeholder="Hasło"
+                    />
+                  </div>
+                  {/* {errorPassword && (
                         <span className="errorMessage">{errorPassword}</span>
                       )} */}
-                        </form>
-                      </div>
-                      }  
+                </form>
+              </div>
+            )}
 
             <div className="loginpage-buttons-container">
               {this.props.user.email === "" ? (
