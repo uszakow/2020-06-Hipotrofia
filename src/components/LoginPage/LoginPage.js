@@ -70,8 +70,6 @@ class LoginPage extends Component {
 
     const isInvalid = password === "" || email === "";
 
-    console.log(this.props);
-
     return (
       <div className="container loginpage">
         <div className="loginpage-form-container">
@@ -100,7 +98,7 @@ class LoginPage extends Component {
                   {errorEmail && <span className="errorMessage">{errorEmail}</span>}
 
                   <div className="password-container">
-                    <label>Password</label>
+                    <label>Hasło</label>
                     <input
                       id="password"
                       name="password"
@@ -162,7 +160,7 @@ class LoginPage extends Component {
   }
 }
 
-/// komponent funkcyjny
+
 
 export default LoginPage;
 

@@ -14,6 +14,7 @@ import CooperationPage from "./components/Cooperation/Cooperation";
 import StoriesPage from "./components/Stories/Stories";
 import LoginPage from "./container/LoginPage";
 import ArticlesPage from "./components/ArticlesPage/ArticlesPage";
+import SignUpPage from './components/SignUpPage/SignUpPage';
 
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
@@ -38,6 +39,7 @@ function App() {
               </Route>
               <Route path="/cooperation" component={CooperationPage} />
               <Route path="/login" component={LoginPage} />
+              <Route path="/signup" component={SignUpPage} />
               <Route path="/articles" component={ArticlesPage} />
               <Route path="/pregnancy">
                 <PageInConstruction />
