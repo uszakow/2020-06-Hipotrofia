@@ -12,7 +12,15 @@ import AvatarImage from "../../img/Articles/woman-wearing-coat-762020 1.png";
 
 
 class Article extends Component {
+   state={
+     wrapperIsOpen:false
+   };
+   wrapperHandler = () => {
+     this.setState({wrapperIsOpen:!this.state.wrapperIsOpen})
+   }
   render() {
+
+    const { title, contents, created, author } = this.props.article;
     return (
       <div className="article">
         <div className=" article-horizontal-line"></div>
@@ -23,15 +31,15 @@ class Article extends Component {
           <div className=" article-content-text">
             <div className=" article-content-text-header">
               <div className="article-content-text-header-box">
-                <h1>Tytuł artykułu</h1>
-                <p>Data utworzenia</p>
+                <h1>{title}</h1>
+                <p>{created}</p>
               </div>
 
               <img src={HeartImage} alt="heart"></img>
             </div>
             <div className="article-content-text-body-box">
               <div className="article-content-text-body-box-content">
-                treść artykułu blablabla
+                {contents}
               </div>
               <p>Czytaj więcej</p>
 

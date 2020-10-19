@@ -20,13 +20,10 @@ class SignUpPage extends Component{
 
     onClick = () => {
         const user= {
-          token: "",
           name: "",
           email: this.state.email,
-          roleName: "ROLE_USER",
           password:this.state.password,
           secondPassword:this.state.secondPassword,
-          active:true
         };
     
         
@@ -87,6 +84,20 @@ class SignUpPage extends Component{
             
               <div className="signup-box">
                 <form onSubmit={this.onSubmit}>
+
+                <div className="name-container">
+                    <label>Twój Nick</label>
+                    <input
+                      id="name"
+                      name="name"
+                      // value={email}
+                      onChange={this.onChange}
+                      // onBlur={this.validateEmail}
+                      type="text"
+                      placeholder="Twój Nick"
+                    />
+                  </div>
+
                   <div className="email-container">
                     <label>Email</label>
                     <input
