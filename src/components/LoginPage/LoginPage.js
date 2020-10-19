@@ -128,7 +128,7 @@ class LoginPage extends Component {
                   </button>
 
                   <p className="register-button">
-                    <Link to={"/register"}>Zarejestruj</Link>
+                    <Link to={"/signup"}>Zarejestruj</Link>
                   </p>
                   <p className="forget-password">
                     <Link to={"/"}>Zapomniałeś hasła?</Link>

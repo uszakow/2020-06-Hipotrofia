@@ -25,11 +25,19 @@ const getUser = async (userDto) => {
         .then(result => result.json())
         .then(result => result[0])
         .then(result => result.token)
-        .then(result => parseJwt(result))}
+        .then(result => parseJwt(result))
+      
+  };
+
+
 
         //funkcja, wywołanie dwóch akcji jedna po drugiej / dispatch - wywołuje funkcje, które mają wpływ na reducer
     const loginUser = (userDto) => (dispatch) => {    getUser(userDto)
-      .then(result => dispatch(login(result)));    }    
+      .then(result => dispatch(login(result)));    } ;
+      
+      
+     
+       
       //funkcja która wyciaga dane z tokenu
       const parseJwt = (token) => {
       try {

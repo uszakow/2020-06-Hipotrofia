@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import "./signUpPage.scss";
 import { Link } from "react-router-dom";
 import LoginPageText from "../../img/Login/logo-hipotrofia 1.png";
+import Axios from "axios";
 
 class SignUpPage extends Component{
-    constructor(props){
-        super(props);
-        this.state={...props,
+    constructor(){
+        super();
+        this.state={
         email:"",
         errorEmail:"",
         password:"",
@@ -18,17 +19,26 @@ class SignUpPage extends Component{
     }
 
     onClick = () => {
-        const userDto = {
+        const user= {
           token: "",
           name: "",
-          email: document.getElementById("email").value,
-          roleName: "",
+          email: this.state.email,
+          roleName: "ROLE_USER",
+          password:this.state.password,
+          secondPassword:this.state.secondPassword,
+          active:true
         };
     
-        this.state.loginUser(userDto);
+        
+
+        Axios.post(`http://localhost:3001/users`, {user})
+        .then(response => {
+          console.log(response);
+          console.log(response.data)
+        })
       };
       onChange = (event) => {
-        // this.setState({ [event.target.name]: event.target.value });
+        this.setState({ [event.target.name]: event.target.value });
       };
       validateEmail = () => {
         const { email } = this.state;
@@ -58,6 +68,8 @@ class SignUpPage extends Component{
         }
         return isPasswordValid;
       };
+
+
     
     render(){
 

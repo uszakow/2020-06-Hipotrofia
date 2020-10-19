@@ -5,14 +5,14 @@ import {combineReducers} from 'redux';
 // //? nie wiem czy trzeba
 
 const INITIAL_STATE = {
-
     token: '',
     name: '', 
     email: '', 
     roleName: '',
-
   };
-//obiekt ktory definiuje stan 
+
+
+//obiekt ktory definiuje stan - funkcja switch - nazwa obiektu pdrzechowywanego w storze
 const activeUser = (state= INITIAL_STATE,  action )=>{ 
     switch (action.type) {
         case LOGIN:
