@@ -111,12 +111,27 @@
                     font-size: 18px;
                     line-height: 22px;
                     font-weight: 400;
+                    .article-content-text-body-box-content{
+                        display: block;
+                        height: auto;
+                    }
+                    .article-content-text-body-box-content-hidden{
+                        display: block;
+                        height: 40px;
+                        overflow: hidden;
+                    }
 
                     p{
                         cursor: pointer;
                         text-decoration: underline;
                         font-size: 18px;
                         line-height: 22px;
+                    }
+                    p.article-button-show-more-hidden{
+                        display: none;
+                    }
+                    p.article-button-hide-hidden{
+                        display: none;
                     }
                     .horizontal-line-short{
                         width: 100%;

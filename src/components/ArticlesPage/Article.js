@@ -38,12 +38,36 @@ class Article extends Component {
               <img src={HeartImage} alt="heart"></img>
             </div>
             <div className="article-content-text-body-box">
-              <div className="article-content-text-body-box-content">
+             
+             
+             <div className={
+               this.state.wrapperIsOpen
+               ? "article-content-text-body-box-content"
+               : "article-content-text-body-box-content-hidden"
+             }
+             >
                 {contents}
               </div>
-              <p>Czytaj więcej</p>
+              <p
+              onClick={this.wrapperHandler}
+              className={
+                this.state.wrapperIsOpen
+                ? "article-button-show-more-hidden"
+                : "article-button-show-more"
+              }>
+                Czytaj więcej
+              </p>
+              <p
+              onClick={this.wrapperHandler}
+              className={
+                this.state.wrapperIsOpen
+                ? "article-button-hide"
+                : "article-button-hide-hidden"
+              }>
+                Czytaj mniej
+              </p>
 
-              <p>Czytaj mniej</p>
+
 
               <div className="horizontal-line-short"></div>
               <div className="article-content-text-body-box-content-action-box">
