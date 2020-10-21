@@ -22,7 +22,7 @@ class ArticlesPage extends Component{
     }
 
     render(){
-        
+        console.log("to są propsy" + this.props);
         return(
             <div className="ArticlesPage container">
             <Banner/>

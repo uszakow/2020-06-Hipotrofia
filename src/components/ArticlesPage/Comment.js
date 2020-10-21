@@ -5,6 +5,10 @@ import SettingsImage from "../../img/Articles/Group 100.png";
 import ThumbUpImage from "../../img/Articles/thumbs-up.png";
 import MessageSquareImage from "../../img/Articles/message-square.png";
 
+
+//zrobić wyciąganie komentarzy z bazy dancyh , tylko te, które == id
+
+
 const Comment = () => {
   return (
     <>

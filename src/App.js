@@ -3,7 +3,7 @@ import "./App.scss";
 
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
-import Menu from "./components/Menu/Menu";
+import Menu from "./container/Menu";
 import Footer from "./components/Footer/Footer";
 import ButtonUp from "./components/ButtonUp/ButtonUp";
 import PageInConstruction from "./components/PageInConstruction/PageInConstruction";
@@ -13,7 +13,7 @@ import Home from "./components/Home/Home";
 import CooperationPage from "./components/Cooperation/Cooperation";
 import StoriesPage from "./components/Stories/Stories";
 import LoginPage from "./container/LoginPage";
-import ArticlesPage from "./components/ArticlesPage/ArticlesPage";
+import ArticlesPage from "./container/ArticlesPage";
 import SignUpPage from './components/SignUpPage/SignUpPage';
 
 import { Provider } from "react-redux";

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Comment from './Comment';
+import Comment from "./Comment";
 
 import HeartImage from "../../img/Articles/Vector.png";
 import ThumbUpImage from "../../img/Articles/thumbs-up.png";
@@ -10,17 +10,15 @@ import EditImage from "../../img/Articles/edit-3.png";
 import DeleteImage from "../../img/Articles/trash.png";
 import AvatarImage from "../../img/Articles/woman-wearing-coat-762020 1.png";
 
-
 class Article extends Component {
-   state={
-     wrapperIsOpen:false
-   };
-   wrapperHandler = () => {
-     this.setState({wrapperIsOpen:!this.state.wrapperIsOpen})
-   }
+  state = {
+    wrapperIsOpen: false,
+  };
+  wrapperHandler = () => {
+    this.setState({ wrapperIsOpen: !this.state.wrapperIsOpen });
+  };
   render() {
-
-    const { title, contents, created, author } = this.props.article;
+    const { title, contents, created, author, id } = this.props.article;
     return (
       <div className="article">
         <div className=" article-horizontal-line"></div>
@@ -38,36 +36,35 @@ class Article extends Component {
               <img src={HeartImage} alt="heart"></img>
             </div>
             <div className="article-content-text-body-box">
-             
-             
-             <div className={
-               this.state.wrapperIsOpen
-               ? "article-content-text-body-box-content"
-               : "article-content-text-body-box-content-hidden"
-             }
-             >
+              <div
+                className={
+                  this.state.wrapperIsOpen
+                    ? "article-content-text-body-box-content"
+                    : "article-content-text-body-box-content-hidden"
+                }
+              >
                 {contents}
               </div>
               <p
-              onClick={this.wrapperHandler}
-              className={
-                this.state.wrapperIsOpen
-                ? "article-button-show-more-hidden"
-                : "article-button-show-more"
-              }>
+                onClick={this.wrapperHandler}
+                className={
+                  this.state.wrapperIsOpen
+                    ? "article-button-show-more-hidden"
+                    : "article-button-show-more"
+                }
+              >
                 Czytaj więcej
               </p>
               <p
-              onClick={this.wrapperHandler}
-              className={
-                this.state.wrapperIsOpen
-                ? "article-button-hide"
-                : "article-button-hide-hidden"
-              }>
+                onClick={this.wrapperHandler}
+                className={
+                  this.state.wrapperIsOpen
+                    ? "article-button-hide"
+                    : "article-button-hide-hidden"
+                }
+              >
                 Czytaj mniej
               </p>
-
-
 
               <div className="horizontal-line-short"></div>
               <div className="article-content-text-body-box-content-action-box">
@@ -96,12 +93,7 @@ class Article extends Component {
           </div>
         </div>
         <div className="article-comments">
-        <Comment/>
-
-          
-
-
-
+          <Comment id={id} />
         </div>
       </div>
     );
