@@ -1,0 +1,223 @@
+@import "../../variables";
+
+.ArticlesPage {
+    // width: 100%;
+    // display: flex;
+    // flex-direction: column;
+    font-family: $basic;
+    
+    
+    .ArticlesBanner{
+        
+        height: 249px;
+        border-radius: 10px;
+        background-image: url("../../img/Articles/pexels-taryn-elliott-3889795\ 1.png");
+        position: relative;
+        // background-repeat: no-repeat;
+
+        @media(max-width:$xl){
+            background-position-x: 80%;
+            overflow: hidden;
+        }
+        @media(max-width:$sm){
+            background-image: none;
+        }
+
+        .ArticlesBanner-TextBox{
+            background-color: #858181;
+            width: 337px;
+            height: 249px;
+            position: absolute;
+            right: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            @media(max-width: $md){
+                right: 0;
+                border-radius: 10px;
+            }
+            @media(max-width:$sm){
+                right: auto;
+            }
+
+            img{
+                margin-right: 10px;
+            }
+            .line{
+                width: 5px;
+                height: 249px;
+                margin: 10px;
+                padding:0;
+                background-color: $grey-light;
+
+                @media(max-width: $md){
+                    display: none;
+                }
+        
+            }
+        }
+    }
+    .article{
+        padding-top: 30px;
+        .article-horizontal-line{
+            width: 100%;
+            height: 2px;
+            background-color: $grey-medium;
+        }
+        .article-content{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            @media(max-width:$md){
+                flex-direction: column;
+            }
+
+            .article-content-avatar-image {
+                padding-top: 10px;
+                margin-right: 20px;
+
+                img{
+                    border-radius: 50%;
+                }
+            }
+            .article-content-text{
+                width: 85%;
+                
+                .article-content-text-header{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: flex-start;
+
+                    h1{
+                        font-size: 20px;
+                        font-weight: 700;
+                        color:#412a2a ;
+                    }
+                    p{
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+
+                    img{
+                        padding-top: 20px;
+                    }
+                }
+                .article-content-text-body-box{
+                    font-size: 18px;
+                    line-height: 22px;
+                    font-weight: 400;
+                    .article-content-text-body-box-content{
+                        display: block;
+                        height: auto;
+                    }
+                    .article-content-text-body-box-content-hidden{
+                        display: block;
+                        height: 40px;
+                        overflow: hidden;
+                    }
+
+                    p{
+                        cursor: pointer;
+                        text-decoration: underline;
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
+                    p.article-button-show-more-hidden{
+                        display: none;
+                    }
+                    p.article-button-hide-hidden{
+                        display: none;
+                    }
+                    .horizontal-line-short{
+                        width: 100%;
+                        height: 2px;
+                        background-color: $grey-medium;
+                    }
+                    .article-content-text-body-box-content-action-box{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 20px 0;
+                        @media(max-width:$md){
+                            flex-direction: column;
+                            
+                            align-items: flex-start;
+                        }
+
+                        div{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                            img{
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .article-comments{
+            
+            .article-comments-header{
+                width: 100%;
+                height: 60px;
+                background-color: #dedada;
+                font-size: 20px;
+                line-height: 24px;
+                padding:15px 10px;
+                margin:10px 0;
+            }
+            .article-comments-comment{
+                background-color: #f7f7f7;
+                width: 100%;
+                padding:10px;
+                display: flex;
+                flex-direction: row;
+                @media(max-width:$md){
+                    flex-direction: column;
+                }
+                 img.avatar-image{
+                     border-radius:50%;
+                     width: 103px;
+                     height: 103px;
+                     margin-right: 20px;
+                 }
+                 .article-comments-comment-content{
+                     width: 100%;
+                     .article-comments-comment-content-header{
+                         display: flex;
+                         flex-direction: row;
+                         justify-content: space-between;
+                         align-items: center;
+                         img.settings{
+                             cursor: pointer;
+                         }
+                     }
+
+                     .article-comments-comment-content-action-box{
+                         display: flex;
+                         flex-direction: row;
+                         justify-content: end;
+                         align-items: center;
+                         padding: 5px 30px;
+
+                         div{
+                             padding:0 20px;
+                             img{
+                                 margin-right: 15px;
+                             }
+                         }
+                     }
+                 }
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
 @import "../../variables";
 
-    .loginpage{
+    .signup-page{
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -8,7 +8,7 @@
         width: 90%;
         height: 90vh;
 
-        .loginpage-form-container{
+        .signup-form-container{
             height: 100%;
             width: 100%;
             display: flex;
@@ -16,7 +16,7 @@
             justify-content: center;
             align-items: center;
             
-            .loginpage-form-container-form{
+            .signup-form-container-form{
                 height: 80%;
                 max-height: 780px;
                 width: 90%;
@@ -32,7 +32,7 @@
                     font-weight: normal;
                     margin-bottom: 70px;
                 }
-                .email-container, .password-container{
+                .email-container, .password-container, .name-container{
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
@@ -86,10 +86,10 @@
             }
 
         }
-        .loginpage-buttons-container{
+        .signup-page-buttons-container{
             margin-top: 45px;
 
-            .login-button, .register-button, .logout-button{
+            .signup-button, .login-button, .logout-button{
                 width: 278px;
                 height: 54px;
                 border: 1px solid $blue-medium; 
@@ -101,22 +101,17 @@
                 font-family: $basic;
                 cursor: pointer;
             }
-            .login-button{
+            .signup-button{
                 background-color: $blue-medium;
                 color: #ffffff;
-                padding:16px 94px;
+                padding:16px 50px;
             }
-            .register-button{
-                padding: 16px 72px;
+            .login-button{
+                padding: 16px 92px;
                 a{
                     color:$blue-medium;
                     text-decoration: none;
                 }
-            }
-            .logout-button{
-                background-color: $grey-medium;
-                border: none;
-                
             }
 
         }
