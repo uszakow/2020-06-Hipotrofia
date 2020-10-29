@@ -12,7 +12,7 @@ function FAQ() {
     useEffect(() => {
         try {
             const getFaqArr = async () => {
-                const url = "http://localhost:3001/faq";
+                const url = "https://hipotrofia.herokuapp.com/faq";
                 const res = await axios.get(url);
 
                 setFaq(res.data);
