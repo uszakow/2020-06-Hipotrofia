@@ -17,6 +17,7 @@ import Home from './components/Home/Home';
 import CooperationPage from './components/Cooperation/Cooperation';
 import StoriesPage from './components/Stories/Stories';
 import LoginPage from './components/LoginPage/LoginPage';
+import FAQ from './components/FAQ/FAQ';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
             <PageInConstruction />
           </Route>
           <Route path="/cooperation" component={CooperationPage} />
+          <Route path="/questions" component={FAQ} />
           <Route path="/login">
             <LoginPage />
           </Route>
