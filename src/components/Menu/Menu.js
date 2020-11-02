@@ -20,8 +20,6 @@ class Menu extends Component {
     componentDidMount() {
         this.isMobile();
         window.addEventListener("resize", this.isMobile);
-
-        this.props.getAllTags();
     }
 
     render() {
