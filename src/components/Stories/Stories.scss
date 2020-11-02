@@ -14,28 +14,17 @@
             background-color: $grey-medium;
         }
         h2.stories-post-title{
-            // font-family: $basic;
-            // font-size: 20px;
-            // line-height: 24px;
+
             color: $blue-medium;
             font-weight: bold;
         }
         .stories-post-date{
-            // font-family: $basic;
-            // font-size: 18px;
-            // line-height: 22px;
+
             font-weight: normal;
         }
 
         .stories-post-content{
-            // font-family: $basic;
-            // font-size: 18px;
-            // line-height: 22px;
             font-weight: normal;
-
-/*             .stories-post-content-sample-text{
-                margin:0;
-            } */
 
 
             .stories-post-button-show-more {
@@ -88,19 +77,9 @@
             
             .stories-images-container{
                 padding: 15px;
-                // display: flex;
-                /* flex-wrap: wrap;
-                flex-direction: row;
-                justify-content: space-around;
-                align-items: center; */
                 width: 100%;
                 display: grid;
-    
-    
-                @media(max-width:$lg){
-                    // justify-content: center;
-    
-                }
+
     
                 img{
                     

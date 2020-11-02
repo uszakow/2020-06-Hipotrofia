@@ -16,9 +16,9 @@ class Post extends Component {
   };
 
   render() {
-    console.log(this.state.wrapperIsOpen);
+    // console.log(this.state.wrapperIsOpen);
 
-    const {author, title, created, contents}=this.props.post;
+    const { title, created, contents}=this.props.post;
 
     return (
       <div className="stories-post-container">
