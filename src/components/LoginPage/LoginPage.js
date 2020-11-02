@@ -18,6 +18,22 @@ class LoginPage extends Component {
   }
 
   onSubmit = (event) => {
+    const { email, password, error } = this.state;
+
+    //get z db potem funkcja z filter i dwie sciezki- do zalogowania i do bledu
+    
+    const [usersList, setUsersList] = useState([]);
+
+    useEffect(() => {
+      axios
+        .get("https://hipotrofia.herokuapp.com/users")
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          setUsersList(data);
+        });
+    }, []);
     event.preventDefault();
   };
 

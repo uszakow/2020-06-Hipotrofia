@@ -5,7 +5,7 @@ import Banner from "../Banner/Banner";
 import ButtonsAndText from "../ButtonsAndText/ButtonsAndText";
 import Post from "./Post";
 
-import bannerPhoto from "../../img/Banner/banner.svg";
+import bannerPhoto from '../../img/Banner/background.png';
 
 class StoriesPage extends Component {
   state = {
@@ -13,7 +13,7 @@ class StoriesPage extends Component {
   };
 
   componentDidMount() {
-    axios.get("http://localhost:3001/articleDto?page=3")
+    axios.get("https://hipotrofia.herokuapp.com/articleDto?page=3")
       .then(res => {
         const postsList = res.data;
         this.setState({ postsList });
