@@ -3,7 +3,29 @@ import { Link } from "react-router-dom";
 import "./loginpage.scss";
 import LoginPageText from "../../img/Login/logo-hipotrofia 1.png";
 
-class LoginPage extends Component {
+const LoginPage = () => (
+  <div className="container loginpage">
+    <div className="loginpage-form-container">
+      <LoginFormBase />
+    </div>
+    <div className="loginpage-photo-container">
+      <div className="background-image"  >
+        <img className="text-image" src={LoginPageText} alt="login page text hipotrofia"></img>
+      </div>      
+    </div>
+  </div>
+);
+
+const INITIAL_STATE = {
+  email: "",
+  password: "",
+  errorEmail: "",
+  errorPassword: "",
+  isValid: false,
+  error: null,
+};
+
+class LoginFormBase extends Component {
   constructor(props) {
     super(props);
     this.state = {
