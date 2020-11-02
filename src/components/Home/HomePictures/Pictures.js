@@ -40,7 +40,7 @@ const tiles = [
         text: 'consectetur adipiscing elit, sed do eiusmod tempor incididunt'
     },
     {
-        href: '/inconstruction',
+        href: '/questions',
         src: najczesciejZadawanePytania,
         alt: 'Najczęściej zadawane pytania o hipotrofię',
         title: 'Najczęściej zadawane pytania o hipotrofię',
