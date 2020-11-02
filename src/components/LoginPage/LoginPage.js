@@ -1,27 +1,46 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React, { Component, useState, useEffect } from "react";
+import { Link, withRouter } from "react-router-dom";
+// import { compose } from "recompose";
+
 import "./loginpage.scss";
+import axios from "axios";
+import LoginPageImage from "../../img/Login/abstract-login-image.png";
 import LoginPageText from "../../img/Login/logo-hipotrofia 1.png";
 
-class LoginPage extends Component {
+const LoginPage = () => (
+  <div className="container loginpage">
+    <div className="loginpage-form-container">
+      <LoginFormBase />
+    </div>
+    <div className="loginpage-photo-container">
+      <div className="background-image"  >
+        <img className="text-image" src={LoginPageText} alt="login page text hipotrofia"></img>
+      </div>
+    </div>
+  </div>
+);
+
+const INITIAL_STATE = {
+  email: "",
+  password: "",
+  errorEmail: "",
+  errorPassword: "",
+  isValid: false,
+  error: null,
+};
+
+class LoginFormBase extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      ...props,
-      email: "",
-      errorEmail: "",
-      password: "",
-      errorPassword: "",
-      error:null,
-      isInvalid:false
-    };
+
+    this.state = { ...INITIAL_STATE };
   }
 
   onSubmit = (event) => {
     const { email, password, error } = this.state;
 
     //get z db potem funkcja z filter i dwie sciezki- do zalogowania i do bledu
-    
+
     const [usersList, setUsersList] = useState([]);
 
     useEffect(() => {
@@ -34,28 +53,20 @@ class LoginPage extends Component {
           setUsersList(data);
         });
     }, []);
+
+    // IF wprowadzone dane = dane z bazy danych =>> zalogowano---> landing page / ---> nieprawidłowe dane, zapomniałeś hasła?
+
     event.preventDefault();
   };
 
-  onClick = () => {
-    const userDto = {
-      token: "",
-      name: "",
-      email: document.getElementById("email").value,
-      roleName: "",
-    };
-
-    this.state.loginUser(userDto);
-  };
-
   onChange = (event) => {
-    // this.setState({ [event.target.name]: event.target.value });
+    this.setState({ [event.target.name]: event.target.value });
   };
 
   validateEmail = () => {
     const { email } = this.state;
     let isEmailValid = true;
-    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!re.test(email)) {
       isEmailValid = false;
       this.setState({ errorEmail: "Podany email jest nieprawidłowy!" });
@@ -87,96 +98,64 @@ class LoginPage extends Component {
     const isInvalid = password === "" || email === "";
 
     return (
-      <div className="container loginpage">
-        <div className="loginpage-form-container">
-          <div className="loginpage-form-container-form">
-            {this.props.user.email === "" ? (
-              <h1>Witamy...</h1>
-            ) : (
-              <h1>Witamy {this.props.user.email}</h1>
-            )}
+      <>
+        <div className="loginpage-form-container-form">
+          <h1>Witamy...</h1>
 
-            {this.props.user.email === "" && (
-              <div className="LoginBox">
-                <form onSubmit={this.onSubmit}>
-                  <div className="email-container">
-                    <label>Email</label>
-                    <input
-                      id="email"
-                      name="email"
-                      // value={email}
-                      onChange={this.onChange}
-                      onBlur={this.validateEmail}
-                      type="text"
-                      placeholder="imię@email.com"
-                    />
-                  </div>
-                  {errorEmail && <span className="errorMessage">{errorEmail}</span>}
-
-                  <div className="password-container">
-                    <label>Hasło</label>
-                    <input
-                      id="password"
-                      name="password"
-                      // value={password}
-                      onChange={this.onChange}
-                      onBlur={this.validatePassword}
-                      type="password"
-                      placeholder="Hasło"
-                    />
-                  </div>
-                  {/* {errorPassword && (
-                        <span className="errorMessage">{errorPassword}</span>
-                      )} */}
-                </form>
+          <div className="LoginBox">
+            <form onSubmit={this.onSubmit}>
+              <div className="email-container">
+                <label>Email</label>
+                <input
+                  name="email"
+                  value={email}
+                  onChange={this.onChange}
+                  onBlur={this.validateEmail}
+                  type="text"
+                  placeholder="imię@email.com"
+                />
               </div>
-            )}
+              {errorEmail && <span className="errorMessage">{errorEmail}</span>}
 
-            <div className="loginpage-buttons-container">
-              {this.props.user.email === "" ? (
-                <>
-                  <button
-                    className="login-button"
-                    type="submit"
-                    onClick={this.onClick}
-                  >
-                    Zaloguj
-                  </button>
-
-                  <p className="register-button">
-                    <Link to={"/signup"}>Zarejestruj</Link>
-                  </p>
-                  <p className="forget-password">
-                    <Link to={"/"}>Zapomniałeś hasła?</Link>
-                  </p>
-                </>
-              ) : (
-                <button
-                  className="logout-button"
-                  onClick={this.state.logoutUser}
-                >
-                  Wyloguj
-                </button>
+              <div className="password-container">
+                <label>Password</label>
+                <input
+                  name="password"
+                  value={password}
+                  onChange={this.onChange}
+                  onBlur={this.validatePassword}
+                  type="password"
+                  placeholder="Hasło"
+                />
+              </div>
+              {errorPassword && (
+                <span className="errorMessage">{errorPassword}</span>
               )}
-            </div>
-            {/* {error && <p className="errorMessage">{error.message}</p>} */}
+            </form>
           </div>
-        </div>
-        <div className="loginpage-photo-container">
-          <div className="background-image">
-            <img
-              className="text-image"
-              src={LoginPageText}
-              alt="login page text hipotrofia"
-            ></img>
+          <div className="loginpage-buttons-container">
+            <button className="login-button" disabled={isInvalid} type="submit" onClick={this.onSubmit}>
+              Zaloguj
+          </button>
+            <p className="register-button">
+              <Link to={"/register"}>Zarejestruj</Link>
+            </p>
+            <p className="forget-password">
+              <Link to={"/"}>Zapomniałeś hasła?</Link>
+            </p>
+
+
           </div>
+          {error && <p className="errorMessage">{error.message}</p>}
         </div>
-      </div>
+
+
+      </>
     );
   }
 }
 
-
+// const LoginForm = compose(withRouter)(LoginFormBase);
 
 export default LoginPage;
 
