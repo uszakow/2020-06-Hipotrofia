@@ -15,8 +15,7 @@ const LoginPage = () => (
     <div className="loginpage-photo-container">
       <div className="background-image"  >
         <img className="text-image" src={LoginPageText} alt="login page text hipotrofia"></img>
-      </div>
-      
+      </div>      
     </div>
   </div>
 );
