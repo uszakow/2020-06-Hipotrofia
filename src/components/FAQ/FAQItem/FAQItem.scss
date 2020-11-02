@@ -1,15 +1,17 @@
 @import "./../../../variables";
 
-.faq-item {
-    overflow: hidden;
+.faq-item {    
     margin: 5px 0;
     &-title {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: sticky;
+        top: 0;
         font-weight: 700;
         font-size: 18px;
         line-height: 28px;
+        background-color: white;
         padding: 10px 24px;
         border: 2px solid #dedada;
         border-radius: 12px;
@@ -33,11 +35,13 @@
         max-height: 0;
         font-size: 18px;
         line-height: 22px;
-        margin: 0;
+        margin: 0;        
+        overflow-y: auto;
         transition: max-height 1s;
     }
     &-content.faq-content-show {
-        max-height: 100vh;
+        max-height: 1000vh;
+        padding-bottom: 1px;
         transition: max-height 1s;
     }
 }
