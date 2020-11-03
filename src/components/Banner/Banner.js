@@ -1,27 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Banner.scss';
 
 import { Link } from 'react-router-dom';
 
 import logo from './../../img/Banner/logo-hipotrofia.png';
-// import axios from 'axios';
-
-//ma zaciągać z http://localhost:3001/pictures/banner/logo
 
 function Banner(props) {
-    // const [appState, setAppState] = useState({
-    //     logo: ''
-    // });
-
-    // useEffect(() => {
-    //     axios.get("http://localhost:3001/pictures")
-    //         .then(res => {
-    //             setAppState({
-    //                 logoHipotrofia: require(`./../../img/${res.data.banner}`)
-    //             });
-    //         })
-    // }, [setAppState])
-
     return (
         <div className="banner-container">
             <img src={props.photo} alt="" width='100%' className="banner-background" />
