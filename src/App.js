@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import ButtonUp from "./components/ButtonUp/ButtonUp";
 import PageInConstruction from "./components/PageInConstruction/PageInConstruction";
 import Page404 from "./components/Page404/Page404";
+import FAQ from "./components/FAQ/FAQ";
 
 import Home from "./components/Home/Home";
 import CooperationPage from "./components/Cooperation/Cooperation";
@@ -18,12 +19,12 @@ import SignUpPage from './components/SignUpPage/SignUpPage';
 
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
-import {store, persistor } from './redux/store';
+import { store, persistor } from './redux/store';
 
 function App() {
   return (
     <Provider store={store}>
-      <PersistGate  loading={null} persistor={persistor}>
+      <PersistGate loading={null} persistor={persistor}>
         <Router>
           <div className="app-wrap">
             <Menu />
@@ -38,6 +39,7 @@ function App() {
                 <PageInConstruction />
               </Route>
               <Route path="/cooperation" component={CooperationPage} />
+              <Route path="/questions" component={FAQ} />
               <Route path="/login" component={LoginPage} />
               <Route path="/signup" component={SignUpPage} />
               <Route path="/articles" component={ArticlesPage} />
@@ -46,10 +48,7 @@ function App() {
               </Route>
               <Route path="/children">
                 <PageInConstruction />
-              </Route>
-              <Route path="/inconstruction">
-                <PageInConstruction />
-              </Route>
+              </Route>              
               <Route component={Page404} />
             </Switch>
 
