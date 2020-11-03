@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/2020-06-Hipotrofia/static/css/main.dc734538.chunk.css",
-    "main.js": "/2020-06-Hipotrofia/static/js/main.6f03a22a.chunk.js",
-    "main.js.map": "/2020-06-Hipotrofia/static/js/main.6f03a22a.chunk.js.map",
+    "main.css": "/2020-06-Hipotrofia/static/css/main.c98b7ca2.chunk.css",
+    "main.js": "/2020-06-Hipotrofia/static/js/main.739c2451.chunk.js",
+    "main.js.map": "/2020-06-Hipotrofia/static/js/main.739c2451.chunk.js.map",
     "runtime-main.js": "/2020-06-Hipotrofia/static/js/runtime-main.020e4572.js",
     "runtime-main.js.map": "/2020-06-Hipotrofia/static/js/runtime-main.020e4572.js.map",
-    "static/js/2.d33aab83.chunk.js": "/2020-06-Hipotrofia/static/js/2.d33aab83.chunk.js",
-    "static/js/2.d33aab83.chunk.js.map": "/2020-06-Hipotrofia/static/js/2.d33aab83.chunk.js.map",
+    "static/js/2.44208d21.chunk.js": "/2020-06-Hipotrofia/static/js/2.44208d21.chunk.js",
+    "static/js/2.44208d21.chunk.js.map": "/2020-06-Hipotrofia/static/js/2.44208d21.chunk.js.map",
     "index.html": "/2020-06-Hipotrofia/index.html",
-    "precache-manifest.c2ae0e0d6da841e70f105741012740e7.js": "/2020-06-Hipotrofia/precache-manifest.c2ae0e0d6da841e70f105741012740e7.js",
+    "precache-manifest.72ea4f55ff451fb10b40143c420dfda6.js": "/2020-06-Hipotrofia/precache-manifest.72ea4f55ff451fb10b40143c420dfda6.js",
     "service-worker.js": "/2020-06-Hipotrofia/service-worker.js",
-    "static/css/main.dc734538.chunk.css.map": "/2020-06-Hipotrofia/static/css/main.dc734538.chunk.css.map",
-    "static/js/2.d33aab83.chunk.js.LICENSE.txt": "/2020-06-Hipotrofia/static/js/2.d33aab83.chunk.js.LICENSE.txt",
-    "static/media/abstract-login-image.png": "/2020-06-Hipotrofia/static/media/abstract-login-image.52d30f70.png",
+    "static/css/main.c98b7ca2.chunk.css.map": "/2020-06-Hipotrofia/static/css/main.c98b7ca2.chunk.css.map",
+    "static/js/2.44208d21.chunk.js.LICENSE.txt": "/2020-06-Hipotrofia/static/js/2.44208d21.chunk.js.LICENSE.txt",
+    "static/media/signUpPage.scss": "/2020-06-Hipotrofia/static/media/abstract-login-image.52d30f70.png",
     "static/media/annaharat.jpg": "/2020-06-Hipotrofia/static/media/annaharat.12e42455.jpg",
     "static/media/background.png": "/2020-06-Hipotrofia/static/media/background.9d65c718.png",
     "static/media/builder.svg": "/2020-06-Hipotrofia/static/media/builder.abf40bc0.svg",
@@ -25,17 +25,19 @@
     "static/media/magicFoundation.png": "/2020-06-Hipotrofia/static/media/magicFoundation.1a745018.png",
     "static/media/najczesciejZadawanePytania.png": "/2020-06-Hipotrofia/static/media/najczesciejZadawanePytania.2ceac759.png",
     "static/media/paweluszakow.png": "/2020-06-Hipotrofia/static/media/paweluszakow.643bbfc1.png",
+    "static/media/ArticlesPage.scss": "/2020-06-Hipotrofia/static/media/pexels-taryn-elliott-3889795 1.86e74021.png",
     "static/media/programLeczeniaWPolsce.png": "/2020-06-Hipotrofia/static/media/programLeczeniaWPolsce.ad20e713.png",
     "static/media/Cooperation.scss": "/2020-06-Hipotrofia/static/media/roller-coaster-3605743_1920 1.03984309.png",
     "static/media/roznicaMiedzySGAaIUGR.png": "/2020-06-Hipotrofia/static/media/roznicaMiedzySGAaIUGR.2e6f56db.png",
     "static/media/search.svg": "/2020-06-Hipotrofia/static/media/search.10ca1dbf.svg",
     "static/media/up.svg": "/2020-06-Hipotrofia/static/media/up.b1aba57b.svg",
+    "static/media/woman-wearing-coat-762020 1.png": "/2020-06-Hipotrofia/static/media/woman-wearing-coat-762020 1.65ee8f28.png",
     "static/media/wspolpraca.png": "/2020-06-Hipotrofia/static/media/wspolpraca.91ec88cf.png"
   },
   "entrypoints": [
     "static/js/runtime-main.020e4572.js",
-    "static/js/2.d33aab83.chunk.js",
-    "static/css/main.dc734538.chunk.css",
-    "static/js/main.6f03a22a.chunk.js"
+    "static/js/2.44208d21.chunk.js",
+    "static/css/main.c98b7ca2.chunk.css",
+    "static/js/main.739c2451.chunk.js"
   ]
 }

@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "59d3cac2c80d9d263e421d86ad44b3b3",
+    "revision": "62114aefbe52bcccbe733ab3a781c308",
     "url": "/2020-06-Hipotrofia/index.html"
   },
   {
-    "revision": "7ba200638390dd7457f2",
-    "url": "/2020-06-Hipotrofia/static/css/main.dc734538.chunk.css"
+    "revision": "80c1ff8487864be874f0",
+    "url": "/2020-06-Hipotrofia/static/css/main.c98b7ca2.chunk.css"
   },
   {
-    "revision": "7641d738dbbb6419c270",
-    "url": "/2020-06-Hipotrofia/static/js/2.d33aab83.chunk.js"
+    "revision": "7ca1f2b75fcd020fe192",
+    "url": "/2020-06-Hipotrofia/static/js/2.44208d21.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/2020-06-Hipotrofia/static/js/2.d33aab83.chunk.js.LICENSE.txt"
+    "url": "/2020-06-Hipotrofia/static/js/2.44208d21.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7ba200638390dd7457f2",
-    "url": "/2020-06-Hipotrofia/static/js/main.6f03a22a.chunk.js"
+    "revision": "80c1ff8487864be874f0",
+    "url": "/2020-06-Hipotrofia/static/js/main.739c2451.chunk.js"
   },
   {
     "revision": "02c8ce99886770aa7ad7",
@@ -76,6 +76,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/2020-06-Hipotrofia/static/media/paweluszakow.643bbfc1.png"
   },
   {
+    "revision": "86e74021fcf28e8829d80f0fde78986c",
+    "url": "/2020-06-Hipotrofia/static/media/pexels-taryn-elliott-3889795 1.86e74021.png"
+  },
+  {
     "revision": "ad20e7137d3fb61d94f391252f9ca3ae",
     "url": "/2020-06-Hipotrofia/static/media/programLeczeniaWPolsce.ad20e713.png"
   },
@@ -94,6 +98,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b1aba57bf3ca2099aa08d1fcea21b196",
     "url": "/2020-06-Hipotrofia/static/media/up.b1aba57b.svg"
+  },
+  {
+    "revision": "65ee8f287abbae2cb9baf9f5353b63de",
+    "url": "/2020-06-Hipotrofia/static/media/woman-wearing-coat-762020 1.65ee8f28.png"
   },
   {
     "revision": "91ec88cfbeb76309b079cad69d2ccb75",
